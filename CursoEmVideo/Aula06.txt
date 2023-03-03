@@ -1,0 +1,31 @@
+n1 =  int(input('Digite um número:'))
+n2 = int(input('Digite um segundo número:'))
+s = n1 + n2
+
+print('A soma entre {} e {}, é {}'.format(n1, n2, n3))
+
+------------------------------------------------------------
+
+n = float (input('Digite um valor:'))
+print(type(n))
+
+----------------------------------------------------------
+#programa para ler dois numeros inteiros
+
+n1 =  int(input('Digite um número:'))
+n2 = int(input('Digite um segundo número:'))
+s = n1 + n2
+
+print('A soma entre {} e {}, é {}'.format(n1, n2, s))
+
+---------------------------------------------------------------
+
+# programa que le algo no teclado e mostre na tela o teu tipo primitivo e todas as informações
+#possiveis sonre ela
+
+a = input('Digite alguma coisa:')
+print(type(a))
+print((a.isupper()))
+print(a.isalnum())
+print(a.isalpha())
+print('O que você digitou tem ', len(a), 'caracteres')
