@@ -1,0 +1,48 @@
+#Curso Python #07 - Operadores Aritméticos
+
+#operadorestimeticos
+# + adicação
+# - subtração
+# * multiplicação
+# / divisão
+# // divisão inteira
+# ** potência
+# % resto da divisão
+
+#operadores binários precisão de dois operandos ex:
+
+#dois simbolos de = é para dizer que é igual e não que esta sendo atribuido um valor
+
+#  5+5 = 10
+#      =
+
+# 10-8 = 2
+#      =
+
+# 8*2  = 16
+#      =
+
+# 8/1 = 8
+#     =
+
+# 5//2 = 2
+#      =
+
+# 5**2 = 25
+#      =
+
+# 5%2 =  1
+#     =
+
+#Ordem de precedência
+#
+# 1 - ()
+# 2 - **
+# 3 -  *  /  //  % se houver mais de um na mesma expressão, resolve pelo qual apareceu primeiro
+# 4 -  +  -
+#
+#   Ex: 5 + 3  * 2 == 11
+#
+#   Ex:  3 * 5 + 4 ** 2 == 31
+#
+#   Ex:  3 * (5 + 4) ** 2 == 243
