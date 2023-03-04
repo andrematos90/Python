@@ -46,3 +46,125 @@
 #   Ex:  3 * 5 + 4 ** 2 == 31
 #
 #   Ex:  3 * (5 + 4) ** 2 == 243
+
+
+--------------------------------------------------------------------------------------------------------
+
+n1 = int(input(''))
+n2 = int (input(''))
+print('A soma entre {} e {} é {}'.format(n1,n2,n1+n2))
+print('A Divisão entre {} e {} é {:.3f}'.format(n1,n2,n1/n2)) # {:.3f} formata para ter apenas ter 3 casas decimais depois da virgula
+print('O produto entr {} e {} é {}' .format(n1,n2,n1*n2))
+
+#OUTRA MANEIRA DE FAZER
+#
+# n1 = int(input(''))
+# n2 = int(input(''))
+# s = n1 + n2
+# d = n1/n2
+# m = n1 * n2
+# di = n1//n2
+# e = n1**n2
+#
+#
+# print ( 'A soma é {}, a divisão é {} e a multiplicação é {}'.format(s,d,m),end=' ))     #end=' 'serve para não quebrar a linha de um print para outro e \n para quebrar a linha
+# rint('A divisão inteira é {} e a pótência é {}'.format(di, e))
+
+
+---------------------------------------------------------------------------------------------------
+
+DESAFIO 005
+
+#Faça um programa que leia um numero inteiro e mostre na tela se sucessor e seu antecessor
+
+
+n = int(input('Digite um número:'))
+
+print('Antecessor: {}'.format(n-1,n))
+print('Sucessor: {}'.format(n+1,n))
+
+
+-------------------------------------------------------------------------------------------------------
+
+DESAFIO 006
+
+#crie um algoritimo que leia um numero e mostre seu dobro, triplo e raiz quadrada
+
+n = int(input('Digite um número: '))
+
+d = n*2
+t = n*3
+r = n**2
+
+print(' dobro:{}\n triplo:{}\n raiz:{}\n'.format(d,t,r))
+
+-----------------------------------------------------------------------------------------------------------
+
+DESAFIO 007
+
+#Desenvolva um programa que leia duas notas de um aluno, calcule e mostre sua média
+
+n1 = int(input('Primeira nota:'))
+n2 = int(input('Segunda nota:'))
+
+m = (n1+n2)/2
+
+print('Média: {}'.format(m))
+
+------------------------------------------------------------------------------------------------------------
+
+DESAFIO 008
+
+# Programa que le valor em metro e converte para centimetros e milimetros
+
+metros = int(input('Digite um número em metros: '))
+
+cm = metros*100
+
+mm = metros*1000
+
+print('"{}" metros em centimetros é {} e em milimetros {}'.format(metros,cm,mm))
+
+-------------------------------------------------------------------------------------------------------------
+
+DESAFIO 009
+
+#programa que le um numero inteiro e mostra sua tabuada
+
+n = int(input('Digite um número: '))
+
+nx1 = n*1
+nx2 = n*2
+nx3 = n*3
+nx4 = n*4
+nx5 = n*5
+nx6 = n*6
+nx7 = n*7
+nx8 = n*8
+nx9 = n*9
+nx10 = n*10
+
+print('{} x 1 = {}'.format(n,nx1))
+print('{} x 2 = {}'.format(n,nx2))
+print('{} x 3 = {}'.format(n,nx3))
+print('{} x 4 = {}'.format(n,nx4))
+print('{} x 5 = {}'.format(n,nx5))
+print('{} x 6 = {}'.format(n,nx6))
+print('{} x 7 = {}'.format(n,nx7))
+print('{} x 8 = {}'.format(n,nx8))
+print('{} x 9 = {}'.format(n,nx9))
+print('{} x 10 = {}'.format(n,nx10))
+
+-----------------------------------------------------------------------------------------------------------
+
+DESAFIO 010
+
+#programa para ler quantos reais uma pessoa tem e converter para dolares
+
+R = int(input('Quantos Reais você tem?'))
+
+D = 5.24
+
+C = R/D
+
+print('Pela cotação atual voce tem ${:.2f} (Dolares)'.format(C))
