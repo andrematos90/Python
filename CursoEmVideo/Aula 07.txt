@@ -1,4 +1,4 @@
-#Curso Python #07 - Operadores Aritméticos
+---------------------------------#AULA07 - Operadores Aritméticos--------------------------------------
 
 #operadorestimeticos
 # + adicação
@@ -126,7 +126,6 @@ mm = metros*1000
 print('"{}" metros em centimetros é {} e em milimetros {}'.format(metros,cm,mm))
 
 -------------------------------------------------------------------------------------------------------------
-
 DESAFIO 009
 
 #programa que le um numero inteiro e mostra sua tabuada
@@ -168,3 +167,53 @@ D = 5.24
 C = R/D
 
 print('Pela cotação atual voce tem ${:.2f} (Dolares)'.format(C))
+
+------------------------------------------------------------------------------------------------------------
+
+DESAFIO 011
+
+# faça um programa que leia a altura e a lagura de uma parede em metros
+# calcule sua area e a quantidade de tinta necesaria para pintala,
+#sabendo que cada litro de tinta pinta uma area de 2m²
+
+
+a = int(input('Altura: '))
+l = int(input('Largura: '))
+
+area = a*l
+
+t = area/2
+
+print(' Área parede: {} \n Tinta necessária: {:.2f} litros'.format(a,t))
+
+------------------------------------------------------------------------------------------------------------
+
+DESAFIO 012
+
+# algoritimo para ler um preço de produto e mostrar esse preço com 5% de desconto
+
+preco = int(input('Digite o Preço do produto: '))
+
+porcentagem = preco/100
+
+novopreco = preco-(porcentagem*5)
+
+print('Preço com desconto: {}'.format(novopreco))
+
+-------------------------------------------------------------------------------------------------------------
+
+DESAFIO 013 
+
+#faça um algoritimo que leia um sálario e calcule e exiba esse sálario com 15% de aumento
+
+
+s = int(input('Digite o salário:  '))
+
+porcentagem = s/100
+
+novosalario = s + (porcentagem*15)
+
+print('O novo salário é: R${:.2f}'.format(novosalario))
+
+
+-------------------------------------------------------------------------------------------------------------
