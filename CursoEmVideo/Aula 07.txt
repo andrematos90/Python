@@ -233,3 +233,29 @@ print('O novo salário é: R${:.2f}'.format(novosalario))
 
 
 -------------------------------------------------------------------------------------------------------------
+
+DESAFIO 014 
+
+# converter graus Celcius para Fahrenheith
+
+c = float(input('Digite em graus Celcius: '))
+
+f =  c *1.8 + 32
+k = c + 273
+
+print('{}° Celcius equivalem a {}° Fahreinheit'.format(c,f))
+print('e {}° Celcius correspondem a {}° Kelvin'.format(c,k))
+
+
+-------------------------------------------------------------------------------------------------------------
+
+DESAFIO 015
+
+#escreva um programa que pergunte a quantidade de km percorrido por um carro alugado
+#e a quantidade de dias pelos quais foi alugado. Calcule o preço a pagar,
+#sabendo que o carro custa R$60 por dia e R$0,15 por km rodado.
+
+d = int(input('Dias: '))
+km = float(input('Quilômetros: '))
+
+print('Total a pagar: R${:.2f}'.format(d*60 + km *0.15))
