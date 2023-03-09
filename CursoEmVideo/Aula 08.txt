@@ -1,4 +1,34 @@
 --------------------------Curso Python #08 - Utilizando Módulos-------------------------------------------
 
+#originalmente a linguagem python tem uma quantidade limitada de comandos
+#  em python podemos adicionar módulos/pacotes/bibliotecas trazendo mais comandos/funcionalidades
+#para incluir/importar algo usa se o comando "import"
+
+# import bebida (importa toda a biblioteca de "bebida" por exemplo)
+# from bebida import suco (importa somene "suco da biblioteca de "bebida") è feito assim para ecomizar memória
+
+# ex:
+
+# biblioteca math
+
+# funcionalidade        o que faz?
+# ceil                 #arredonda para cima
+#floor                 # arredonda para baixo
+#trunc                 # "trunca" elimina as casas depois da virgula
+#pow                   #potencia
+#stqrt                 #raiz quadrada
+#factorial             #fatorial
+
+# quandp se usa o comando "import match" todas essas funcionalidades são importadas
+
+# ex: se quero um programa que apenas calcule a raiz quadrada
+
+# from match import sqrt "importa apenas a funcionalidade de rai"
+# from match import sqrt,ceil " emporta apenasa as funcionalidades de raiz e arredondamento para cima"
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
 
 
