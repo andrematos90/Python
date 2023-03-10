@@ -29,6 +29,133 @@
 
 
 
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------Aula008 A----------------------------------------------------------
+
+# raiz = sqrt(n)
+#
+# print('A raiz de {} é {}'.format(n,math.ceil(raiz)))
+#
+
+----------------------------------------------Aula008B--------------------------------------------------------
+
+import emoji
+
+print(emoji.emojize('Olá, mundo! :v::earth_americas:', language = 'alias'))
+
+-------------------------------------------Aula008 DESAFIO016--------------------------------------------------
+
+#Crie um program que leia um número real e mostre na tela somente sua porção inteira
+from math import trunc
+num = float(input('Digite um número real: '))
+
+inteiro = trunc(num)
+
+print('parte inteira: {}'.format(inteiro))
+
+
+'''
+
+
+outra forma de fazer
+
+import math
+
+num = float(input('Digite um número real: '))
+
+print('parte interia {}'.format(math.trunc(num)))
+
+
+
+
+outra maneira sem importar modulos
+
+num = float(input('Digite um numero real: '))
+
+print('parte inteira: {}' .format(int(num)))
+
+'''
+
+
+------------------------------------Aula 008 Desafio017-----------------------------------------------------
+
+#Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retangulo
+#calcule e mostre o tamanho da hipotenusa.
+
+catop = float(input('Cateto oposto:'))
+catadj = float(input('Cateto adjacente:'))
+
+hip = (catop ** 2 + catadj ** 2) **(1/2)
+
+print('Hipotenusa: {:.2f}'.format(hip))
+
+
+
+outra maneira usando o modulo match
+
+import math
+from math import hypot
+catop = float(input('Cateto Oposto: '))
+catadj = float(input('Cateto ajacente'))
+
+hip = math.hypot(catop,catadj)
+print('Hipotenusa: {:.2f}'.format(hip))
+
+
+------------------------------------- Aula008 Desafio018----------------------------------------------------
+
+# um professor quer sortear um dos seus quatro alunos para apagar o quadro
+#Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome escolhido
+import random
+
+aluno1 = input('Aluno 1: ')
+aluno2 = input('Aluno 2: ')
+aluno3 = input('Aluno 3: ')
+aluno4 = input('Aluno 4: ')
+
+print('Aluno Escolhido: {}'.format(random.choice([aluno1,aluno2,aluno3,aluno4])))
+
+'''
+outra maneira de fazer 
+
+import random
+
+a1 = input('Aluno 1: ')
+a2 = input('Aluno 2: ')
+a3 = input('Aluno 3: ')
+a4 = input('Aluno 4: ')
+
+lista = [a1, a2, a3, a4]
+escolhido = random.choice(lista)
+
+print('Escolhido: {}' .format(escolhido))
+
+'''
+
+
+-------------------------------------------Aula 008 Desafio020--------------------------------------------
+
+#algoritmo que le o nome de quatro alunos e sorteie uma ordem de apresentação
+import random
+
+a1 = input('Aluno 1: ')
+a2 = input('Aluno 2: ')
+a3 = input('Aluno 3: ')
+a4 = input('Aluno 4: ')
+
+lista = [a1,a2,a3,a4]
+
+random.shuffle(lista)
+
+print('Ordem: {}'.format(lista))
+
+
+----------------------------------------Aula 008 Desafio021-------------------------------------------------
+
+#faça um programa que abra e reproduza um arquivo mp3
+
+import playsound
+
+playsound.playsound('Alphaville - Forever Young.mp3')
+
 
 
