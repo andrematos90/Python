@@ -1,0 +1,155 @@
+--------------------------------Aula 009 Manipulando Texto------------------------------------------------
+
+'''
+uma string é uma cadeia de caracteres
+
+em python para atribuir uma string a uma váriavel usa se aspas simples ou duplas, tambem a possibilidade de as triplas
+para dar print em um texto inteiro
+
+ex:
+
+frase = 'curso em video python'
+
+quando é criada a váriavel, ela é guradada em um espaço da memória do computador e cada uma dos carateres é salvo
+em microespaços, cada espaço recebe um "indice" que é um numero sequencial apartir do 0
+
+ex:
+           frase = 'c u r s o   e m   v  i  d  e  o      p   y  t  h  o  n '
+                    0 1 2 3 4 5 6 7 8 9 10 11 12 13  14 15  16 17 18 19 20
+
+                                         OPERAÇOES :
+
+fatiamento: é pegar pedaços da string
+
+
+      frase[9]
+
+      o simbolo de colchete é o identificador de uma estrutura de dados (lista)
+      [9] é o numero do indice
+
+      seleciona o "V"
+
+ex:
+        frase[9:13]
+
+        seleciona do "V" até o caracter anterior ao "0"
+
+
+ex:    frase[9:21:2]
+
+        seleciona do [9] até o anterior ao [21] e pulando de 2 em dois
+
+        apareceria  = VD0PTO
+
+
+ex:
+
+       frase [:5]
+
+        começa antes dos dois pontos, termina depois dos dois pontos, quando nao tem o valor inicial
+        ele começa do 0
+
+ex:
+       frase[15:]
+
+       indica o inicio mas sem o final, então vai até o final
+
+
+       frase[9::3]
+
+      começa do 9 vai até o final, pulando de 3 em 3
+
+      VEPH
+
+
+                                                 ANALISE:
+
+
+ex:            len(frase)  -  função len() conta a quantidade de caracteres
+
+ex:            frase.count('o)  -  conta e mostra  a quantidade de letras o existe
+
+ex:            frase.count('0',0,13)  - conta a frase ja com fatiamento conta do "0" até o "13" e mostra
+                a quantidade de letras "o"
+
+ex:            frase.find('deo') - mostra em que momento começou "deo" mostraria "11" que é a posição que começou.
+
+ex:            frase.find('android') não tendo a palavra "android" ele retorna o valor "-1"
+
+ex:            'curso' in frase  retorna "true" quando a palavra existe na frase
+
+
+
+                                        TRANSFORMAÇÃO:
+
+não é possivel mudar uma lista destring em python, não é possivel direto nos elementos,
+mas é possível através de métodos
+
+
+ex:               frase.replace('python','android')
+                 aonde tiver a palavra "python" substitui por "android"
+                 obs: não substitui direto na string, substitui de forma secundaria
+
+ex:              frase.upper()
+                 sustitui por letras maiusculas
+
+ex:              frase.lower()
+                 substtitui por minusculo
+
+ex:              frase.capitalize()
+                 transforma todos os caracteres em minuculos
+                 e só o primeiro para maiusculo
+
+ex:              frase.title ()
+                 analisa quantas palavras tem
+                 quebrando a frase onde a espaços e tranformando em
+                 maiusculas a primeira letra das palavras.
+
+
+ex:             '  aprenda python  '
+
+
+                 frase.strip()
+                 remove os espaços inutes no incio e final da string, mantendo os
+                 espaços entre as palavras
+
+ex:              frase.rstrip()
+                 r = right/direita
+                 remove somentes os ultimos espaços
+
+ex:              frase.lstrip()
+                 left/esquerda
+                 remove somente os espaços do começo
+
+
+                                      DIVISÃO
+
+
+ex:              frase.split()
+                 ocorre uma divisão dentro da string, considerando os espaços
+                 pega aonde tem espaços e cria uma divisao
+                 refaz os indices, cada palavra recebe uma idexização nova
+                 cada palavra é colocada dentro de uma outra lista
+
+                frase = 'c u r s o   e m    v  i  d  e  o      p   y  t  h  o  n '
+                         0 1 2 3 4   01     0  1  2  3   4     0   1  2  3  4  5
+                             0        1            2                   3
+
+
+                                        JUNÇÃO
+
+
+                frase = 'c u r s o   e m    v  i  d  e  o      p   y  t  h  o  n '
+                         0 1 2 3 4   01     0  1  2  3   4     0   1  2  3  4  5
+                             0        1            2
+
+
+
+ex:            '-'.join(frase)
+                junta todos os elementos de "frase" com "-" entre eles
+
+
+
+'''
+
+-----------------------------------------Aula 009 Desafio022---------------------------------------------------------
