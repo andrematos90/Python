@@ -153,3 +153,104 @@ ex:            '-'.join(frase)
 '''
 
 -----------------------------------------Aula 009 Desafio022---------------------------------------------------------
+'''
+Crie um programa que leia o nome completo e mostre
+
+*o nome com todas as letras maiusculas
+*todas minusculas
+*quantas letras sem considerar espaços
+*quantas letras tem o primeiro nome
+'''
+
+nome = input('Digite seu nome completo: ')
+maiscula = nome.upper()
+minusculo = nome.lower()
+junto = nome.replace(' ','' )
+firstname = nome[0:5]
+
+
+
+print('Nome em maiúsculo: {}'.format(maiscula))
+print('Nome em minúsculo: {}'.format(minusculo))
+print('Quantidade de letras: {}'.format(len(junto)))
+print('Quantidade de letras do primeiro nome: {}'.format(len(firstname)))
+
+--------------------------------------AULA009 DESAFIO023-------------------------------------------------------
+'''
+Faça um programa que leia um numero de 0 a 9999 e mostre na tela cada um dos digitos separados
+
+ex: numero :1834
+
+unidade: 4
+dezena: 3
+centena: 8
+milhar: 1
+'''
+
+numero = (input('Digite um numero: '))
+
+
+print('Unidade: {}'.format(numero[3]))
+print('dezena: {}'.format(numero[2]))
+print('centena: {}'.format(numero[1]))
+print('milhar: {}'.format(numero[0]))
+
+
+
+--------------------------------------AULA009 DESAFIO024-------------------------------------------------------
+
+'''
+Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com a palavra "santo"
+'''
+
+cidade = input('Cidade: ')
+
+existe = 'Santo' in cidade[0:5]
+
+print('Existe a palavra "Santo": {}'.format(existe))
+
+
+
+
+--------------------------------------AULA009 DESAFIO025-------------------------------------------------------
+
+'''
+crie um programa que leia o nome de uma pessoa e diga se tem silva
+'''
+
+nome = input('Digite seu nome: ')
+
+print('Possui o nome Silva? {}' .format('Silva' in nome))
+
+
+
+--------------------------------------AULA009 DESAFIO026-------------------------------------------------------
+'''
+
+Faça um programa que leia uma frase e mostre:
+
+* quantas vezes aparece a letra "A".
+* em que posição ela aparece a primeira vez.
+* em que posição ela aparece a ultima vez.
+
+'''
+
+frase = input('Digite uma frase: ')
+
+ultimo = frase.find([-1])
+
+print('Letras "A": {}'.format(frase.count('A',0)))
+print('Posição em que aparece a primeira vez: {}'.format(frase.find('A')))
+print('Posição em que aparece por ultimo: {}'.format(ultimo))
+
+
+--------------------------------------AULA009 DESAFIO027-------------------------------------------------------
+
+'''
+Faça um programa que um nome e mostre o primeiro e o ultimo:
+'''
+
+nome = input('Digite seu nome:')
+
+print('Primeiro nome: {}'.format(nome [0:'']))
+
