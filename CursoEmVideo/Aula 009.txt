@@ -175,6 +175,19 @@ print('Nome em minúsculo: {}'.format(minusculo))
 print('Quantidade de letras: {}'.format(len(junto)))
 print('Quantidade de letras do primeiro nome: {}'.format(len(firstname)))
 
+
+
+                                        OUTRA FORMA DE FAZER
+
+
+
+nome =  str(input('Nome: ')).strip()    '''strip()   retira os espaços do inicio e do fim'''
+
+print('nome em máiusculo: {}'.format(nome.upper()))
+print('nome em minúsculo: {}'.format(nome.lower()))
+print('quantidade de letras: {}'.format(len(nome) - nome.count(' ')))   ''' len conta os caracteres de nome e count conta a quantidade de letras'''
+print('letras no primeiro nome: {}'.format(nome.find(' ')))             ''' find encontra o primeiro espaço '''                                 
+
 --------------------------------------AULA009 DESAFIO023-------------------------------------------------------
 '''
 Faça um programa que leia um numero de 0 a 9999 e mostre na tela cada um dos digitos separados
@@ -252,5 +265,5 @@ Faça um programa que um nome e mostre o primeiro e o ultimo:
 
 nome = input('Digite seu nome:')
 
-print('Primeiro nome: {}'.format(nome [0:'']))
+print('Primeiro nome: {}'.format(nome [0:''])) 
 
