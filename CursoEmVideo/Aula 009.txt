@@ -209,6 +209,22 @@ print('centena: {}'.format(numero[1]))
 print('milhar: {}'.format(numero[0]))
 
 
+                                    OUTRA FORMA DE FAZER
+
+
+numero = int(input('Digite um número: '))
+u = numero // 1 % 10
+d = numero // 10 % 10
+c = numero // 100 % 100
+m = numero // 1000 % 1000
+
+print('Analisando o numero: {}'.format(numero))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar {}'.format(m))
+
+
 
 --------------------------------------AULA009 DESAFIO024-------------------------------------------------------
 
@@ -216,11 +232,19 @@ print('milhar: {}'.format(numero[0]))
 Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com a palavra "santo"
 '''
 
-cidade = input('Cidade: ')
+cidade = input('Cidade: ').stript()
 
 existe = 'Santo' in cidade[0:5]
 
 print('Existe a palavra "Santo": {}'.format(existe))
+
+
+                                     OUTRA FORMA DE FAZER
+
+
+
+cidade = str(input('Cidade: ')).strip()
+print(cidade[:5].upper() == 'SANTO')
 
 
 
@@ -233,7 +257,9 @@ crie um programa que leia o nome de uma pessoa e diga se tem silva
 
 nome = input('Digite seu nome: ')
 
-print('Possui o nome Silva? {}' .format('Silva' in nome))
+print('Possui o nome Silva? {}' .format('SILVA' in nome.upper()))
+
+resolvido com o operador "in"
 
 
 
@@ -248,13 +274,14 @@ Faça um programa que leia uma frase e mostre:
 
 '''
 
-frase = input('Digite uma frase: ')
+frase = input('Digite uma frase: ').upper().strip()
 
-ultimo = frase.find([-1])
+print('A letra "A" aparece {} vezes'.format(frase.count('A')))
+print('A primeira letra "A" apareceu na posição {}'.format(frase.find('A')+1))
+print ('Aparece pela última vez na posição {}'.format(frase.rfind('A')+1))
 
-print('Letras "A": {}'.format(frase.count('A',0)))
-print('Posição em que aparece a primeira vez: {}'.format(frase.find('A')))
-print('Posição em que aparece por ultimo: {}'.format(ultimo))
+
+
 
 
 --------------------------------------AULA009 DESAFIO027-------------------------------------------------------
@@ -263,7 +290,7 @@ print('Posição em que aparece por ultimo: {}'.format(ultimo))
 Faça um programa que um nome e mostre o primeiro e o ultimo:
 '''
 
-nome = input('Digite seu nome:')
+nome = input('Digite seu nome:').split()
 
-print('Primeiro nome: {}'.format(nome [0:''])) 
-
+print('Primeiro nome: {}'.format(nome[0]))
+print('Último nome: {}'.format(nome[len(nome)-1]))
