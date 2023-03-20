@@ -1,0 +1,71 @@
+  ---------------------------------------AULA011 CORES NO TERMINAL------------------------------------------
+
+'''
+Padrão de normalização internacional ANSI possui escape sequence funcinando em vários ambientes
+
+para cores funciona com:
+
+tudo começa com "\" e depois vem um código
+
+ex: \033[ aqui é preenchido com 1,2 ou 3 códigos para definir a cor m
+
+ex: \033[ style text back m
+obs: podem ser colocados em qualquer ordem pq há diferenciação numérica entre cada um deles
+
+
+ex: \033[0,33;44m
+
+sendo códigos para style(estilo):
+
+0 - none (sem estilo)
+1 - bold (negrito)
+4 - underline (sublinhado)
+7 - negative (inverte as condições)
+
+(existem mais)
+
+sendo para cores da fonte:
+
+30 - white (branco)
+31 - red (vermelho)
+32 - green (verde)
+33 - yellow (amarelo)
+34 - blue (azul)
+35 - purple (roxo)
+36 -cyan (ciano)
+37 - grey (cinza) - é a cor padrão
+
+obs: é possivel adicionar mais com bibliotecas
+
+sendo para o background:
+
+40 - white (branco)
+41 - red (vermelho)
+42 - green (verde)
+43 - yellow (amarelo)
+44 - blue (azul)
+45 - purple (roxo)
+46 -cyan (ciano)
+47 - grey (cinza) - é a cor padrão
+
+OBS: não em preto por que é o padrao
+
+EX: para fazer letra branca e fundo preto (que ja é o padrão)
+
+\033[m
+
+EX: para fazer um fundo branco e letra preta
+
+\033[7:30m
+
+o 7 inverte colocando o 30 (branco) na letra com o 7 que inverte
+o fundo fica branco e a letra preta
+
+
+EXEMPLOS:
+
+nome = 'andré'
+print('Olá! Muito prazer, {} {} {}!!!'.format('\033[4;34m', nome,'\033[m'))
+
+
+'''
