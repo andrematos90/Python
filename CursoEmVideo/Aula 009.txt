@@ -294,3 +294,23 @@ nome = input('Digite seu nome:').split()
 
 print('Primeiro nome: {}'.format(nome[0]))
 print('Último nome: {}'.format(nome[len(nome)-1]))
+
+
+
+
+--------------------------------------AULA 010 CONDICIONAIS----------------------------------------------
+
+
+n1 = float(input('Nota 1: '))
+n2 = float(input('nota 2: '))
+
+media = (n1+n2)/2
+
+if media >= 7:
+    print('Parabéns, Você está aprovado!')
+else:
+    print('Reprovado!')
+
+
+
+---------------------------------------AULA010DESFAIO028-------------------------------------------------
