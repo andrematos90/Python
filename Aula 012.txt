@@ -1,0 +1,71 @@
+---------------------------------------AULA012 CONDIÇÕES ANINHADAS---------------------------------------------
+
+'''
+São estruturas condicionais dentro de estruturas condicionais. Você pode usar vários  if
+ dentro de uma estrutura..
+
+ex: estrutura aninhada em python com 3 condições
+
+
+if carro.esquerda():
+
+bloco de código 1
+
+elif carro.direito():
+
+bloco de código 2
+
+else:
+
+bloco de código 3
+
+ex: estrutura aninhada em python com 4 condições, adiciona-se mais um "elif"
+
+
+if carro.esquerda():
+
+bloco de código 1
+
+elif carro.direito():
+
+bloco de código 2
+
+elif carro.direito():
+
+bloco de código 3
+
+else:
+
+bloco de código 4
+
+
+
+
+elif = else if
+
+'''
+
+---------------------------------------AULA012 DESAFIO036---------------------------------------------
+
+'''
+Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
+O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
+Calcule o valor da prestação mensal sabendo que ela não pode excerder 30% do salário ou então o empréstimo será negado.
+'''
+
+casa = float(input('Valor da casa: '))
+salario = float(input('Salário: '))
+anos = float(input('Anos de Financiamento: '))
+
+prestacao = casa / anos
+psalario = salario / 100 * 30
+
+if prestacao >= psalario:
+    print('Negado')
+
+else:
+    print('Empréstmo consedido!, Valor das Prestações: R$\033[32;40m{:.2f}'.format(prestacao))
+
+
+---------------------------------------AULA012 DESAFIO037---------------------------------------------------
+
