@@ -15,13 +15,13 @@ ano_atual = int ( data_atual. strftime ( "%Y" ))
 
 
 if nascimento + 18 > ano_atual:
-    print('Não se alista! ainda faltam {} anos para se alistar.'.format((nascimento + 18) - ano_atual))
+    print('Não se alista! ainda faltam {} ano(s) para se alistar.'.format((nascimento + 18) - ano_atual))
     
 elif nascimento + 18 == ano_atual:
-    print('é hora de se alistar')
+    print('É hora de se alistar!')
 
 elif nascimento + 18 < ano_atual:
-    print('já passou {} anos da hora de se alistar'.format(abs((nascimento + 18) - ano_atual)))
+    print('já passou {} ano(s) da hora de se alistar'.format(abs((nascimento + 18) - ano_atual)))
 
 
 
