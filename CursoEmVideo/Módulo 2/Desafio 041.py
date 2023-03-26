@@ -15,11 +15,11 @@ ano_atual = int(data_atual.strftime("%Y"))
 
 if (ano_atual - ano_nascimento) <= 9:
     print('Categoria: MIRIN')
-elif (ano_atual - ano_nascimento) >= 9 and (ano_atual - ano_nascimento) < 14:
+elif (ano_atual - ano_nascimento) <= 14:
     print('Caregoria: INFANTIL')
-elif (ano_atual - ano_nascimento) >= 14 and (ano_atual - ano_nascimento) < 19:
+elif (ano_atual - ano_nascimento) <= 19:
     print('Categoria: JUNIOR')
-elif (ano_atual - ano_nascimento) >= 19 and (ano_atual - ano_nascimento) <20:
+elif (ano_atual - ano_nascimento) <= 25:
     print('Categoria: SÊNIOR')
 else:
     print('Categoira: MASTER')
