@@ -8,5 +8,6 @@ for cont  in range (10, -1, -1):
     sleep(1)
     os.system('cls') or None
     print(cont)
-    print('=- * 6 FOGOS =- * 6' )
+print('=-' * 6, 'FOGOS', '=-' *6)
+   
     
