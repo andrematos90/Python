@@ -3,6 +3,6 @@ só que agora utilizando laço for.'''
 
 n = int(input('Número: '))
 
-for n in range (0, 10, *n):
+for c in range (1, 11): 
 
- print(n)
+ print('{} x {} = {}'.format(n, c, n * c))
