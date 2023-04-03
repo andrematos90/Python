@@ -1,10 +1,12 @@
 '''Faça um programa que mostre na tela um contagem regressiva  de 10 até 0
 com intervalo de 1 segundo'''
-from time import sleep
 
-for c in range(10, 0, -1):
+
+from time import sleep
+import os 
+
+for cont  in range (10, -1, -1):
     sleep(1)
-    print(c)
-    
-   
-    
+    os.system('cls') or None
+    print(cont)
+print('FIM')
