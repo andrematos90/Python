@@ -6,7 +6,8 @@ cont =  0
 
 for n in range (1, 501, 2):
     if n % 3 == 0:
-        soma = soma + n
-        cont = cont + 1
+        soma = soma + n # acumalador soma os valores
+        cont = cont + 1 # acumulador soma +1
+        
 print('A soma entre todos os {} valores encontrados é: {}'.format(cont, soma))
 
