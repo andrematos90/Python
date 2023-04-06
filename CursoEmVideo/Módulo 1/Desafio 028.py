@@ -1,5 +1,5 @@
 '''escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça
-para o usuario descobrir qur numrero é esse. O Programa dira se acertou ou não.'''
+para o usuario descobrir que número é esse. O Programa dira se acertou ou não.'''
 
 from random import randint
 from time import sleep
