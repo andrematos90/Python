@@ -6,6 +6,9 @@ No final do programa mostre:
 
 soma = 0
 total = 0
+maioridadehomem = 0
+nomevelho = ''
+totmulher20 = 0
 
 
 for pessoa in range(1,5):
@@ -17,9 +20,22 @@ for pessoa in range(1,5):
     soma = soma + idade
     total = total + 1
     media = soma / total 
-print('A média de idade do grupo é de {} anos'.format(media))
 
+    if pessoa == 1 and sexo in 'Mn':
+        maioridadehomem = idade
+        nomevelho = nome
 
+    if sexo in 'Mm' and idade > maioridadehomem:
+        maioridadehomem = idade
+        nomevelho = nome
     
+    if sexo in'Ff' and idade < 20:
+        totmulher20 = totmulher20 + 1
+
+print('A média de idade do grupo é de {} anos'.format(media))
+print('O homem mais velho tem {} anos e se chama {}'.format(maioridadehomem, nomevelho))
+print('O total de mulheres com menos de 20 anos é de {} Mulheres'.format(totmulher20))
+
+
 
 

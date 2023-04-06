@@ -1,0 +1,48 @@
+ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO
+
+While = executa o codigo enqunto determinada condição for verdadeira
+usado quando não se sabe quantas vezes o código devera ser executado
+diferente do for que sabemos o limite que sera executado 
+
+
+sintaxe:
+
+em portugues:
+
+ex: enqunto não maça
+        passo
+    pega
+
+em python:
+     
+ex: while not maça:
+       passo
+    pega
+
+
+-------------------------------
+
+ex: 
+
+         portugues                         Python
+
+      enqunto nao maça                  while not maça:
+        se chão                           if chão:
+           passo                              passo
+        se buraco                         if buraco:
+           pula                              pula
+        se moeda                          if moeda: 
+           pega                              pega
+      pega                                pega
+
+
+
+com for
+for c in range(1,10):
+  print(c)
+
+com while
+
+while c < 10:
+ c += 1
+ print(c)
