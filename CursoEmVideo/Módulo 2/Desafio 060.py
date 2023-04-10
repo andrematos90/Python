@@ -2,12 +2,17 @@
 
 Ex: 5*4*3*2*1 = 120'''
 
+from math import factorial
 
-num = int(input('Digite um número: '))
+n = int(input('Digite um número: '))
 
-while num >= 1:
-    num = num * (num - 1) * (num - 2) * (num - 3)
-print(num)
-    
+f = factorial(n)
+
+print('O Fatorial de {} é {}'.format(n, f))
+
+
+
+
+
 
 

@@ -11,5 +11,5 @@ for i in range(1, 11):
     termo = primeiro_termo + (i - 1) * razao
     print("{}".format(termo))
 
-    # formula para calcular o enéximo 
+    # formula para calcular o enésimo 
     #  termo = primeiro_termo + (i - 1) * razao

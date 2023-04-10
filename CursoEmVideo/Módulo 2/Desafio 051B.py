@@ -2,9 +2,9 @@
 No final mostre os 10 primeiros termos dessa progressão'''
 
 N = int(input('Digite o primeiro termo da P.A: '))
-R = int(input('Digite a razão da P.A: '))
-D = N + (10 - 1) * R
+razao = int(input('Digite a razão da P.A: '))
+decimo = N + (10 - 1) * razao
 
-for c in range(N, D + R, R):
+for c in range(N, decimo + razao, razao):
     print('{}'.format(c), end=' > ')
 print('Fim')
