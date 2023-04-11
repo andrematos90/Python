@@ -1,4 +1,6 @@
-ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO
+                     LAÇOS DE REPETIÇÃO PARTE 2
+
+ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO NO INÍCIO
 
 While = executa o codigo enqunto determinada condição for verdadeira
 usado quando não se sabe quantas vezes o código devera ser executado

@@ -1,0 +1,39 @@
+                             LAÇOS DE REPETIÇÃO PARTE 3
+
+
+Normamente as linguagens de programação tem três tipos de estruturas de controle de 
+repetição for, while e do while, no caso do python não existe do while, mas é pos-
+sível "simular"
+
+Sintaxe:
+
+em português: 
+
+  enquanto verdadeiro          
+    se chao
+       passo
+    se buraco
+       pula
+    se moeda
+       pega
+    se trofeu
+       pula
+       interrompa
+ pega
+
+
+ em python:
+
+ em português: 
+
+  while true:
+    if chao
+       passo
+    if buraco
+       pula
+    if moeda
+       pega
+    if trofeu
+       pula
+       break
+ pega
