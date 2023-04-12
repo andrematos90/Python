@@ -4,7 +4,7 @@ consecutivas do jogador.'''
 
 from random import randint
 from time import sleep
-
+vitoria = 0
 while True:
     computador = randint(1,10)
     jogador = str(input('Par ou Impar: ' )).upper().strip()
@@ -21,14 +21,14 @@ while True:
     sleep(2)
 
     if total %2 == 0 and jogador == 'PAR':
-        vitoria =+1
+        vitoria = vitoria + 1
         print('Deu Par, você venceu!')    
     elif total %2 == 0 and jogada_computadoR == 'PAR':
         print('Deu Par, computador venceu!')
         print(f'Você teve {vitoria} vitórias!')
         break
     elif total %2 != 0 and jogador == 'IMPAR':
-        vitoria =+1
+        vitoria = vitoria + 1
         print('Deu Impar, você venceu!')
     elif total %2 != 0 and jogada_computadoR == 'IMPAR':
         print('Deu Impar, o computador venceu!')
