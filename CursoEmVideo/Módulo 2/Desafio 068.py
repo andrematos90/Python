@@ -5,24 +5,33 @@ consecutivas do jogador.'''
 from random import randint
 from time import sleep
 
-computador = randint(1,10)
-jogador = str(input('Par ou Impar: ' )).upper().strip()
+while True:
+    computador = randint(1,10)
+    jogador = str(input('Par ou Impar: ' )).upper().strip()
+    jogadas = 0
 
-if jogador == 'PAR':
-    jogada_computadoR = 'IMPAR'
-else:
-    jogada_computadoR ='PAR'
+    if jogador == 'PAR':
+        jogada_computadoR = 'IMPAR'
+    else:
+        jogada_computadoR ='PAR'
 
-num = int(input('Digite um número: '))
-total = computador + num
+    num = int(input('Digite um número: '))
+    total = computador + num
+   
+    print(f'Computador jogou {computador} e você {num} total {total}')
+    sleep(2)
 
-print(f'Computador jogou {computador} e você {num} total {total}')
-sleep(2)
-
-if total %2 == 0 and jogador == 'PAR':
-    print('Você venceu!')
-else:
-    print('Computador venceu!')
+    if total %2 == 0 and jogador == 'PAR':
+        print('Deu Par, você venceu!')
+    elif total %2 == 0 and jogada_computadoR == 'PAR':
+        print('Deu Par, computador venceu!')
+        break
+    elif total %2 != 0 and jogador == 'IMPAR':
+        print('Deu Impar, você venceu!')
+    elif total %2 != 0 and jogada_computadoR == 'IMPAR':
+        print('Deu Impar, o computador venceu!')
+        break
+print(f'Você teve {jogadas} vitória!')
 
 
 
