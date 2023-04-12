@@ -22,16 +22,19 @@ while True:
     sleep(2)
 
     if total %2 == 0 and jogador == 'PAR':
-        print('Deu Par, você venceu!')
+        vitoria =+1
+        print('Deu Par, você venceu!')    
     elif total %2 == 0 and jogada_computadoR == 'PAR':
         print('Deu Par, computador venceu!')
+        print(f'Você teve {vitoria} vitórias!')
         break
     elif total %2 != 0 and jogador == 'IMPAR':
         print('Deu Impar, você venceu!')
+        vitoria =+1
     elif total %2 != 0 and jogada_computadoR == 'IMPAR':
         print('Deu Impar, o computador venceu!')
+        print(f'Você teve {vitoria} vitórias!')
         break
-print(f'Você teve {jogadas} vitória!')
 
 
 
