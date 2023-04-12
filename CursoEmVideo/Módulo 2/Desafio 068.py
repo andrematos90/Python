@@ -8,8 +8,7 @@ from time import sleep
 while True:
     computador = randint(1,10)
     jogador = str(input('Par ou Impar: ' )).upper().strip()
-    jogadas = 0
-
+    
     if jogador == 'PAR':
         jogada_computadoR = 'IMPAR'
     else:
@@ -29,8 +28,8 @@ while True:
         print(f'Você teve {vitoria} vitórias!')
         break
     elif total %2 != 0 and jogador == 'IMPAR':
-        print('Deu Impar, você venceu!')
         vitoria =+1
+        print('Deu Impar, você venceu!')
     elif total %2 != 0 and jogada_computadoR == 'IMPAR':
         print('Deu Impar, o computador venceu!')
         print(f'Você teve {vitoria} vitórias!')
