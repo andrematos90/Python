@@ -13,16 +13,16 @@ mulheres = 0
 while True:
     idade = int(input('Digite a idade: '))
     sexo = str(input('M ou F? ')).upper().strip()[0]
-    resposta = str(input('Quer continuar S/N? ')).upper()
+    resposta = str(input('Quer continuar S/N? ')).upper().strip()[0]
 
+    if idade > 18:
+           pessoas = pessoas + 1
     if sexo == 'M':
             homens = homens +1
-    elif idade > 18:
-           pessoas = pessoas + 1
-    elif sexo == 'F' and idade < 20:
+    if sexo == 'F' and idade < 20:
             mulheres = mulheres +1
-    elif resposta == 'N':
-           break
-print(f'Foram cadastradas {pessoas} pessoas com menos de 18 anos!')
+    if resposta == 'N':
+          break
+print(f'Foram cadastradas {pessoas} pessoas com mais de 18 anos!')
 print(f'{homens} homem(s)')
-print(f'{mulheres} com menos de 20 anos')
+print(f'{mulheres} mulheres com menos de 20 anos')
