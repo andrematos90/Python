@@ -128,4 +128,58 @@ Por fim, o programa pergunta ao usuário se ele deseja sair do programa.
 Se o usuário digitar "s", o loop é interrompido usando o comando break, o que significa que o programa termina. Se o usuário digitar "n", o loop continua e o programa volta para o início, pedindo novamente o valor do saque.
 
 
-                                     '''
+                                   CÓDIGO GUANABARA 
+
+
+print('=' * 30)
+print('{:^30}'.format('BANCO MATOS'))
+print('='* 30)
+valor_do_saque = int(input('Valor do Saque: R$'))
+total = valor_do_saque
+cedula = 50
+total_cedula = 0
+
+while True:
+    if total >= cedula:
+        total -= cedula
+        total_cedula = total_cedula + 1
+    else:
+        if total_cedula > 0:
+         print(f'Total de {total_cedula} cédulas de R${cedula}')
+        if cedula == 50:
+            cedula = 20
+        elif cedula == 20:
+            cedula = 10
+        elif cedula == 10:
+            cedula = 1
+        total_cedula = 0
+        if total == 0:
+            break
+
+A primeira linha imprime 30 sinais de igual na tela.
+A segunda linha imprime "BANCO MATOS" centralizado em 30 caracteres usando o método 
+format().
+A terceira linha imprime novamente 30 sinais de igual na tela.
+A quarta linha pede ao usuário para digitar o valor do saque em reais (R$).
+A quinta linha define uma variável "total" com o valor do saque digitado pelo usuário.
+A sexta linha define a variável "cedula" como 50, que será usada para determinar 
+qual nota deve ser entregue ao usuário.
+A sétima linha define a variável "total_cedula" como 0, que será usada para contar
+o número de notas entregues.
+A partir da oitava linha começa um loop while infinito que só será interrompido com
+o comando "break".
+Na nona linha, o programa verifica se o valor total é maior ou igual ao valor da 
+cédula. Se for, então uma nota é entregue e a variável "total_cedula" é incrementada
+em 1. Em seguida, o valor da cédula é subtraído do valor total.
+Se o valor total não for maior ou igual ao valor da cédula, o programa verifica se a
+variável "total_cedula" é maior que 0. Se for, o programa imprime o número de notas
+entregues e o valor da cédula correspondente.
+A partir da linha 14, o programa verifica qual é a próxima cédula menor que deve ser 
+entregue (de 50 para 20, de 20 para 10, de 10 para 1). A variável "cedula" é 
+atualizada com o novo valor.
+A partir da linha 17, a variável "total_cedula" é redefinida como zero e o loop 
+continua até que o valor total seja igual a zero, momento em que o loop é interrompido.
+                                   
+                                     
+                                       
+                                           '''
