@@ -3,7 +3,14 @@
 quais são as vogais'''
 
 palavras = ('simba', 'aviao', 'mulher', 'agua', 'carro', 'cachorro')
+vogais = []
 
-for c in palavras:
-    print(f'Na palavra{palavras}')
+# Iteração sobre cada letra da palavra
+for letra in palavras:
+    # Verifica se a letra é uma vogal
+    if letra.lower() in 'aeiou':
+        # Adiciona a vogal à lista de vogais da palavra
+        vogais.append(letra)
 
+# Imprime a palavra e suas vogais correspondentes
+print(f'A palavra "{palavras}" tem as seguintes vogais: {vogais}')

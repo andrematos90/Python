@@ -1,25 +1,12 @@
-print('=' * 30)
-print('{:^30}'.format('BANCO MATOS'))
-print('='* 30)
-valor_do_saque = int(input('Valor do Saque: R$'))
-total = valor_do_saque
-cedula = 50
-total_cedula = 0
+palavra = ('abacaxi', 'banana', 'laranja', 'limao', 'morango')
 
-while True:
-    if total >= cedula:
-        total -= cedula
-        total_cedula = total_cedula + 1
-    else:
-        if total_cedula > 0:
-         print(f'Total de {total_cedula} cédulas de R${cedula}')
-        if cedula == 50:
-            cedula = 20
-        elif cedula == 20:
-            cedula = 10
-        elif cedula == 10:
-            cedula = 1
-        total_cedula = 0
-        if total == 0:
-            break
+vogais = []
+# Iteração sobre cada letra da palavra
+for letra in palavra:
+    # Verifica se a letra é uma vogal
+    if letra.lower() in 'aeiou':
+        # Adiciona a vogal à lista de vogais da palavra
+        vogais.append(letra)
 
+# Imprime a palavra e suas vogais correspondentes
+print(f'A palavra "{palavra}" tem as seguintes vogais: {vogais}')
