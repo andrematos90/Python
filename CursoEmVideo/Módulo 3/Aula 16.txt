@@ -1,0 +1,375 @@
+--------------------------VARIAVÉIS COMPOSSTAS - TUPLAS ---------------------------
+
+Em python existem 3 tipos de váriaveis composta: tuplas, listas e dicionários.
+Tupla é uma váriavel composta, que é uma variável que tem "mais espaços e armazenam
+vários valores.
+
+Os elementos dentro da tupla possuem 'indices numéricos', que servem para acessar o elemento
+dentro da tupla.
+
+SINTAXE:
+
+lanche = ('hamburguer', 'suco', 'pizza', 'pudim') com ou sem parenteses
+
+print(lanche) imprime todos os elementos
+print(lanche[2])  acessando e imprimindo apenas "pizza"
+print(lanche[0:2]) acessa e imprime hamburguer e suco
+print(lache[1:]) acessa começando do suco e mostra todos os outros depois até o final
+print(lanche[-1]) acessa e imprime o ultimo elemento 
+
+Usando função len()
+
+len(lanche) diz quantos elementos tem o lanche = 4
+
+
+Usando for
+
+para cada repetição do for a variável c recebe um novo elemento da tupla "lanche"
+
+for c in lanche:
+ print (c)
+
+
+As tuplas são imutáveis, não é possível mudar ou trocar um elemento dentro dela 
+
+
+
+EXEMPLOS :
+
+lanche = ('hamburguer', 'suco', 'pizza', 'pudim', 'batata frita')
+
+# for mostrando apenas o elemento 
+
+for comida in lanche:
+   print(f'Comid {comida})
+
+#dois for diferentes fazendo a mesma coisa mostrando além do elemento a posição: 
+
+for cont in range(0,len(lanche)):
+      print(f'Comi {lanche[cont]}  na posição {cont}')
+
+for pos, comida in enumerate(lanche):
+        print(f'Comi {comida} na posição {pos}')
+
+
+EX:   
+
+lanche = ('hamburguer', 'suco', 'pizza', 'pudim', 'batata frita')
+
+print(sorted(lanche))  # sorted() não muda a ordem da tupla, apenas mostra em ordem 
+
+
+EX: 
+
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b
+
+print(c)
+
+imprime (2, 5, 4, 5, 8, 1, 2) # nao soma, mas junta as tuplas
+
+
+EX: 
+
+# possui alguns métodos internos como o "count" no objeto da tupla
+
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b
+print(c.count(5)) imprime quantas vezes aparece o numero "5"
+
+
+EX: 
+
+#propriedade "index" do objeto tupla
+
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b
+print(c.index(8)) #mostra em que posição esta o "8"
+
+EX:
+
+#tupla com dados de tipos diferentes
+
+pessoa = ('andré', 39, 'M', 70)
+
+EX:
+
+#apagando uma tupla
+
+pessoa = ('andré', 39, 'M', 70)
+del(pessoa)
+
+
+-------------------------------------------------------------------------------------
+
+
+Em Python, uma tupla é uma coleção ordenada de elementos, que podem ser de diferentes 
+tipos de dados, como números, strings, objetos, entre outros. As tuplas são muito 
+semelhantes às listas em Python, mas a principal diferença é que as tuplas
+ são imutáveis, ou seja, uma vez criadas, não podem ser modificadas.
+As tuplas são definidas usando parênteses e separando os elementos por vírgulas.
+Você pode acessar os elementos de uma tupla usando seus índices, começando do zero. 
+Por exemplo, para acessar o primeiro elemento da tupla acima, você pode usar tupla[0].
+
+As tuplas são úteis em situações em que você precisa armazenar uma sequência 
+de valores que não deve ser modificada. Por exemplo, se você está escrevendo um 
+programa que precisa armazenar as coordenadas de um ponto em um gráfico, pode usar
+ uma tupla para representar as coordenadas x e y do ponto, já que elas não devem ser
+  modificadas.
+
+Em resumo, as tuplas em Python são coleções imutáveis e ordenadas de elementos,
+ muito semelhantes às listas, mas com algumas diferenças importantes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
