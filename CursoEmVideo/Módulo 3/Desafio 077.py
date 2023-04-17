@@ -2,7 +2,7 @@
 (não usar acentos). Depois disso, você deve mostrar, para cada palavra,
 quais são as vogais'''
 
-palavras = ('simba', 'aviao', 'mulher', 'agua', 'carro', 'cachorro')
+palavras = ('Simba', 'aviao', 'mulher', 'agua', 'carro', 'cachorro')
 vogais = []
 
 # Iteração sobre cada letra da palavra
