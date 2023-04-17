@@ -65,7 +65,7 @@ RESUMO:
 
 num = [2, 5, 9, 1]
 num[2] = 3 #substitui o "9" pelo "3"
-num.append(7) #adiciona p "7" ao final da lista
+num.append(7) #adiciona o "7" ao final da lista
 num.sort(reverse=True) #coloca em ordem decreceste
 num.sort() #coloca em ordem crescente
 num.insert(2,0) #adiciona o "0" no indice(posicao) "2"
