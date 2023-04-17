@@ -1,16 +1,7 @@
-num = (int(input('Digite um numero: ')),
-      int(input('Digite um numero: ')),
-      int(input('Digite um numero: ')),
-      int(input('Digite um numero: ')))
-      
-print(f' O número "9" aparece {num.count(9)} vezes.')
+num = list()
 
-if 3 in num:
-    print(f'A primeira vez que o numero "3" aparece é na posição {num.index(3) + 1}')
-else:
-    print('O número "3" não aparece')
+for c in range(0, 5):
+   num.append(int(input(f'Digite um valor para a posição {c}: ')))
 
-print('Números pares: ')
-for n in num:   # para cada numero em n 
-    if n % 2 == 0: # verifico se o resto é 0, se for 
-        print(n, end=' ')# dou print em n
+print(f'Maior valor: {max(num)} na posição {num.index(max(num))}')
+print(f'Menor valor: {min(num)} na posição {num.index(min(num))}')
