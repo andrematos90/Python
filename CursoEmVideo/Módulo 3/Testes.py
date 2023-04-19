@@ -1,16 +1,20 @@
-lista = []
-for c in range(0,5):
-    n = int(input('Digite um número: '))
-    if c == 0:
-        lista.append(n)
-        print('Adicionado ao final da lista!')
+numeros_digitados = []
+impares = []
+pares = []
+
+while True:
+    numeros_digitados.append(int(input('Digite um número: ')))
+    resposta = str(input('Quer continuar? [S/N] ?'))
+    if resposta in 'nN':
+     break
+
+for indice, valor in enumerate(numeros_digitados):
+    if valor % 2 == 0:
+        pares.append(valor)
     else:
-        pos = 0
-        while pos <len(lista):
-            if n <= lista[pos]:
-                lista.insert(pos, n)
-                print(f'Adicionado na posição {pos} da lista!')
-                break
-            pos += 1
-print('-=' * 30)
-print(f'Os valores digitados em ordem foram: {lista}')
+        impares.append(valor)
+
+print(f'Números digitados! {numeros_digitados}')
+print(f'pares: {pares}')
+print(f'impares: {impares}')
+
