@@ -1,5 +1,7 @@
 --------------------------VARIAVÉIS COMPOSSTAS - LISTAS ---------------------------
 
+                                c
+
 Váriveis compostas como listas são váriáveis que diferentemente das tuplas 
 não são imutáveis, permitindo a alteração de seus elementos.
 Uma lista pode ser identificada pelo uso colchetes []
@@ -112,4 +114,75 @@ a = [1, 3 , 8 , 9]
 b = a[:]  # "b" recebe os itens de "a"
 b[2] = 8 
 
+
+
+                                   PARTE 2
+
+
+lista1 = [1, 2, 3]
+lista2 = lista1
+
+Nesse caso, lista2 receberá uma cópia da referência de lista1, 
+ou seja, lista2 e lista1 referenciam a mesma lista na memória. 
+Qualquer mudança que você fizer em lista1 ou lista2 afetará a mesma lista. 
+Por exemplo:
+
+lista1.append(4)
+print(lista1) # Saída: [1, 2, 3, 4]
+print(lista2) # Saída: [1, 2, 3, 4]
+
+Observe que quando você adiciona o elemento 4 à lista1, 
+a mesma mudança é refletida em lista2.
+
+Se você quiser fazer uma cópia completa da lista, você pode usar o método 
+copy() ou a sintaxe de fatiamento ([:]). Por exemplo:
    
+lista1 = [1, 2, 3]
+lista2 = lista1.copy()  # ou lista2 = lista1[:]
+
+esse caso, lista2 será uma cópia completa de lista1,
+ou seja, as duas listas serão independentes e alterações feitas em uma não afetarão 
+a outra.
+
+
+
+PARA UMA LISTA RECEBER VÁRIAS OUTRAS LISTAS: 
+
+Para criar uma lista de listas em Python, você pode simplesmente criar uma lista 
+vazia e adicionar as outras listas como elementos dessa lista. Por exemplo,
+para criar uma lista de pessoas onde cada pessoa é representada por uma lista
+com idade, peso e profissão, você pode fazer o seguinte:
+
+pessoa1 = [20, 70.5, 'engenheiro']
+pessoa2 = [35, 62.1, 'médico']
+pessoas = [pessoa1, pessoa2]
+
+
+Aqui, pessoa1 e pessoa2 são listas individuais que representam as informações de
+cada pessoa. Depois, criamos a lista pessoas e adicionamos pessoa1 e pessoa2 a 
+ela usando a sintaxe de colchetes:
+
+
+pessoas = [pessoa1, pessoa2]
+
+Observe que a lista pessoas agora contém duas listas, que representam as informações
+de duas pessoas diferentes. Para acessar as informações de uma pessoa específica, 
+você pode usar a sintaxe de indexação dupla, como por exemplo pessoas[0][0] para 
+obter a idade da primeira pessoa.
+
+Se você quiser adicionar mais pessoas à lista, basta criar outras listas individuais
+para elas e adicioná-las à lista pessoas usando a mesma sintaxe:
+
+pessoa3 = [25, 58.9, 'professor']
+pessoas.append(pessoa3)
+
+Aqui, criamos uma nova lista pessoa3 que representa a informação de uma terceira
+pessoa e adicionamos essa lista à lista pessoas usando o método append(). 
+Agora, a lista pessoas contém três listas, cada uma representando as informações
+de uma pessoa diferente.
+
+
+
+
+
+
