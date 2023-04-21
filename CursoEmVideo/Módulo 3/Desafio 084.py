@@ -1,3 +1,10 @@
+'''Faça um programa que leia o nome e peso de várias pessoas,
+guardando tudo em uma lista, No final, mostre:
+
+A - Quantas pessoas foram cadastradas.
+B - Uma listagem das pessoas mais pesadas.
+C - Uma listagem com as pessoas mais leves.'''
+
 pessoas = []
 while True:
     nome = input('Nome: ')
@@ -56,6 +63,4 @@ if pessoa[1] == pessoas[-1][1]:: Verifica se o peso da pessoa atual é igual ao 
 da última pessoa na lista (ou seja, é a pessoa mais pesada).
 print(f'{pessoa[0]} ({pessoa[1]:.2f} kg)'): Imprime o nome e o peso da pessoa mais 
 pesada com duas casas decimais.'''
-
-
 
