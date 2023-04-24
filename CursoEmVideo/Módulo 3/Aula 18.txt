@@ -1,0 +1,138 @@
+                                   LISTA - PARTE 2
+
+
+lista1 = [1, 2, 3]
+lista2 = lista1
+
+Nesse caso, lista2 receberá uma cópia da referência de lista1, 
+ou seja, lista2 e lista1 referenciam a mesma lista na memória. 
+Qualquer mudança que você fizer em lista1 ou lista2 afetará a mesma lista. 
+Por exemplo:
+
+lista1.append(4)
+print(lista1) # Saída: [1, 2, 3, 4]
+print(lista2) # Saída: [1, 2, 3, 4]
+
+Observe que quando você adiciona o elemento 4 à lista1, 
+a mesma mudança é refletida em lista2.
+
+Se você quiser fazer uma cópia completa da lista, você pode usar o método 
+copy() ou a sintaxe de fatiamento ([:]). Por exemplo:
+   
+lista1 = [1, 2, 3]
+lista2 = lista1.copy()  # ou lista2 = lista1[:]
+
+esse caso, lista2 será uma cópia completa de lista1,
+ou seja, as duas listas serão independentes e alterações feitas em uma não afetarão 
+a outra.
+
+
+
+PARA UMA LISTA RECEBER VÁRIAS OUTRAS LISTAS: 
+
+Para criar uma lista de listas em Python, você pode simplesmente criar uma lista 
+vazia e adicionar as outras listas como elementos dessa lista. Por exemplo,
+para criar uma lista de pessoas onde cada pessoa é representada por uma lista
+com idade, peso e profissão, você pode fazer o seguinte:
+
+pessoa1 = [20, 70.5, 'engenheiro']
+pessoa2 = [35, 62.1, 'médico']
+pessoas = [pessoa1, pessoa2]
+
+
+Aqui, pessoa1 e pessoa2 são listas individuais que representam as informações de
+cada pessoa. Depois, criamos a lista pessoas e adicionamos pessoa1 e pessoa2 a 
+ela usando a sintaxe de colchetes:
+
+
+pessoas = [pessoa1, pessoa2]
+
+Observe que a lista pessoas agora contém duas listas, que representam as informações
+de duas pessoas diferentes. Para acessar as informações de uma pessoa específica, 
+você pode usar a sintaxe de indexação dupla, como por exemplo pessoas[0][0] para 
+obter a idade da primeira pessoa.
+
+Se você quiser adicionar mais pessoas à lista, basta criar outras listas individuais
+para elas e adicioná-las à lista pessoas usando a mesma sintaxe:
+
+pessoa3 = [25, 58.9, 'professor']
+pessoas.append(pessoa3)
+
+Aqui, criamos uma nova lista pessoa3 que representa a informação de uma terceira
+pessoa e adicionamos essa lista à lista pessoas usando o método append(). 
+Agora, a lista pessoas contém três listas, cada uma representando as informações
+de uma pessoa diferente.
+
+
+OUTRO EXEMPLO:
+
+dados_joao = []
+dados_maria = []
+pessoas = []
+
+dados_joao.append('João')
+dados_joao.append(25)
+dados_maria.append('Maria')
+dados_maria.append(23)
+pessoas.append(dados_joao[:])
+pessoas.append(dados_maria[:])
+
+print(pessoas)
+
+
+
+EXEMPLOS:
+
+galera = []
+dados = []
+
+for c in range(0, 3):
+    dados.append(str(input('Nome: ')))
+    dados.append(int(input('Idade: ')))
+    galera.append(dados[:])
+    dados.clear()
+print(galera)
+
+
+galera = [] - Cria uma lista vazia chamada galera.
+
+dados = [] - Cria outra lista vazia chamada dados.
+
+for c in range(0, 3): - Inicia um loop for que irá iterar 3 vezes.
+
+dados.append(str(input('Nome: '))) - Solicita ao usuário que insira um nome (usando input()) e adiciona o nome digitado à lista dados.
+
+dados.append(int(input('Idade: '))) - Solicita ao usuário que insira uma idade (usando input()) e adiciona a idade digitada à lista dados.
+
+galera.append(dados[:]) - Cria uma cópia da lista dados (usando [:]) e adiciona essa cópia à lista galera. Isso é necessário para que cada sublista adicionada à galera seja uma nova lista, e não apenas uma referência à mesma lista dados (que será esvaziada em seguida).
+
+dados.clear() - Esvazia a lista dados para que possa ser preenchida novamente com novos dados na próxima iteração do loop.
+
+print(galera) - Imprime a lista galera, que contém todas as sub-listas adicionadas durante o loop, cada uma contendo o nome e a idade de uma pessoa inserida pelo usuário.
+
+
+EXEMPLO MOSTRAR MAIORES E MENORES DE IDADE:
+
+galera = []
+dados = []
+totmaio = 0
+totmen = 0
+
+for c in range(0, 3):
+    dados.append(str(input('Nome: ')))
+    dados.append(int(input('Idade: ')))
+    galera.append(dados[:])
+    dados.clear()
+print(galera)
+
+#para mostrar somente os maiores de idade
+
+for p in galera:
+    if p[1] > 18: #Verifica se o elemento "1" que é a idade é maior do que 18
+        print(f' {p[0]} é maior de idade!')
+        totmaio +=1
+    else:
+        print(f'{p[0]} é menor de idade')
+        totmen +=1
+print(f'total de maiores {totmaio}')
+print(f'total de menores {totmen}')
