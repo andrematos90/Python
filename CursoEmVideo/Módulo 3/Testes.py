@@ -1,23 +1,32 @@
-galera = []
-dados = []
-totmaio = 0
-totmen = 0
+'''
+78 - Crie um programa que leia 5 valores numéricos e guarde em uma lista
+No final, mostre qual foi o maior e o menor valor digitado e as respectivas
+posições na lista'''
 
-for c in range(0, 3):
-    dados.append(str(input('Nome: ')))
-    dados.append(int(input('Idade: ')))
-    galera.append(dados[:])
-    dados.clear()
-print(galera)
+numeros  = []
+maior = menor = 0
 
-#para mostrar somente os maiores de idade
-
-for p in galera:
-    if p[1] > 18:
-        print(f' {p[0]} é maior de idade!')
-        totmaio +=1
+for c in range(0, 5):
+    numeros.append(int(input(f'Digite o numero para a posição {c}: ')))
+    if c == 0: 
+        maior = menor = numeros[c]
     else:
-        print(f'{p[0]} é menor de idade')
-        totmen +=1
-print(f'total de maiores {totmaio}')
-print(f'total de menores {totmen}')
+        if numeros[c] > maior:
+            maior = numeros[c]
+        if numeros[c] < menor:
+            menor = numeros[c]
+
+print(f'Lista: {numeros}')
+
+for i, v in enumerate(numeros):
+    if v == maior:
+        print()
+     
+print(f'na posição {i} temos {maior} como maior')
+
+for i, v in enumerate(numeros):
+    if v == menor:
+        print()
+
+print(f'na posição {i} temos { menor} como menor')
+
