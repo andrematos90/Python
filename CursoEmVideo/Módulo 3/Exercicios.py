@@ -10,18 +10,9 @@ No final, serão exibidos todos os valores únicos digitados,
 em ordem de crescente'''
 
 '''
-
-81 - Crie um programa que leia vários números e os cadastre-os em 
-uma lista. Caso o número ja exista ele não sera adicionado.
-No final, serão exibidos todos os valores únicos digitados,
-em ordem de crescente'''
-
-'''
-82 - Crie um programa onde o usuário possa digitar cinco valores
+80 - Crie um programa onde o usuário possa digitar cinco valores
 e cadastre-os em uma lista, ja na posição correta de inserção
 (sem usar o sort(). No final, mostre a lista ordenada na tela.)'''
-
-
 
 
 '''
@@ -39,7 +30,7 @@ pares e os valores impares digitados, respectivamente. Ao final, mostre o
 conteúdo das três listas geradas.'''
 
 '''
- 83 - Crie um programa onde o usuário digite uma expressão qualquer que use parênteses.
+83 - Crie um programa onde o usuário digite uma expressão qualquer que use parênteses.
 Seu programa deverá analisar se a expressão passada está com os parêntes abertos e fechados
 na ordem correta.'''
 
@@ -50,4 +41,3 @@ guardando tudo em uma lista, No final, mostre:
 A - Quantas pessoas foram cadastradas.
 B - Uma listagem das pessoas mais pesadas.
 C - Uma listagem com as pessoas mais leves.'''
-
