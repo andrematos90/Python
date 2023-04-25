@@ -3,6 +3,44 @@ uma lista. Caso o número ja exista ele não sera adicionado.
 No final, serão exibidos todos os valores únicos digitados,
 em ordem de crescente'''
 
+lista = []
+unicos = []
+
+while True:
+    lista.append(int(input('Número: ')))
+    resposta = str(input('Quer continuar? [S/N]'))
+    if resposta in 'nN':
+        break
+
+   
+for item in lista:
+    if item not in unicos:
+        unicos.append(item)
+        
+
+unicos.sort()
+print(f'Valores únicos digitados em ordem: {unicos}')
+
+'''
+O código começa criando duas listas vazias, "lista" e "unicos".
+
+O código entra em um loop "while True", que é executado indefinidamente até que o usuário decida parar de inserir números.
+
+Dentro do loop, o código usa a função "input()" para solicitar ao usuário que digite um número. Em seguida, o código converte o número de string para inteiro usando a função "int()" e adiciona o número à lista "lista" usando o método "append()".
+
+O código usa a função "input()" novamente para perguntar ao usuário se ele deseja continuar digitando números. Se o usuário digitar "n" ou "N", o loop é interrompido usando a instrução "break".
+
+Depois que o loop é interrompido, o código entra em um novo loop "for item in lista:". Este loop percorre cada item na lista "lista".
+
+Dentro do loop "for", o código verifica se o item atual não está na lista "unicos". Se o item não estiver na lista "unicos", o código adiciona o item à lista "unicos" usando o método "append()".
+
+Finalmente, o código ordena a lista "unicos" em ordem crescente usando o método "sort()" e exibe os valores únicos em ordem crescente usando a função "print()".'''
+
+
+
+
+'''
+                              CÓDIGO GUANABARA
 numeros = []
 
 while True:  # Entra em um loop infinito
@@ -18,7 +56,7 @@ while True:  # Entra em um loop infinito
 numeros.sort()  # Ordena a lista numeros em ordem crescente
 print(f'Números digitados: {numeros}')  # Imprime a lista numeros ordenada em ordem crescente
 
-'''
+
 A linha while True: cria um loop infinito, ou seja, um loop que se repete 
 indefinidamente até que uma condição de parada seja alcançada.
 A linha num = int(input('Digite um número: ')) pede para o usuário digitar um 

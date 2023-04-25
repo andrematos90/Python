@@ -6,7 +6,7 @@ em ordem de crescente'''
 
 
 lista = []
-copia = lista[:]
+unicos = []
 
 while True:
     lista.append(int(input('Número: ')))
@@ -15,4 +15,10 @@ while True:
         break
 
    
-print(copia)
+for item in lista:
+    if item not in unicos:
+        unicos.append(item)
+        
+
+unicos.sort()
+print(f'Valores únicos digitados em ordem: {unicos}')
