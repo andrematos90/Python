@@ -1,6 +1,6 @@
 --------------------------VARIAVÉIS COMPOSSTAS - LISTAS ---------------------------
 
-                                c
+                                
 
 Váriveis compostas como listas são váriáveis que diferentemente das tuplas 
 não são imutáveis, permitindo a alteração de seus elementos.
