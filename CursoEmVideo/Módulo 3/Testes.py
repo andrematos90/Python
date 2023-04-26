@@ -1,24 +1,33 @@
 '''
-82 - Crie um programa que leia varios números e coloque-os em uma lista.
-Depois disso, crie duas listas extras que vão conter apenas os valores
-pares e os valores impares digitados, respectivamente. Ao final, mostre o 
-conteúdo das três listas geradas.'''
+84 - Faça um programa que leia o nome e peso de várias pessoas,
+guardando tudo em uma lista, No final, mostre:
+
+A - Quantas pessoas foram cadastradas.
+B - Uma listagem das pessoas mais pesadas.
+C - Uma listagem com as pessoas mais leves.'''
 
 
-
-numeros = pares = impares = []
+pesadas = []
+leves = []
 
 while True:
-    numeros.append(int(input('Número: ')))
-    for c in numeros:
-        if c % 2 == 0:
-            pares.append(c)
-        else:
-            impares.append(c)
-
-    res = str(input(input('Continuar: [S/N]')))
-    if res in 'Nn':
+    nome = str(input('Nome: '))
+    peso = str(input('Peso: '))
+    if peso >= 70:
+      pesadas.append(nome)
+      pesadas.append(peso)
+    elif peso >= 70:
+       leves.append(nome)
+       leves.append
+    resposta = str(input('Continuar? [S/N]'))
+    if resposta in 'Nn':
         break
-print(f'Lista: {numeros}')
-print(f'Impares: {impares}')
-print(f'Pares: {pares}')
+
+print(f'Pessoas mais pesados: {pesadas}')
+print(f'Pessoas mais leves: {leves}')
+
+
+
+
+
+
