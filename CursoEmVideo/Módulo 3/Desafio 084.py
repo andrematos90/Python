@@ -189,5 +189,5 @@ Adiciona a lista "temp" à lista "princ" usando o método "append". É important
 temp.clear()
 Limpa a lista "temp" usando o método "clear", para que possa ser reutil'''
 
-'''
+
 
