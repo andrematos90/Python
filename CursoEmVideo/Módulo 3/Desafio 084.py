@@ -135,7 +135,7 @@ for p in princ:
 
 for p in princ:
     if p[1] == leve:
-        print(f'{p[0]} é o(a) mais leve com {leve};kg')
+        print(f'{p[0]} é o(a) mais leve com {leve}kg')
 
 print(f'Total de pessoas cadastradas: {len(princ)}')
 
