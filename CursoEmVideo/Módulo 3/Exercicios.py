@@ -46,3 +46,9 @@ C - Uma listagem com as pessoas mais leves.'''
 85 - Crie um programa onde o usuário possa digitar sete valores numéricos
 e cadastre-os em uma lista única que mantenha separados os valores pares e impares.
 No final, mostre os valores pares e impares em ordem crescente.'''
+
+'''
+86 - Crie um programa que crie uma matriz de dimensão 3x3 e preencha com valores
+lidos pelo teclado.
+No final, motre a matriz na tela com a formatação correta.
+'''

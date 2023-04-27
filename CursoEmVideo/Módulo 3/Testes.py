@@ -1,85 +1,34 @@
-princ = []
-temp = []
-pesada = leve = 0
+matriz = [[0, 0 ,0], [0, 0, 0], [0, 0, 0]]
 
-while True:
-    temp.append(str(input('Digite o nome: ')))
-    temp.append(float(input('Digite o peso: ')))
-    if len(princ) == 0:
-        pesada = leve = temp[1]
-    else:
-        if temp[1] > pesada:
-            pesada = temp[1]
-        if temp[1] < leve:
-            leve = temp[1]
+for linha in range(0, 3): 
+      for coluna in range(0, 3):
+          matriz[linha][coluna] = int(input(f'Digite um valor para a posição {linha},{coluna}: '))
 
-    princ.append(temp[:])
-    temp.clear()
+for linha in range(0, 3):
+     for coluna in range(0, 3):
+          print(f'[{matriz[linha][coluna]:^5}]', end=' ')
+     print()
 
-
-    resposta = str(input('Continuar? [S/N]'))
-    if resposta in 'nN':
-        break
-for p in princ:
-    if p[1] == pesada:
-        print(f'{p[0]} é o(a) mais pesado(a) com {pesada}Kg')
-
-for p in princ:
-    if p[1] == leve:
-        print(f'{p[0]} é o(a) mais leve com {leve};kg')
-
-print(f'Total de pessoas cadastradas: {len(princ)}')
 
 '''
-princ = []
+A primeira linha do código cria uma matriz 3x3 e a inicializa com zeros. A matriz é armazenada na variável "matriz".
 
-Cria uma lista vazia chamada "princ", que será usada para armazenar todas as pessoas cadastradas.
+A segunda linha inicia um loop "for" que irá iterar pelas linhas da matriz. O loop percorre as linhas de 0 a 2 (pois a matriz tem 3 linhas).
 
-temp = []
+Dentro do loop "for" das linhas, é iniciado outro loop "for" que irá iterar pelas colunas da matriz. O loop percorre as colunas de 0 a 2 (pois a matriz tem 3 colunas).
 
-Cria outra lista vazia chamada "temp", que será usada temporariamente para armazenar o nome e o peso de cada pessoa.
+Dentro do loop "for" das colunas, a função "input" é utilizada para solicitar que o usuário digite um valor para a posição atual da matriz. A posição é indicada pelas variáveis "linha" e "coluna", que foram definidas pelos loops anteriores. O valor digitado pelo usuário é convertido para um número inteiro e armazenado na posição correspondente da matriz.
 
-pesada = leve = 0
+Quando o loop "for" das colunas é concluído, o controle é retornado ao loop "for" das linhas. O próximo conjunto de linhas é iterado e o processo se repete.
 
-Inicializa as variáveis "pesada" e "leve" com o valor 0. Essas variáveis serão usadas para determinar a pessoa mais pesada e a pessoa mais leve, respectivamente.
+Após todos os valores da matriz serem preenchidos pelo usuário, o programa entra em outro loop "for" que também itera pelas linhas da matriz.
 
-while True:
+Dentro deste novo loop "for", um terceiro loop "for" é iniciado para iterar pelas colunas da matriz.
 
-Inicia um loop infinito usando a palavra-chave "while" seguida da constante "True". Isso significa que o loop será executado repetidamente até que seja interrompido por alguma condição.
+Dentro do loop "for" das colunas, a função "print" é utilizada para imprimir na tela o valor armazenado na posição correspondente da matriz. A letra "f" antes da string indica que a string é uma f-string, que permite que variáveis e expressões sejam incorporadas na string. O valor é impresso com 5 espaços de largura, alinhado no centro.
 
-temp.append(str(input('Digite o nome: ')))
+O argumento "end" é passado para a função "print" com o valor " " (um espaço em branco), o que significa que um espaço em branco será impresso após o valor da matriz em vez de um caractere de nova linha. Isso é feito para que todos os valores da mesma linha da matriz sejam impressos na mesma linha da tela.
 
-Solicita o nome de uma pessoa usando a função "input" do Python e armazena o valor digitado na lista "temp", convertendo-o em uma string usando a função "str" do Python. O método "append" adiciona o valor digitado ao final da lista "temp".
+Quando o loop "for" das colunas é concluído, a função "print" é chamada novamente sem argumentos, o que significa que um caractere de nova linha é impresso na tela. Isso é feito para que a próxima linha da matriz seja impressa abaixo da linha anterior.
 
-temp.append(float(input('Digite o peso: ')))
-
-Solicita o peso da mesma pessoa usando a função "input" do Python e armazena o valor digitado na lista "temp", convertendo-o em um número decimal (float) usando a função "float" do Python.
-
-if len(princ) == 0:
-
-Verifica se a lista "princ" está vazia. Se estiver vazia, significa que esta é a primeira pessoa sendo cadastrada, e portanto seu peso deve ser definido como o valor inicial de "pesada" e "leve".
-
-pesada = leve = temp[1]
-
-Define o valor de "pesada" e "leve" como o peso da primeira pessoa cadastrada (o segundo elemento da lista "temp", que contém o peso).
-
-else:
-
-Se a lista "princ" não estiver vazia, significa que já há pelo menos uma pessoa cadastrada, e portanto é necessário comparar o peso da pessoa atual com os valores de "pesada" e "leve".
-
-if temp[1] > pesada:
-
-Verifica se o peso da pessoa atual (o segundo elemento da lista "temp") é maior que o valor de "pesada". Se for, atualiza o valor de "pesada" com o peso da pessoa atual.
-
-if temp[1] < leve:
-Verifica se o peso da pessoa atual é menor que o valor de "leve". Se for, atualiza o valor de "leve" com o peso da pessoa atual.
-
-princ.append(temp[:])
-Adiciona a lista "temp" à lista "princ" usando o método "append". É importante usar a sintaxe "temp[:]" em vez de simplesmente "temp", para que seja criada uma cópia da lista "temp" e adicionada à lista "princ", em vez de adicionar uma referência para a mesma lista.
-
-temp.clear()
-Limpa a lista "temp" usando o método "clear", para que possa ser reutil'''
-
-
-
-
+Quando o loop "for" das linhas é concluído, o programa termina.'''
