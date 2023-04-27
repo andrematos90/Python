@@ -52,3 +52,15 @@ No final, mostre os valores pares e impares em ordem crescente.'''
 lidos pelo teclado.
 No final, motre a matriz na tela com a formatação correta.
 '''
+
+'''
+87 - Aprimore o desafio anterior, mostrando no final:
+A - A soma de todos os valores pares digitados.
+B - A soma dos valores da terceira coluna .
+C - O maior valor da segunda linha.'''
+
+'''
+88 - Crie um programa que ajude um jogador da mega sena a criar palpites.
+O programa vai perguntar quantos jogos serão gerados e sortear 6 números
+para cada um deles  entre 1, 60, cadastrando tudo em uma lista composta.'''
+
