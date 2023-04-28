@@ -64,3 +64,7 @@ C - O maior valor da segunda linha.'''
 O programa vai perguntar quantos jogos serão gerados e sortear 6 números
 para cada um deles  entre 1, 60, cadastrando tudo em uma lista composta.'''
 
+'''
+89 - Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em uma váriavel composta. No final, mostre um boletim contendo a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualemente..
+'''
+
