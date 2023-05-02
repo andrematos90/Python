@@ -1,13 +1,5 @@
-estado = dict()
-brasil = list()
+'''
+1 - Crie um prorgama que escreva "Olá, Mundo na tela!"
+'''
 
-for c in range(0, 3):
-    estado['uf'] = str(input('Unidade federativa: '))
-    estado['sigla'] = str(input('Sigla: '))
-    brasil.append(estado.copy())  
-
-print(brasil)
-
-''' nao da para fazer fatiamento com dicionarios, para copiar usa-se o método copy()'''
-
-
+print("Olá mundo!")
