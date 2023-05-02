@@ -30,7 +30,8 @@ possiveis sobre ele.
 '''
 
 
-
+'''
+9 - programa que le um numero inteiro e mostra sua tabuada'''
 
 
 
