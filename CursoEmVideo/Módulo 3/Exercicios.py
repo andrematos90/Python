@@ -34,6 +34,12 @@ possiveis sobre ele.
 9 - programa que le um numero inteiro e mostra sua tabuada'''
 
 
+'''
+10 - programa para ler quantos reais uma pessoa tem e converter para dolares
+
+'''
+
+
 
 
 
