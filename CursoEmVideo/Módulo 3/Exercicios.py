@@ -6,6 +6,49 @@
 2 - Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas - vindas.'''
 '''
 
+3 - Crie um programa que leia dois números e mostre a soma entre eles
+'''
+
+'''
+
+4 - Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações
+possiveis sobre ele.
+
+5 - Faça um programa que leia um numero inteiro e mostre na tela se sucessor e seu antecessor'''
+'''
+
+
+6 - crie um algoritimo que leia um numero e mostre seu dobro, triplo e raiz quadrada '''
+
+'''
+
+7 - Desenvolva um programa que leia duas notas de um aluno, calcule e mostre sua média'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 78 - Crie um program aque leia 5 valores numéricos e guarde em uma lista
 No final, mostre qual foi o maior e o menor valor digitado e as respectivas
 posições na lista'''

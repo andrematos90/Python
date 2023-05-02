@@ -1,9 +1,8 @@
-#crie um algoritimo que leia um numero e mostre seu dobro, triplo e raiz quadrada
+#Desenvolva um programa que leia duas notas de um aluno, calcule e mostre sua média
 
-from math import sqrt
 
-numero = int(input('Digite um número: '))
+nota1 = float(input('Primeira nota: '))
+nota2 = float(input('Segunda nota: '))
+media = (nota1 + nota2) / 2
 
-print(f'Dobro: {numero * 2}')
-print(f'Triplo: {numero * 3}')
-print(f'Raiz: { sqrt(numero)}')
+print(f'A média é {media}')
