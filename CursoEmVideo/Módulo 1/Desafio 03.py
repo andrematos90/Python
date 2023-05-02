@@ -1,9 +1,7 @@
-# programa que le algo no teclado e mostre na tela o teu tipo primitivo e todas as informações
-#possiveis sonre ela
+'''3 - Crie um programa que leia dois números e mostre a soma entre eles
+'''
 
-a = input('Digite alguma coisa:')
-print(type(a))
-print((a.isupper()))
-print(a.isalnum())
-print(a.isalpha())
-print('O que você digitou tem ', len(a), 'caracteres')
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+
+print(f"A soma de {n1} + {n2} é {n1 + n2}")
