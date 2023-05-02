@@ -1,12 +1,13 @@
-# programa que le algo no teclado e mostre na tela o seu
-#seu tipo primitivo e todas as informações possiveis sobre o que foi digitado.
+'''Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações
+possiveis sobre ele.'''
 
-a = input('Digite algo:') #a é um objeto, objeto tem caracteristicas e funcionalidades, atributos e métodos
-print('o que você digitou é do tipo:',type(a))
-print('é em letras maiúsculas?', a.isupper())
-print('é numérico?', a.isnumeric())
-print('são letras?', a.isalpha())
-print('são letras e números?',a.isalnum())
-print('só tem espaços?', a.isspace())
-print('está capitalizada?', a.istitle()) #nem maiúscula nem minuscula
-print('o que você digitou foi "{}"' .format(a), 'que possui', len(a), 'caracteres')
+digitado = str(input('Digite algo: '))
+
+print(f'O que foi digitado é do tipo de dado:  {type(digitado)}') # solicitada que o usuário digite algo
+print(f'só tem espaços? {digitado.isspace()}') # informa se o que foi inserido são apenas espaços
+print(f'É um número? {digitado.isnumeric()}') # informa se é um número
+print(f'É alfabético? {digitado.isalpha()}') # informa se são letras
+print(f'É alfanumérico? {digitado.isalnum()}') # informa se são números
+print(f'Está em maisúculo? {digitado.isupper()}') # informa se só tem  letras maiúsculas
+print(f'Está em minúsculo {digitado.islower()}') # inforam se só tem letras minúsculas
+print(f'Está capitalzada? {digitado.istitle()}') # informa se tem letras maiúsculas e minúsculas
