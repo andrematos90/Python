@@ -1,8 +1,10 @@
-#Desenvolva um programa que leia duas notas de um aluno, calcule e mostre sua média
+# Programa que le valor em metro e converte para centimetros e milimetros
 
 
-nota1 = float(input('Primeira nota: '))
-nota2 = float(input('Segunda nota: '))
-media = (nota1 + nota2) / 2
+metro = float(input('Digite quantos metros: '))
 
-print(f'A média é {media}')
+cent = metro * 100
+mili = metro * 1000
+
+print(f'{metro} metros em centrimetros são: {cent} centímetro', end=' ')
+print(f' em milímetro são {mili} milímetros.')

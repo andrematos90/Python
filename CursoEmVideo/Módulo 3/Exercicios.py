@@ -24,6 +24,11 @@ possiveis sobre ele.
 
 7 - Desenvolva um programa que leia duas notas de um aluno, calcule e mostre sua média'''
 
+'''
+8 - Programa que le valor em metro e converte para centimetros e milimetros
+
+'''
+
 
 
 
