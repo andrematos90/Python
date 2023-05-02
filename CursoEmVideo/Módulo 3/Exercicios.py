@@ -68,3 +68,23 @@ para cada um deles  entre 1, 60, cadastrando tudo em uma lista composta.'''
 89 - Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em uma váriavel composta. No final, mostre um boletim contendo a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualemente..
 '''
 
+'''90 - Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário.
+No final mostre o conteúdo da estrutura na tela.'''
+
+'''91 - Crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios. Guarde esses resultados em um dicionário. No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado.'''
+
+'''
+Crie um programa que leia o nome, ano de nascimenmto e carteira de trabalho e cadastre - os (com idade) em um dicionário se por acaso o CTPS for diferente de zero, o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar. Consierando que para se aposentar tem que ter 35 anos de contribuição'''
+
+'''93 - Crie um programa que gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de golds feitos em cada partida. No final, tudo será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.'''
+
+'''
+94 - Crie um programa que leia o nome, sexo  e idade de várias pessoas, guardando os dados de cada uma delas
+em um dicionário e todos os dicionários em uma lista. No final mostre:
+A - Quantas pessoas foram cadastradas.
+B - A Média de idade do grupo.
+C - Uma lista com todas as mulheres.
+D - Uma lista com todas as pessoas com idade acima da média.'''
+
+'''
+95 - Aprimore o desafio 93 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.'''

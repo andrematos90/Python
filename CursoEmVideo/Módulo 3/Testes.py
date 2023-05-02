@@ -1,11 +1,13 @@
-filme = {
-    'titulo': 'Star Wars',
-    'ano': 1977,
-    'diretor': 'George Lucas'
-}
+estado = dict()
+brasil = list()
 
-for k, v in filme.items:
-    print(f"O {k} é {v}")
-  
+for c in range(0, 3):
+    estado['uf'] = str(input('Unidade federativa: '))
+    estado['sigla'] = str(input('Sigla: '))
+    brasil.append(estado.copy())  
+
+print(brasil)
+
+''' nao da para fazer fatiamento com dicionarios, para copiar usa-se o método copy()'''
 
 
