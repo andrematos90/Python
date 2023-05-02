@@ -1,0 +1,56 @@
+----------------------DICIONÁRIO-------------------------
+
+Em Python, um dicionário é uma estrutura de dados que permite armazenar e recuperar valores a partir de uma chave. Ele é criado utilizando-se chaves {} e os valores associados a cada chave são separados por dois pontos :. Por exemplo:
+
+sintaxe para declarar uma váriavel como dicionário:
+
+dados = {}
+dados = dict()
+
+dados = {'nome' : 'Pedro'}  "nome" é o identificador e "pedro"  
+
+EX: 
+
+meu_dicionario = {"maça": 2, "banana": 3, "laranja": 1}
+
+Nesse exemplo, "maça", "banana" e "laranja" são as chaves do dicionário e 2, 3 e 1 são os valores associados a cada chave, respectivamente.
+
+ADIONAR ELEMENTOS
+Para adicionar novas chaves e valores o método append não funciona para dicioários
+ao invéz disso pode simplismente adicionar um novo elemento 
+
+EX: dados['sexo'] = 'M'
+
+cria o elemento "sexo" e coloca o valor "m" 
+
+REMOVER ELEMENTOS
+para remover um elemeno é utilizado o comando "del"
+
+EX:  del dados['idade']
+
+
+EXEMPLO:
+
+filme = {
+    'titulo': 'star wars',
+    'ano': 1977,
+    'diretor': 'george lucas'
+}
+
+PARA IMPRIMIR TODOS OS VALORES:
+
+print(filme.values())
+
+PARA IMPRIMIR AS CHAVES:
+
+print(filme,keys())
+
+PARA IMPRIMIR OS VALORES E AS CHAVES:
+
+print(filme.items())
+
+
+USANDO UM LOOP FOR:
+
+for k,v in film.items():
+  print(f' o {k}, é {v})
