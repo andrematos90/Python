@@ -1,7 +1,5 @@
-#programa para ler dois numeros inteiros
+'''2 - Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas - vindas.'''
 
-n1 =  int(input('Digite um número:'))
-n2 = int(input('Digite um segundo número:'))
-s = n1 + n2
+nome = str(input('Digite o seu nome: '))
 
-print('A soma entre {} e {}, é {}'.format(n1, n2, s))
+print(f'Olá {nome}, Seja bem vindo!')
