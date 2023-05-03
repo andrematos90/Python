@@ -1,5 +1,9 @@
-# converter graus Celcius para Fahrenheith
+#escreva um programa que pergunte a quantidade de km percorrido por um carro alugado
+#e a quantidade de dias pelos quais foi alugado. Calcule o preço a pagar,
+#sabendo que o carro custa R$60 por dia e R$0,15 por km rodado.
 
-celcius = float(input('Digite em graus Celcius: '))
 
-print(f'{celcius}°C em Farenheit é {celcius * 1.8 + 32}°F')
+km = float(input('quilómetros: '))
+dias = int(input('Quantidade de dias: '))
+preco = (dias * 60) + (km * 0.15)
+print(f'Total a pagar R$ {preco:.2f}')

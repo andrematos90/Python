@@ -6,3 +6,11 @@ d = int(input('Dias: '))
 km = float(input('Quilômetros: '))
 
 print('Total a pagar: R${:.2f}'.format(d*60 + km *0.15))
+
+'''
+outra forma 
+
+km = float(input('quilómetros: '))
+dias = int(input('Quantidade de dias: '))
+preco = (dias * 60) + (km * 0.15)
+print(f'Total a pagar R$ {preco:.2f}')'''
