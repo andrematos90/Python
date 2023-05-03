@@ -1,15 +1,13 @@
-#Faça um programa que leia um numero de 0 a 9999 e mostre na tela cada um dos digitos separados
+# Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com a palavra "santo"
 
-'''ex: numero :1834
 
-unidade: 4
-dezena: 3
-centena: 8
-milhar: '''
+cidade = str(input('Digite a cidade: ')).lower().split()
 
-numero = int(input('Digite o número: '))
-numuero_str = str(numero)
-print(f'Milhar: {numuero_str[0]}')
-print(f'Centena: {numuero_str[1]}')
-print(f'Dezena: {numuero_str[2]}')
-print(f'Unidade: {numuero_str[-1]}')
+if 'santo' in cidade[0]:
+    print('O nome da cidade começa com "Santo"!')
+else:
+    print('Não começa com "Santo!')
+
+
+print(cidade[0:2])
+
