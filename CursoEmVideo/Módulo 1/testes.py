@@ -1,9 +1,11 @@
-'''Faça um programa que leia três numeros  e mostre qual é o maior e qual é o menor'''
-maior = menor = 0
-numero = []
+'''Escreva um program que pergunte o salário de um funcionário
+e calcule o valor do seu aumento, para salários superiores a
+R$ 1250.00 calcule um aumento de 10%, para os inferiores ou iguais
+o aumento é de 15%'''
 
-for n in range(0,3):
-    numero.append(int(input(f'Digite o {n +1}º número: ')))
-numero.sort()
-print(f'Menor número: {numero[0]}')
-print(f'Maior número: {numero[-1]}')
+salario = float(input('Sálario R$: '))
+
+if salario <= 1250:
+    print(f'Novo salário: {salario + (salario / 100 * 15):.2f}')
+elif salario > 1250:
+    print(f'Novo salário: {salario + (salario / 100 * 10):.2f}')

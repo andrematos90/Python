@@ -119,6 +119,15 @@ a multa vai custar R$7,00 por quilólemtro
 Calcule o preço da passagem cobrando R$0,50 por quilometro para viagens de até 200km
 e R$ 0,45 para viagens mais longas'''
 
+''' 32 - Faça um programa que leia um ano qualquer e mostre se é bissexto'''
+
+'''33 - Faça um programa que leia três numeros  e mostre qual é o maior e qual é o menor'''
+
+'''34 - Escreva um program que pergunte o salário de um funcionário
+e calcule o valor do seu aumento, para salários superiores a
+R$ 1250.00 calcule um aumento de 10%, para os inferiores ou iguais
+o aumento é de 15%'''
+
 
 
 '''
