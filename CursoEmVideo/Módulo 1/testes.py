@@ -12,11 +12,13 @@ nome = input('Nome Completo: ').strip()
 
 # Remove quaisquer espaços extras entre as palavras do nome e conta o número de letras sem espaços em branco
 quantidade_letras = len(nome.replace(' ', ''))
-primeiro_nome = nome.split()[0]
+primeiro_nome = nome.split()
+
 
 # Imprime o nome em maiúsculas e minúsculas, juntamente com o número de letras sem espaços em branco
 print(f'Nome em maiúsculas: {nome.upper()}')
 print(f'Nome em minúsculas: {nome.lower()}')
 print(f'Total de letras sem espaços: {quantidade_letras}')
 print(f'Quantidade de letras do primeiro nome: {len(primeiro_nome)}')
+print(f'{primeiro_nome}')
 
