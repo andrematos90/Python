@@ -21,3 +21,16 @@ if n3 < menor:
     menor = n3
 
 print('maior: {} \nmenor: {}'.format(maior,menor))
+
+
+'''
+outra forma 
+
+maior = menor = 0
+numero = []
+
+for n in range(0,3):
+    numero.append(int(input(f'Digite o {n +1}º número: ')))
+numero.sort()
+print(f'Menor número: {numero[0]}')
+print(f'Maior número: {numero[-1]}')'''

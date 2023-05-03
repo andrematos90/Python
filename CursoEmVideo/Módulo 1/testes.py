@@ -1,17 +1,9 @@
-'''Faça um programa que leia um ano qualquer e mostre se é bissexto'''
+'''Faça um programa que leia três numeros  e mostre qual é o maior e qual é o menor'''
+maior = menor = 0
+numero = []
 
-import datetime
-
-ano_atual = datetime.datetime.now().year
-
-ano = int(input('Digite o ano ou 0 para o ano atual: '))
-
-if ano == 0:
-    ano = datetime.datetime.now().year
-
-if ano % 4 == 0 and ano % 100 != 0:
-    print('Ano bissexto')
-elif  ano %400 == 0:
-    print('Ano bissexto')
-else:
-    print('Não é ano bissexto')
+for n in range(0,3):
+    numero.append(int(input(f'Digite o {n +1}º número: ')))
+numero.sort()
+print(f'Menor número: {numero[0]}')
+print(f'Maior número: {numero[-1]}')
