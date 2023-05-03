@@ -39,8 +39,13 @@ possiveis sobre ele.
 
 '''
 
+'''
+11 - # faça um programa que leia a altura e a lagura de uma parede em metros
+# calcule sua area e a quantidade de tinta necesaria para pintala,
+#sabendo que cada litro de tinta pinta uma area de 2m²
 
 
+'''
 
 
 

@@ -11,3 +11,14 @@ area = altura*largura
 t = area/2
 
 print(' Área parede: {} \n Tinta necessária: {:.2f} litros'.format(area,t))
+
+
+'''
+outra forma 
+
+altura = float(input('Altura: '))
+largura = float(input('Largura: '))
+area = altura * largura
+litros = area / 2
+
+print(f'Para uma parede de {area}m² de área, serão utilizados {litros:.2f} litros.')'''
