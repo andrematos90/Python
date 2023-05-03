@@ -1,21 +1,14 @@
-#algoritmo que le o nome de quatro alunos e sorteie uma ordem de apresentação
 
-import random
-aluno1 = str(input('Nome do aluno: '))
-aluno2 = str(input('Nome do aluno: '))
-aluno3 = str(input('Nome do aluno: '))
-aluno4 = str(input('Nome do aluno: '))
-alunos = []
+'''22 - Crie um programa que leia o nome completo e mostre
 
-alunos.append(aluno1)
-alunos.append(aluno2)
-alunos.append(aluno3)
-alunos.append(aluno4)
-random.shuffle(alunos)
-print(f'Ordem de apresnetação: ')
+*o nome com todas as letras maiusculas
+*todas minusculas
+*quantas letras sem considerar espaços
+*quantas letras tem o primeiro nome
+'''
 
-for a in alunos:
-    print(f'{a}')
+nome = str(input('Nome Completo: '))
 
-
-
+print(f'{nome.upper()}')
+print(f'{nome.lower()}')
+print(f'{len(nome.split())} letras')

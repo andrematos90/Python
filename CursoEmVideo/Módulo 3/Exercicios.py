@@ -42,14 +42,10 @@ possiveis sobre ele.
 '''
 11 - # faça um programa que leia a altura e a lagura de uma parede em metros
 # calcule sua area e a quantidade de tinta necesaria para pintala,
-#sabendo que cada litro de tinta pinta uma area de 2m²
-
-
-'''
+#sabendo que cada litro de tinta pinta uma area de 2m²'''
 
 '''
 12 - algoritimo para ler um preço de produto e mostrar esse preço com 5% de desconto'''
-
 
 '''
 13 - faça um algoritimo que leia um sálario e calcule e exiba esse sálario com 15% de aumento'''
@@ -74,6 +70,16 @@ possiveis sobre ele.
 ''' 19 - digite um angulo e calcule o seno,cosseno e tangente desse angulo'''
 
 '''20 - #algoritmo que le o nome de quatro alunos e sorteie uma ordem de apresentação'''
+
+'''21 - #faça um programa que abra e reproduza um arquivo mp3'''
+
+'''22 - Crie um programa que leia o nome completo e mostre
+
+*o nome com todas as letras maiusculas
+*todas minusculas
+*quantas letras sem considerar espaços
+*quantas letras tem o primeiro nome
+'''
 
 
 
