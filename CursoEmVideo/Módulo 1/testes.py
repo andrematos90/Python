@@ -1,12 +1,12 @@
-'''Escreva um programa que leia  a velocidade de um carro
-se ele ultrapassar 80km/h, mostre uma mensagem dizendo que ele foi multado
-a multa vai custar R$7,00 por quilólemtro'''
+
+'''Desenvolva um programa que pergunte a distâñcia de uma viagem em km.
+Calcule o preço da passagem cobrando R$0,50 por quilometro para viagens de até 200km
+e R$ 0,45 para viagens mais longas'''
 
 
-velocidade = int(input('Velocidade do veiculo km/h: '))
-multa = (velocidade - 80) * 7
+distancia = int(input('Quilometros: '))
 
-if velocidade > 80:
-    print(f'Excesso de velocidade! Multado em R${multa:.2f}')
+if distancia <= 200:
+    print(f'Valor da viagem: R${distancia * 0.50:.2f}')
 else:
-    print('Abaixo do limite! Boa viagem!')
+    print(f'Valor da viagem: R${distancia * 0.45:.2f}')

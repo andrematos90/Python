@@ -11,3 +11,14 @@ if dist <= 200:
 
 else:
     print('Valor á pagar: R${:.2f}'.format(0.45*dist))
+
+
+'''
+outra forma 
+
+distancia = int(input('Quilometros: '))
+
+if distancia <= 200:
+    print(f'Valor da viagem: R${distancia * 0.50:.2f}')
+else:
+    print(f'Valor da viagem: R${distancia * 0.45:.2f}')'''

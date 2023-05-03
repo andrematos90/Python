@@ -113,9 +113,11 @@ se ele ultrapassar 80km/h, mostre uma mensagem dizendo que ele foi multado
 a multa vai custar R$7,00 por quilólemtro
 '''
 
+''' 30 -crie um programa que leia um nunmero e diga se é impar ou par'''
 
-
-
+''' 31 - Desenvolva um programa que pergunte a distâñcia de uma viagem em km.
+Calcule o preço da passagem cobrando R$0,50 por quilometro para viagens de até 200km
+e R$ 0,45 para viagens mais longas'''
 
 
 
