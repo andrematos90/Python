@@ -1,12 +1,17 @@
+'''Faça um programa que leia um ano qualquer e mostre se é bissexto'''
 
-'''Desenvolva um programa que pergunte a distâñcia de uma viagem em km.
-Calcule o preço da passagem cobrando R$0,50 por quilometro para viagens de até 200km
-e R$ 0,45 para viagens mais longas'''
+import datetime
 
+ano_atual = datetime.datetime.now().year
 
-distancia = int(input('Quilometros: '))
+ano = int(input('Digite o ano ou 0 para o ano atual: '))
 
-if distancia <= 200:
-    print(f'Valor da viagem: R${distancia * 0.50:.2f}')
+if ano == 0:
+    ano = datetime.datetime.now().year
+
+if ano % 4 == 0 and ano % 100 != 0:
+    print('Ano bissexto')
+elif  ano %400 == 0:
+    print('Ano bissexto')
 else:
-    print(f'Valor da viagem: R${distancia * 0.45:.2f}')
+    print('Não é ano bissexto')
