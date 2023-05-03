@@ -1,11 +1,7 @@
-# faça um programa que leia a altura e a lagura de uma parede em metros
-# calcule sua area e a quantidade de tinta necesaria para pintala,
-#sabendo que cada litro de tinta pinta uma area de 2m²
+#programa para ler quantos reais uma pessoa tem e converter para dolares
 
+reais = int(input('Digite quantos reais você tem: '))
 
-altura = float(input('Altura: '))
-largura = float(input('Largura: '))
-area = altura * largura
-litros = area / 2
+dolar = (reais / 5.06)
 
-print(f'Para uma parede de {area}m² de área, serão utilizados {litros:.2f} litros.')
+print(f'{reais} equivalem a {dolar:.2f} dólares na cotação de hoje!')
