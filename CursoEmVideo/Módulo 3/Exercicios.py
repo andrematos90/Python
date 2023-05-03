@@ -69,6 +69,9 @@ possiveis sobre ele.
 17 - Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retangulo
 #calcule e mostre o tamanho da hipotenusa.'''
 
+'''18 - digite um angulo e calcule o seno,cosseno e tangente desse angulo'''
+
+''' 19 - digite um angulo e calcule o seno,cosseno e tangente desse angulo'''
 
 
 
