@@ -27,4 +27,10 @@ num = float(input('Digite um numero real: '))
 
 print('parte inteira: {}' .format(int(num)))
 
+outra forma 
+
+numero = float(input('Digite um número real: '))
+print(f'{numero:.0f}')
+
+
 '''

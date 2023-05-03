@@ -57,6 +57,13 @@ possiveis sobre ele.
 '''
 14 - converter graus Celcius para Fahrenheith'''
 
+'''
+15 - #escreva um programa que pergunte a quantidade de km percorrido por um carro alugado
+#e a quantidade de dias pelos quais foi alugado. Calcule o preço a pagar,
+#sabendo que o carro custa R$60 por dia e R$0,15 por km rodado.
+'''
+
+'''16 - Crie um program que leia um número real e mostre na tela somente sua porção inteira'''
 
 
 

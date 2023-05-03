@@ -1,9 +1,5 @@
-#escreva um programa que pergunte a quantidade de km percorrido por um carro alugado
-#e a quantidade de dias pelos quais foi alugado. Calcule o preço a pagar,
-#sabendo que o carro custa R$60 por dia e R$0,15 por km rodado.
+#Crie um programa que leia um número real e mostre na tela somente sua porção inteira
 
+numero = float(input('Digite um número real: '))
+print(f'{numero:.0f}')
 
-km = float(input('quilómetros: '))
-dias = int(input('Quantidade de dias: '))
-preco = (dias * 60) + (km * 0.15)
-print(f'Total a pagar R$ {preco:.2f}')
