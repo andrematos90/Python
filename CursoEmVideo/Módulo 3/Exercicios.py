@@ -47,6 +47,8 @@ possiveis sobre ele.
 
 '''
 
+'''
+12 - algoritimo para ler um preço de produto e mostrar esse preço com 5% de desconto'''
 
 
 

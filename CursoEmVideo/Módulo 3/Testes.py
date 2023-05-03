@@ -1,7 +1,6 @@
-#programa para ler quantos reais uma pessoa tem e converter para dolares
+# algoritimo para ler um preço de produto e mostrar esse preço com 5% de desconto
 
-reais = int(input('Digite quantos reais você tem: '))
+preco = float(input('Digite o preço do produto: '))
+desconto = (preco / 100 ) * 5
 
-dolar = (reais / 5.06)
-
-print(f'{reais} equivalem a {dolar:.2f} dólares na cotação de hoje!')
+print(f'Valor com desconto: {preco - desconto:.2f}')
