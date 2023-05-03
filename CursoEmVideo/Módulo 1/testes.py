@@ -1,5 +1,7 @@
-#Crie um programa que leia um número real e mostre na tela somente sua porção inteira
-
-numero = float(input('Digite um número real: '))
-print(f'{numero:.0f}')
-
+#Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retangulo
+#calcule e mostre o tamanho da hipotenusa.
+from math import sqrt
+oposto = float(input('Cateto oposto: '))
+adjacente  = float(input('Cateto adjacente: '))
+hipotenusa = sqrt(oposto **2 + adjacente **2) 
+print(f'A hipotenusa é {(hipotenusa)}')
