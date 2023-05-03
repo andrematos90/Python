@@ -128,6 +128,8 @@ e calcule o valor do seu aumento, para salários superiores a
 R$ 1250.00 calcule um aumento de 10%, para os inferiores ou iguais
 o aumento é de 15%'''
 
+'''35 - Desenvolva um programa que leia o comprimento de três
+retas e diga ao usuário se elas podem ou não formar um triângulo'''
 
 
 '''
