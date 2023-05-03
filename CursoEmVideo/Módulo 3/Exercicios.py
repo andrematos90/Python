@@ -51,7 +51,11 @@ possiveis sobre ele.
 12 - algoritimo para ler um preço de produto e mostrar esse preço com 5% de desconto'''
 
 
+'''
+13 - faça um algoritimo que leia um sálario e calcule e exiba esse sálario com 15% de aumento'''
 
+'''
+14 - converter graus Celcius para Fahrenheith'''
 
 
 
