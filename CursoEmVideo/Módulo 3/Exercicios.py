@@ -93,6 +93,8 @@ milhar:
 
 ''' 24 - Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com a palavra "santo"'''
 
+''' 25 - crie um programa que leia o nome de uma pessoa e diga se tem silva
+'''
 
 
 
