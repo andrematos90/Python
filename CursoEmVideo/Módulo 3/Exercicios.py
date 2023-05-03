@@ -102,7 +102,7 @@ milhar:
 * em que posição ela aparece a primeira vez.
 * em que posição ela aparece a ultima '''
 
-
+''' 27 - Faça um programa que um nome e mostre o primeiro e o ultimo:'''
 
 
 
