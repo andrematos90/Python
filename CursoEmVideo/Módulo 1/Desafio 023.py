@@ -17,6 +17,7 @@ print('centena: {}'.format(numero[1]))
 print('milhar: {}'.format(numero[0]))
 
 
+'''
                                     #OUTRA FORMA DE FAZER
 
 
@@ -31,3 +32,14 @@ print('Unidade: {}'.format(u))
 print('Dezena: {}'.format(d))
 print('Centena: {}'.format(c))
 print('Milhar {}'.format(m))
+
+
+outra forma de fazer 
+
+numero = int(input('Digite o número: '))
+numuero_str = str(numero)
+print(f'Milhar: {numuero_str[0]}')
+print(f'Centena: {numuero_str[1]}')
+print(f'Dezena: {numuero_str[2]}')
+print(f'Unidade: {numuero_str[-1]}')
+'''
