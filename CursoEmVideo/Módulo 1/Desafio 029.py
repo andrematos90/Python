@@ -12,3 +12,17 @@ if v > 80:
 else:
     print('sem multas!')
 
+
+'''
+outra forma 
+
+
+velocidade = int(input('Velocidade do veiculo km/h: '))
+multa = (velocidade - 80) * 7
+
+if velocidade > 80:
+    print(f'Excesso de velocidade! Multado em R${multa:.2f}')
+else:
+    print('Abaixo do limite! Boa viagem!')
+    
+'''

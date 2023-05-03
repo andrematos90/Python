@@ -1,19 +1,12 @@
-''' 28 - escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça
-para o usuario descobrir que número é esse. O Programa dira se acertou ou não.'''
+'''Escreva um programa que leia  a velocidade de um carro
+se ele ultrapassar 80km/h, mostre uma mensagem dizendo que ele foi multado
+a multa vai custar R$7,00 por quilólemtro'''
 
 
-from random import randint
-from time import sleep
+velocidade = int(input('Velocidade do veiculo km/h: '))
+multa = (velocidade - 80) * 7
 
-computador = randint(0, 5)
-usuario = int(input('Chute um número de 0 a 5:  '))
-
-if computador == usuario:
-    print('Pensando...')
-    sleep(2)
-    print('Você acertou!')
+if velocidade > 80:
+    print(f'Excesso de velocidade! Multado em R${multa:.2f}')
 else:
-    print('Pensando..')
-    sleep(2)
-    print(f'Você errou! O computador pensou no número {computador}!')
-    
+    print('Abaixo do limite! Boa viagem!')

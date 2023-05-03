@@ -107,6 +107,12 @@ milhar:
 ''' 28 - escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça
 para o usuario descobrir que número é esse. O Programa dira se acertou ou não.'''
 
+'''
+29 - Escreva um programa que leia  a velocidade de um carro
+se ele ultrapassar 80km/h, mostre uma mensagem dizendo que ele foi multado
+a multa vai custar R$7,00 por quilólemtro
+'''
+
 
 
 
