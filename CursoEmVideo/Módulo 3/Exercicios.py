@@ -104,7 +104,8 @@ milhar:
 
 ''' 27 - Faça um programa que um nome e mostre o primeiro e o ultimo:'''
 
-
+''' 28 - escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça
+para o usuario descobrir que número é esse. O Programa dira se acertou ou não.'''
 
 
 

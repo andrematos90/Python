@@ -27,3 +27,23 @@ else:
     print('Tente na próxima!')
 
 print('Número da sorte {}'.format(numero))
+
+
+'''
+outra forma 
+
+from random import randint
+from time import sleep
+
+computador = randint(0, 5)
+usuario = int(input('Chute um número de 0 a 5:  '))
+
+if computador == usuario:
+    print('Pensando...')
+    sleep(2)
+    print('Você acertou!')
+else:
+    print('Pensando..')
+    sleep(2)
+    print(f'Você errou! O computador pensou no número {computador}!')
+    '''
