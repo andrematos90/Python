@@ -1,6 +1,8 @@
-# algoritimo para ler um preço de produto e mostrar esse preço com 5% de desconto
+#faça um algoritimo que leia um sálario e calcule e exiba esse sálario com 15% de aumento
 
-preco = float(input('Digite o preço do produto: '))
-desconto = (preco / 100 ) * 5
+salario = float(input('Digite o salario: R$ '))
 
-print(f'Valor com desconto: {preco - desconto:.2f}')
+aumento = (salario / 100 ) * 15
+
+print(f'O novo salário é de R${salario + aumento:.2f}')
+
