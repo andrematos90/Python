@@ -96,6 +96,12 @@ milhar:
 ''' 25 - crie um programa que leia o nome de uma pessoa e diga se tem silva
 '''
 
+''' 26 - Faça um programa que leia uma frase e mostre:
+
+* quantas vezes aparece a letra "A".
+* em que posição ela aparece a primeira vez.
+* em que posição ela aparece a ultima '''
+
 
 
 
