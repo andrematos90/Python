@@ -73,6 +73,7 @@ possiveis sobre ele.
 
 ''' 19 - digite um angulo e calcule o seno,cosseno e tangente desse angulo'''
 
+'''20 - #algoritmo que le o nome de quatro alunos e sorteie uma ordem de apresentação'''
 
 
 
