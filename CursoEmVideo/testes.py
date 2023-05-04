@@ -1,20 +1,16 @@
-'''Faça um programa que leia o ano de nascimento de um jovem e informe de acordo com sua idade:
+'''Crie um programa que leia duas notas, calcule a média e informe:
 
-- Se ele ainda vai se alistar ao serviço militar
-- Se é a hora de se alistar
-- Se ja passou do tempo de alistamento
+- média abaixo de 5: Reprovado
+- média enrte 5 e 6.9: Recuperação
+- média acima de 7: Aprovado'''
 
-O programa tambem deve mostrar o tempo que falta ou que passou do prazo'''
+nota1 = float(input('Primeira nota: '))
+nota2 = float(input('Segunda nota :'))
+media = (nota1 + nota2) / 2
 
-
-from datetime import datetime
-
-ano = int(input('Ano de nascimento: '))
-ano_atual = datetime.now().year
-
-if ano_atual - ano > 18:
-    print('Fora do prazo de alistamento!')
-elif ano_atual - ano < 18:
-    print('Idade insuficiente para alistamento!')
+if media < 5:
+    print(f'Média: {media} Reprovado!')
+elif media > 5 and media < 6.9:
+    print(f'Média: {media} Recuperação!')
 else:
-    print('Hora de se alistar')
+    print(f'Média: {media} Aprovado!')

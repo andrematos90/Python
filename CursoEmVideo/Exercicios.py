@@ -160,6 +160,12 @@ mostrando uma mensagem na tela:
 
 O programa tambem deve mostrar o tempo que falta ou que passou do prazo'''
 
+'''40 - Crie um programa que leia duas notas, calcule a média e informe:
+
+- média abaixo de 5: Reprovado
+- média enrte 5 e 6.9: Recuperação
+- média acima de 7: Aprovado'''
+
 
 
 
