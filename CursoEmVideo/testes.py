@@ -1,15 +1,16 @@
-'''Escreva um programa que leia um numero inteiro e peça para qual base sera convertido
-*1 -binário
-*2 -octal
-*3 -hexadecimal
-'''
+'''Escreva um programa que leia dois numneros inteiros e compare-os,
+mostrando uma mensagem na tela:
 
-numero = int(input('Numero: '))
-base = str(input('Qual a base de conversão Binario/Octal ou Hexadecimal? ')).lower().strip()
+- o primeiro é o maior
+- o segundo é o maior
+- não existe valor maior os dois são iguais'''
 
-if 'binario' in base:
-    print(f'Binário: {bin(numero)}')
-elif 'octal' in base:
-    print(f'Octal: {oct(numero)}')
-elif 'hexadecimal' in base:
-    print(f'Hexadecimal: {hex(numero)}')
+n1 = int(input('primeiro número: '))
+n2 = int(input('segundo número: '))
+
+if n1 > n2:
+    print('O primeiro valor é o maior!')
+elif n2 > n1:
+    print('O segundo número é o maior!')
+else:
+    print('Os numeros são  iguais!')

@@ -143,6 +143,13 @@ Calcule o valor da prestação mensal sabendo que ela não pode excerder 30% do 
 *3 -hexadecimal
 '''
 
+'''38 - Escreva um programa que leia dois numneros inteiros e compare-os,
+mostrando uma mensagem na tela:
+
+- o primeiro é o maior
+- o segundo é o maior
+- não existe valor maior os dois são iguais'''
+
 
 
 
