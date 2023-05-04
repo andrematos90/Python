@@ -23,6 +23,21 @@ elif nascimento + 18 == ano_atual:
 elif nascimento + 18 < ano_atual:
     print('já passou {} ano(s) da hora de se alistar'.format(abs((nascimento + 18) - ano_atual)))
 
+'''
+outra forma 
+
+from datetime import datetime
+
+ano = int(input('Ano de nascimento: '))
+ano_atual = datetime.now().year
+
+if ano_atual - ano > 18:
+    print('Fora do prazo de alistamento!')
+elif ano_atual - ano < 18:
+    print('Idade insuficiente para alistamento!')
+else:
+    print('Hora de se alistar')'''
+
 
 
 

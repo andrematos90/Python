@@ -1,16 +1,20 @@
-'''Escreva um programa que leia dois numneros inteiros e compare-os,
-mostrando uma mensagem na tela:
+'''Faça um programa que leia o ano de nascimento de um jovem e informe de acordo com sua idade:
 
-- o primeiro é o maior
-- o segundo é o maior
-- não existe valor maior os dois são iguais'''
+- Se ele ainda vai se alistar ao serviço militar
+- Se é a hora de se alistar
+- Se ja passou do tempo de alistamento
 
-n1 = int(input('primeiro número: '))
-n2 = int(input('segundo número: '))
+O programa tambem deve mostrar o tempo que falta ou que passou do prazo'''
 
-if n1 > n2:
-    print('O primeiro valor é o maior!')
-elif n2 > n1:
-    print('O segundo número é o maior!')
+
+from datetime import datetime
+
+ano = int(input('Ano de nascimento: '))
+ano_atual = datetime.now().year
+
+if ano_atual - ano > 18:
+    print('Fora do prazo de alistamento!')
+elif ano_atual - ano < 18:
+    print('Idade insuficiente para alistamento!')
 else:
-    print('Os numeros são  iguais!')
+    print('Hora de se alistar')
