@@ -136,6 +136,25 @@ retas e diga ao usuário se elas podem ou não formar um triângulo'''
 O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
 Calcule o valor da prestação mensal sabendo que ela não pode excerder 30% do salário ou então o empréstimo será negado.'''
 
+''' 
+37 - Escreva um programa que leia um numero inteiro e peça para qual base sera convertido
+*1 -binário
+*2 -octal
+*3 -hexadecimal
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 78 - Crie um program aque leia 5 valores numéricos e guarde em uma lista
 No final, mostre qual foi o maior e o menor valor digitado e as respectivas
