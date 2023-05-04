@@ -131,6 +131,10 @@ o aumento é de 15%'''
 '''35 - Desenvolva um programa que leia o comprimento de três
 retas e diga ao usuário se elas podem ou não formar um triângulo'''
 
+'''
+36 - Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
+O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
+Calcule o valor da prestação mensal sabendo que ela não pode excerder 30% do salário ou então o empréstimo será negado.'''
 
 '''
 78 - Crie um program aque leia 5 valores numéricos e guarde em uma lista

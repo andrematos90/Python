@@ -16,4 +16,4 @@ if prestacao >= psalario:
      print('Negado')
    
 else:
-    print('Empréstmo concedido!, Valor das Prestações: R$\033[32;40m{:.2f}'.format(prestacao))
+    print('Empréstmo concedido!, Valor das Prestações: R$\033[32;40m{:.3f}'.format(prestacao))
