@@ -166,6 +166,16 @@ O programa tambem deve mostrar o tempo que falta ou que passou do prazo'''
 - média enrte 5 e 6.9: Recuperação
 - média acima de 7: Aprovado'''
 
+'''
+41 - A confederação nacional de natação precisa de um programa que leia o ano de nascimento de um nadador
+e indique sua categoria de acorda com a sua idade:
+
+- Até 9 anos: MIRIN
+- Até 14 anos: INFANTIL
+- Até 19 anos: JUNIOR
+- Até 20 anos: SÊNIOR
+- Acima: MASTER '''
+
 
 
 

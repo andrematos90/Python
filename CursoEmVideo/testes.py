@@ -1,16 +1,25 @@
-'''Crie um programa que leia duas notas, calcule a média e informe:
+'''A confederação nacional de natação precisa de um programa que leia o ano de nascimento de um nadador
+e indique sua categoria de acorda com a sua idade:
 
-- média abaixo de 5: Reprovado
-- média enrte 5 e 6.9: Recuperação
-- média acima de 7: Aprovado'''
+- Até 9 anos: MIRIN
+- Até 14 anos: INFANTIL
+- Até 19 anos: JUNIOR
+- Até 20 anos: SÊNIOR
+- Acima: MASTER '''
 
-nota1 = float(input('Primeira nota: '))
-nota2 = float(input('Segunda nota :'))
-media = (nota1 + nota2) / 2
 
-if media < 5:
-    print(f'Média: {media} Reprovado!')
-elif media > 5 and media < 6.9:
-    print(f'Média: {media} Recuperação!')
+from datetime import datetime
+
+ano_atual = datetime.now().year
+ano_de_nascimento = int(input('Ano de nascimento: '))
+idade = ano_atual - ano_de_nascimento
+if idade <= 9:
+    print(f'Idade {idade} Categoria: Mirin')
+elif idade > 9 and idade <= 14:
+    print(f'Idade {idade} Categoria: Infantil')
+elif idade > 14 and idade <= 19:
+    print(f'Idade {idade} Categoria: Junior')
+elif idade > 19 and idade <= 20:
+    print(f'Idade {idade} Categoria: Senior')
 else:
-    print(f'Média: {media} Aprovado!')
+    print(f'idade {idade} Categoria: Master')
