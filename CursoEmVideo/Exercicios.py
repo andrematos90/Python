@@ -176,6 +176,13 @@ e indique sua categoria de acorda com a sua idade:
 - Até 20 anos: SÊNIOR
 - Acima: MASTER '''
 
+'''42 - Refaça o desafio 035 dos triangulos, acrescentando o recurso de mostrar que tipo será formado?
+
+- equilárero: todos os lados iguais
+- isósceles: dois lados iguais
+- escaleno: todos os lados diferentes'''
+
+'''43 - Crie um programa que leia uma frase e diga se ela ela é um palíndromo, desconsiderando os espaços'''
 
 
 

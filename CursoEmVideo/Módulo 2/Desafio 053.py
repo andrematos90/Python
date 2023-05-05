@@ -9,4 +9,18 @@ if fraseinvertida == frase:
 else:
     print('A frase "{}" não é um palindromo'.format(fraseinvertida))
 
+'''
+outra forma 
+
+frase = str(input('Frase: ')).lower().strip()
+inverso = frase[::-1]
+
+if frase == inverso:
+    print('Palíndromo')
+else:
+    print('Não é palindromo')
+
+
+'''
+
 
