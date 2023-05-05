@@ -1,33 +1,60 @@
-'''Elabore um programa que calcule o valor a ser pago por um prouto, 
-considerando o seu preço normal  e condição de pagamento:
+from random import choice
+from time import sleep
 
-- à vista dinheiro/cheque: 10% de desconto
-- à vista no cartão: 5% de desconto
-- em até 2x no cartão: preço normal
-- 3x ou mais no cartão: 20% de juros'''
+OPCOES = ['pedra', 'papel', 'tesoura']
 
-preco = float(input('Valor do produto: '))
-desconto = 0
-forma = int(input('''Digite o numero da opção de pagamento: 
+def jogar():
+    escolha_computador = choice(OPCOES)
+    escolha_usuario = input('Pedra, Papel ou Tesoura? "sair" para sair: ').lower().strip()
+    
+    if escolha_usuario == 'sair':
+        return 'sair'
+    
+    if escolha_usuario not in OPCOES:
+        print('Escolha inválida. Tente novamente.')
+        return jogar()
+    
+    print('...')
+    sleep(2)
+    
+    resultado = verificar_vencedor(escolha_usuario, escolha_computador)
+    print(f'Computador: {escolha_computador}\n{resultado}')
+    
+    return resultado == 'Empate'
 
-1 - A vista 
-2 - A vista no Cartão 
-3-  2X no cartao 
-4 - 3x ou mais no cartão \n'''))
+def verificar_vencedor(escolha_usuario, escolha_computador):
+    if escolha_usuario == escolha_computador:
+        return 'Empate!'
+    elif escolha_usuario == 'pedra' and escolha_computador == 'tesoura':
+        return 'Você venceu!'
+    elif escolha_usuario == 'papel' and escolha_computador == 'pedra':
+        return 'Você venceu!'
+    elif escolha_usuario == 'tesoura' and escolha_computador == 'papel':
+        return 'Você venceu!'
+    else:
+        return 'Você perdeu!'
 
+def main():
+    while True:
+        empates = 0
+        sair = False
+        
+        while empates < 3 and not sair:
+            resultado = jogar()
+            
+            if resultado == 'sair':
+                sair = True
+                break
+            elif resultado:
+                empates += 1
+            else:
+                empates = 0
+        
+        if sair:
+            print('Jogo encerrado.')
+            break
+        
+        print(f'Parabéns, você venceu {empates} vezes seguidas! Vamos jogar mais uma vez?')
 
-if forma == 1:
-    print(f'Valor do produto: R${ preco - (preco / 100 * 10):.2f}')
-elif forma == 2:
-    print(f'Valor do produto: R${preco - (preco /100 * 5):.2f}')
-elif forma == 3:
-    print(f'Valor do produto: R${preco}')
-elif forma == 4:
-    (print(f'valor do produto: R${preco + (preco / 100 * 20):.2f}'))
-else:
-    (print('Opção inválida!'))
-
-
-
-
-
+if __name__ == '__main__':
+    main()

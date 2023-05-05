@@ -192,6 +192,8 @@ considerando o seu preço normal  e condição de pagamento:
 - em até 2x no cartão: preço normal
 - 3x ou mais no cartão: 20% de juros'''
 
+'''45 - Crie um prorgama que jogue jokenpo com você'''
+
 
 
 
