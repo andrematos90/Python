@@ -1,11 +1,9 @@
-'''Faça um programa que calcule a soma entre todos os números impares que são múltiplos de três
-e que se encontram no intervalo de 1 até 500'''
-soma = 0
-tot = 0
+'''Refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher,
+só que agora utilizando laço for.'''
 
-for c in range(0, 501):
-    if c % 2 != 0 and  c % 3 == 0:
-        soma = soma + c
-        tot += 1
-print(f'A soma entre os {tot} valores é : {soma}')
-
+numero = int(input('Numero: '))
+print('-=' * 10)
+print(f'Tabuda de {numero}')
+print('-=' * 10)
+for n in range(0, 11):
+    print(f'{numero} x {n} = {numero * n}')

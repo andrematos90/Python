@@ -203,6 +203,9 @@ no intervalo entre 1 a 50'''
 '''45 - Faça um programa que calcule a soma entre todos os números impares que são múltiplos de três
 e que se encontram no intervalo de 1 até 500'''
 
+'''46 - Refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher,
+só que agora utilizando laço for.'''
+
 
 
 
