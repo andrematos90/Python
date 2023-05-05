@@ -194,6 +194,8 @@ considerando o seu preço normal  e condição de pagamento:
 
 '''45 - Crie um prorgama que jogue jokenpo com você'''
 
+'''46 - Faça um programa que mostre na tela um contagem regressiva  de 10 até 0
+com intervalo de 1 segundo'''
 
 
 
