@@ -197,6 +197,9 @@ considerando o seu preço normal  e condição de pagamento:
 '''46 - Faça um programa que mostre na tela um contagem regressiva  de 10 até 0
 com intervalo de 1 segundo'''
 
+''' 47 - Crie um programa que mostre na tela todos os numeros pares que estão 
+no intervalo entre 1 a 50'''
+
 
 
 

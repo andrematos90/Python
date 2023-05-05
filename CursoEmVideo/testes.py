@@ -1,8 +1,6 @@
-'''Faça um programa que mostre na tela um contagem regressiva  de 10 até 0
-com intervalo de 1 segundo'''
+''' Crie um programa que mostre na tela todos os numeros pares que estão 
+no intervalo entre 1 a 50'''
 
-from time import sleep
-
-for c in range(0, 11):
-    print(c)
-    sleep(1)
+for c in range(0, 51):
+    if c % 2 == 0:
+        print(c)
