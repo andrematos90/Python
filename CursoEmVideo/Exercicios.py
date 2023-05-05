@@ -200,6 +200,8 @@ com intervalo de 1 segundo'''
 ''' 47 - Crie um programa que mostre na tela todos os numeros pares que estão 
 no intervalo entre 1 a 50'''
 
+'''45 - Faça um programa que calcule a soma entre todos os números impares que são múltiplos de três
+e que se encontram no intervalo de 1 até 500'''
 
 
 

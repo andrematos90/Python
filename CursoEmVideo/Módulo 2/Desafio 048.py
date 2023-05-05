@@ -11,3 +11,17 @@ for n in range (1, 501, 2):
         
 print('A soma entre todos os {} valores encontrados é: {}'.format(cont, soma))
 
+
+'''outra forma
+
+soma = 0
+tot = 0
+
+for c in range(0, 501):
+    if c % 2 != 0 and  c % 3 == 0:
+        soma = soma + c
+        tot += 1
+print(f'A soma entre os {tot} valores é : {soma}')
+
+'''
+
