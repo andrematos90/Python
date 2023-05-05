@@ -25,6 +25,30 @@ elif forma == 4:
     parcela = int(input('Digite a quantidade de parcelas: '))
     print('Total a pagar {} parcelas de R$ {}'.format(preco *20 / 100 + preco ) / parcela)
 
+'''
+outra forma 
+
+preco = float(input('Valor do produto: '))
+desconto = 0
+forma = int(input('''Digite o numero da opção de pagamento: 
+
+1 - A vista 
+2 - A vista no Cartão 
+3-  2X no cartao 
+4 - 3x ou mais no cartão \n'''))
+
+
+if forma == 1:
+    print(f'Valor do produto: R${ preco - (preco / 100 * 10):.2f}')
+elif forma == 2:
+    print(f'Valor do produto: R${preco - (preco /100 * 5):.2f}')
+elif forma == 3:
+    print(f'Valor do produto: R${preco}')
+elif forma == 4:
+    (print(f'valor do produto: R${preco + (preco / 100 * 20):.2f}'))
+else:
+    (print('Opção inválida!'))'''
+
 
 
 

@@ -184,6 +184,13 @@ e indique sua categoria de acorda com a sua idade:
 
 '''43 - Crie um programa que leia uma frase e diga se ela ela é um palíndromo, desconsiderando os espaços'''
 
+'''44 - Elabore um programa que calcule o valor a ser pago por um prouto, 
+considerando o seu preço normal  e condição de pagamento:
+
+- à vista dinheiro/cheque: 10% de desconto
+- à vista no cartão: 5% de desconto
+- em até 2x no cartão: preço normal
+- 3x ou mais no cartão: 20% de juros'''
 
 
 
