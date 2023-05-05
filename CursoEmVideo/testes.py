@@ -1,9 +1,11 @@
-'''Refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher,
-só que agora utilizando laço for.'''
+'''Desenvola um programa que leia 6 números inteiros 
+e mostre a soma apenas daqueles que forem par'''
 
-numero = int(input('Numero: '))
-print('-=' * 10)
-print(f'Tabuda de {numero}')
-print('-=' * 10)
-for n in range(0, 11):
-    print(f'{numero} x {n} = {numero * n}')
+soma = 0
+
+for c in range(0, 6):
+    numero = int(input('Numero: '))
+    if numero % 2 == 0:
+        soma = numero + soma
+print(soma)
+    
