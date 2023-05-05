@@ -1,11 +1,8 @@
-'''Desenvola um programa que leia 6 números inteiros 
-e mostre a soma apenas daqueles que forem par'''
+'''Programa que leia o primeiro termo e a razão de uma Progressão aritimética.
+No final mostre os 10 primeiros termos dessa progressão'''
 
-soma = 0
+primeiro_termo = int(input('Primeiro termo da progressão: '))
+razao = int(input('Razão da progressão: '))
 
-for c in range(0, 6):
-    numero = int(input('Numero: '))
-    if numero % 2 == 0:
-        soma = numero + soma
-print(soma)
-    
+for c in range(primeiro_termo, primeiro_termo + 10, razao):
+    print(c)

@@ -210,7 +210,8 @@ só que agora utilizando laço for.'''
 '''50 - Desenvola um programa que leia 6 números inteiros 
 e mostre a soma apenas daqueles que forem par'''
 
-
+'''51 - Programa que leia o primeiro termo e a razão de uma Progressão aritimética.
+No final mostre os 10 primeiros termos dessa progressão'''
 
 
 
