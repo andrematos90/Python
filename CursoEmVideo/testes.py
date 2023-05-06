@@ -1,17 +1,14 @@
-'''Crie um programa que leia o ano de nascimento de 7 pessoas. No final,
-mostre quantas pessoas ainda não atingiram a maioridade (21 anos) e quantos ja são maiores '''
+'''Faça um programa que leia o peso de cinco pessoas 
+e mostre qual é o maior e menor peso.'''
 
-import datetime
-ano_nascimento = 0
-maiores = 0
-menores = 0
+maior = float('-inf')
+menor = float('inf')
 
-for c in range(0, 7):
-    ano_nascimento = int(input('Ano de Nascimento: '))
-    idade = datetime.datetime.now().year - ano_nascimento
-    if idade > 21:
-        maiores += 1
-    else:
-        menores += 1
-print(f'{maiores} Pessoas maiores de idade')
-print(f'{menores} Pessoas menores de idade')
+for c in range(0, 5):
+    peso = float(input('Peso: '))
+    if peso > maior:
+        maior = peso
+    if peso < menor:
+        menor = peso
+print(f'Maior: {maior}')
+print(f'Menor: {menor}')

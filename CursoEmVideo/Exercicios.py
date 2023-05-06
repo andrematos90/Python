@@ -224,7 +224,8 @@ No final mostre os 10 primeiros termos dessa progressão'''
 '''54 - Crie um programa que leia o ano de nascimento de 7 pessoas. No final,
 mostre quantas pessoas ainda não atingiram a maioridade (21 anos) e quantos ja são maiores '''
 
-
+''' 55- Faça um programa que leia o peso de cinco pessoas 
+e mostre qual é o maior e menor peso.'''
 
 '''
 78 - Crie um program aque leia 5 valores numéricos e guarde em uma lista

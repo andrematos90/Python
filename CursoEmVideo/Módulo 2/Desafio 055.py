@@ -22,3 +22,20 @@ for pessoa in range(1,6):
 
 print('o maior peso é {}kg da pessoa {}'.format(maior, pessoa))
 print('o menor peso é {}kg'.format(menor))
+
+
+'''
+outra forma 
+
+maior = float('-inf')
+menor = float('inf')
+
+for c in range(0, 5):
+    peso = float(input('Peso: '))
+    if peso > maior:
+        maior = peso
+    if peso < menor:
+        menor = peso
+print(f'Maior: {maior}')
+print(f'Menor: {menor}')
+'''
