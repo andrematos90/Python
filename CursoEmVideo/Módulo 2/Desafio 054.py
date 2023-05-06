@@ -17,3 +17,22 @@ for pessoa in range(1, 8):
 
 print('A quantidade de maiores é de {} pessoas'.format(maiores))
 print('A quantidade de menores é {} pessoas'.format(menores))
+
+'''
+outra forma
+
+import datetime
+ano_nascimento = 0
+maiores = 0
+menores = 0
+
+for c in range(0, 7):
+    ano_nascimento = int(input('Ano de Nascimento: '))
+    idade = datetime.datetime.now().year - ano_nascimento
+    if idade > 21:
+        maiores += 1
+    else:
+        menores += 1
+print(f'{maiores} Pessoas maiores de idade')
+print(f'{menores} Pessoas menores de idade')
+'''

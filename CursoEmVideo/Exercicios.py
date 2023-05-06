@@ -221,6 +221,9 @@ No final mostre os 10 primeiros termos dessa progressão'''
 
 '''53 - Faça um programa que leia um número inteiro e diga se ele é primo ou não'''
 
+'''54 - Crie um programa que leia o ano de nascimento de 7 pessoas. No final,
+mostre quantas pessoas ainda não atingiram a maioridade (21 anos) e quantos ja são maiores '''
+
 
 
 '''
