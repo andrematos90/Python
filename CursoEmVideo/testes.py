@@ -1,14 +1,26 @@
-'''Faça um programa que leia um número inteiro e diga se ele é primo ou não'''
+'''Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC E mostre
+seu status, se acordo com a tabela abaixo:
 
-numero = int(input('Número: '))
-divisores = 0
+- Abaixo de 18.5: Abaixo do peso
+- Entre 18.5 e 25: Peso ideal 
+- 25 até 30: Sobrepeso
+- 30 até 40: Obesidade
+- Acima de 40: Obesidade Mórbida'''
 
-for c in range(1, numero + 1):
-    if numero % c == 0: # Verifica se c é um divisor de número
-        divisores += 1
-        if divisores > 2: # Se já encontrou mais de 2 divisores, o número não é primo
-            print('Não é primo')
-            break
 
-if divisores == 2: # Se encontrou exatamente 2 divisores, o número é primo
-    print(f'O número {numero} é primo')
+peso = float(input('Peso: '))
+altura = float(input('Digite a altura: '))
+imc = peso /(altura ** 2)
+
+if imc < 18.5:
+    print('Abaixo do peso')
+elif imc > 18.5 and imc < 25:
+    print('Peso ideal')
+elif imc > 25 and imc < 30:
+    print('Sobrepeso')
+elif imc > 30 and imc < 40:
+    print('Obeso')
+else:
+    print('Obesidade Morbida')
+
+
