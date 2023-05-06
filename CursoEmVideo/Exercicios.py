@@ -200,7 +200,6 @@ com intervalo de 1 segundo'''
 ''' 47 - Crie um programa que mostre na tela todos os numeros pares que estão 
 no intervalo entre 1 a 50'''
 
-
 '''48 - Faça um programa que calcule a soma entre todos os números impares que são múltiplos de três
 e que se encontram no intervalo de 1 até 500'''
 
@@ -212,6 +211,8 @@ e mostre a soma apenas daqueles que forem par'''
 
 '''51 - Programa que leia o primeiro termo e a razão de uma Progressão aritimética.
 No final mostre os 10 primeiros termos dessa progressão'''
+
+'''53 - Faça um programa que leia um número inteiro e diga se ele é primo ou não'''
 
 
 
