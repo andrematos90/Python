@@ -227,6 +227,40 @@ mostre quantas pessoas ainda não atingiram a maioridade (21 anos) e quantos ja 
 ''' 55- Faça um programa que leia o peso de cinco pessoas 
 e mostre qual é o maior e menor peso.'''
 
+''' 56 - Desenvolva um programa que leia o nome, idade, e sexo de 4 pessoas.
+No final do programa mostre:
+* A média de idade do grupo.
+*Qual o nome do homem mais velho.
+*Quantas mulheres tem menos de 21 anos '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 78 - Crie um program aque leia 5 valores numéricos e guarde em uma lista
 No final, mostre qual foi o maior e o menor valor digitado e as respectivas
