@@ -240,7 +240,18 @@ Caso contrário, peça a digitação novamente até ter um valor correto.'''
 em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando
 no final quantos palpites foram necessários para vencer.'''
 
+'''
+59 - Crie um programa que leia dois valores e mostre um menu na tela:
 
+[1] Somar
+[2] Multiplicar
+[3] Maior
+[4] Novos números
+[5] Sair do programa
+
+Seu programa deverá realizar a operação solicitada em cada caso.
+
+'''
 
 
 

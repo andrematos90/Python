@@ -1,31 +1,78 @@
-'''Melhore o jogo do DESAFIO 028 onde o computador vai "pensar"
-em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando
-no final quantos palpites foram necessários para vencer.'''
+'''
+Crie um programa que leia dois valores e mostre um menu na tela:
 
+[1] Somar
+[2] Multiplicar
+[3] Maior
+[4] Novos números
+[5] Sair do programa
 
-from random import randint
+Seu programa deverá realizar a operação solicitada em cada caso.
+
+'''
 from time import sleep
-
-palpites = 0
-numero = randint(0, 10)
-
-
-
+import os
 while True:
-        chute = int(input('Digite um número entre 0 e 10: '))
-        print('Processando.')
-        sleep(1)
-        print('Processando..')
-        sleep(1)
-
-        if numero == chute:
-            print(f'Boa! Acertou! com {palpites +1} palpites!')
-
-            break
-
+    n1 = int(input('Primeiro valor: '))
+    n2 = int(input('Segundo valor: '))
+    print()
+    print('Qual operaçãp deseja realizar: ')
+    operacao = int(input('''
+    [1] Somar
+    [2] Multiplicar
+    [3] Maior
+    [4] Novos números
+    [5] Sair do programa 
+    ''' ))
+    if operacao == 1:
+        print(f'Soma de {n1} + {n2} = {n1 + n2}')
+    elif operacao == 2:
+        print(f'Multiplicação de {n1} x {n2} = {n1 * n2}')
+    elif operacao == 3:
+        maior = 0
+        if n1 > n2:
+            maior = n1
         else:
-            print('Tente na próxima!')
-            palpites += 1
+            maior = n2
+        print(f'O maior valor entre {n1} e {n2} é {maior}')
+    elif operacao == 4:
+        continue
+    elif operacao == 5:
+        print('Saindo do programa...')
+        print('Encerrando .')
+        sleep(1)
+        os.system('cls')
+        print('Encerrando ..')
+        sleep(1)
+        os.system('cls')
+        print('Encerrando ...')
+        sleep(1)
+        os.system('cls')
+        print('Encerrando ..')
+        sleep(1)
+        os.system('cls')
+        print('Encerrando .')
+        sleep
+        os.system('cls')
+        print('Encerrando ..')
+        sleep(1)
+        os.system('cls')
+        print('Encerrando ...')
+        sleep(1)
+        os.system('cls')
+        print('Encerrando ..')
+        sleep(1)
+        os.system('cls')
+        print('Encerrando .')
+        sleep(1)
+        os.system('cls')
+        print('FIM')
+        sleep(1)
+        break
+     
 
 
-        
+
+
+
+    
