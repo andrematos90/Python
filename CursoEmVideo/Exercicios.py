@@ -233,6 +233,8 @@ No final do programa mostre:
 *Qual o nome do homem mais velho.
 *Quantas mulheres tem menos de 21 anos '''
 
+''' 57 - Faça um prorama que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F' .
+Caso contrário, peça a digitação novamente até ter um valor correto.'''
 
 
 

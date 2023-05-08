@@ -7,3 +7,15 @@ while sexo not in 'MF':
 print('Registrado com sucesso')
 
 
+
+'''outra forma 
+
+sexo = ' '
+while True:
+    if sexo not in 'MF':
+     sexo = str(input('Sexo: ')).upper().strip()
+    else:
+       break
+print(f'Sexo definido como: {sexo}')
+
+'''

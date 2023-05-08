@@ -1,20 +1,10 @@
-'''Desenvolva um programa que leia o nome, idade, e sexo de 4 pessoas.
-No final do programa mostre:
-* A média de idade do grupo.
-*Qual o nome do homem mais velho.
-*Quantas mulheres tem menos de 21 anos '''
+'''Faça um prorama que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F' .
+Caso contrário, peça a digitação novamente até ter um valor correto.'''
+sexo = ' '
+while True:
+    if sexo not in 'MF':
+     sexo = str(input('Sexo: ')).upper().strip()
+    else:
+       break
+print(f'Sexo definido como: {sexo}')
 
-soma = 0
-media = 0
-velho = 0
-mulheres_acima_de_21 = 0
-
-
-for c in range(1, 5):
-    nome = str(input('Nome: '))
-    idade = int(input('Idade: '))
-    sexo = str(input('Sexo M/F: ')).upper().strip()
-    soma = soma + idade
-    media = soma / c
-
-print(f'Media de idade do grupo: {media} anos')
