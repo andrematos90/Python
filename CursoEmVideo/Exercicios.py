@@ -236,6 +236,10 @@ No final do programa mostre:
 ''' 57 - Faça um prorama que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F' .
 Caso contrário, peça a digitação novamente até ter um valor correto.'''
 
+'''58 - Melhore o jogo do DESAFIO 028 onde o computador vai "pensar"
+em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando
+no final quantos palpites foram necessários para vencer.'''
+
 
 
 
