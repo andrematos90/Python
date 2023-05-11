@@ -1,21 +1,17 @@
-'''61 - Refaça o exercicio 051, lendo o primeiro de uma PA e a razão de uma PA,
-mostrando os 10 primeiros termos da progressão usando a estrutura while.
+'''Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros
+elementos de uma sequência de fibonacci'''
 
-a10 = a1 + (10 - 1)d
 
-Onde:
+numero = int(input('quantidade de termos: '))
+t1 = 0
+t2 = 1
 
-a10 é o décimo termo da sequência;
-a1 é o primeiro termo da sequência;
-d é a diferença comum entre os termos da sequência.
-Basicamente, essa fórmula utiliza a diferença comum d para calcular o valor do décimo termo, que é encontrado adicionando (10 - 1) d ao valor do primeiro termo a1.
-
-'''
-
-primeiro = int(input('primeiro termo: '))
-razao = int(input('razão: '))
-decimo = 0
-
-for c in range(primeiro, primeiro + 10, razao):
-    print(f'{decimo == primeiro + (10 - 1) *razao}')
+print(f'{t1} ➝  {t2} ➝  ', end='')
+cont = 3
+while cont <= numero:
+   t3 = t1 + t2
+   print(f'{t3} ➝  ', end='')
+   t1 = t2
+   t2 = t3
+   cont += 1
 
