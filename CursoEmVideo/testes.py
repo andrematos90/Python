@@ -1,17 +1,18 @@
-'''Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros
-elementos de uma sequência de fibonacci'''
+'''Crie um programa que eleia varios números inteiros. O Programa só vai parar qunado o usúario digitar 
+o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma
+entre eles (desconsiderando o flag "999")'''
 
+soma = 0
+cont = 0
+numero = 0
 
-numero = int(input('quantidade de termos: '))
-t1 = 0
-t2 = 1
-
-print(f'{t1} ➝  {t2} ➝  ', end='')
-cont = 3
-while cont <= numero:
-   t3 = t1 + t2
-   print(f'{t3} ➝  ', end='')
-   t1 = t2
-   t2 = t3
-   cont += 1
+while True:
+    numero = int(input('Numero: [999] para parar: '))
+    if numero == 999:
+        break
+    else:
+     soma = soma + numero
+     cont += 1
+print(f'Soma dos números: {soma}')
+print(f'Quantidade de números somados: {cont}')
 
