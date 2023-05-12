@@ -261,11 +261,15 @@ mostrando os 10 primeiros termos da progressão usando a estrutura while.
 ''' 63 - Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros
 elementos de uma sequência de fibonacci'''
 
-'''Crie um programa que eleia varios números inteiros. O Programa só vai parar qunado o usúario digitar 
+''' 64 - Crie um programa que eleia varios números inteiros. O Programa só vai parar qunado o usúario digitar 
 o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma
 entre eles (desconsiderando o flag "999")'''
 
-
+'''
+65 - Crie um programa que leia vários números inteiros. No final da execução, mostre a média entre todos os valores
+e qual foi o maior e o menor valor lido. O programa deve perguntar ao usúario se ele quer ou não continuar
+a digitar valores
+'''
 
 
 

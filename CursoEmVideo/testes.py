@@ -1,18 +1,29 @@
-'''Crie um programa que eleia varios números inteiros. O Programa só vai parar qunado o usúario digitar 
-o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma
-entre eles (desconsiderando o flag "999")'''
+'''
+Crie um programa que leia vários números inteiros. No final da execução, mostre a média entre todos os valores
+e qual foi o maior e o menor valor lido. O programa deve perguntar ao usúario se ele quer ou não continuar
+a digitar valores
+'''
 
-soma = 0
-cont = 0
-numero = 0
-
+cont = media = maior = menor = soma = 0
+primeiro = True
 while True:
-    numero = int(input('Numero: [999] para parar: '))
-    if numero == 999:
+    numero = int(input('Numero: '))
+    resposta = str(input('Continuar? S/N ')).upper().strip()
+    soma = soma + numero
+    cont += 1
+
+    if primeiro:
+       maior = menor = numero
+       primeiro = False
+    else: 
+        if numero > maior:
+            maior = numero
+        if numero < menor:
+            menor = numero
+    if resposta in 'Nn':
         break
-    else:
-     soma = soma + numero
-     cont += 1
-print(f'Soma dos números: {soma}')
-print(f'Quantidade de números somados: {cont}')
+
+print(f'Média: {soma / cont}')
+print(f'Maior: {maior}')
+print(f'Menor: {menor}')
 
