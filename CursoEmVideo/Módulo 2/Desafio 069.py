@@ -129,7 +129,27 @@ a execução do loop.
 
 Por fim, o programa exibe na tela a quantidade de pessoas com mais de 18 anos, a quantidade de homens cadastrados e a quantidade de mulheres com menos de 20 anos.
 
+outra forma 
 
+maior_18 = 0
+homens_cadastrados = 0
+mulheres_menor_de_20 = 0
+while True:
+    
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo M/F: ')).upper().strip()
+    resposta = str(input('Continuar S/N: ')).upper().strip()
+    if idade >= 18:
+        maior_18 += 1
+    if sexo == 'M':
+     homens_cadastrados += 1
+    if sexo == 'F' and idade <= 20:
+       mulheres_menor_de_20 +=1
+    if resposta in 'nN':
+        break
+print(f'Pessoas maiores de 18: {maior_18}')
+print(f'Homens cadastrados: {homens_cadastrados}')
+print(f'Mulheres menores de 20 anos: {mulheres_menor_de_20}')
 
 
 

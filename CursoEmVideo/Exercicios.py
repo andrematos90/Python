@@ -284,6 +284,14 @@ valor digitado pelo usúario.O programa será interrompido quando o número soli
 só sera interrompido quando o jogador perder. Mostrando o total de vitórias 
 consecutivas do jogador.'''
 
+'''
+69 - crie um programa que leia a idade e sexo de várias pessoas. 
+a cada pessoa cadastrada, o programa deverá perguntar se o usuário quer 
+continuar. No final mostre: 
+A - Quantas pessoas tem mais de 18 anos.
+B - Quantos homens foram cadastrados.
+C - Quantas mulheres tem menos de 20 anos.
+'''
 
 
 
