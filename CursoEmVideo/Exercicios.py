@@ -271,6 +271,9 @@ e qual foi o maior e o menor valor lido. O programa deve perguntar ao usúario s
 a digitar valores
 '''
 
+''' 66 - Crie um program que leia vários números inteiros. O programa só vai parar quando o usúario
+digitar o valor "999", que é a condição de parada.No final, mostre quantos 
+números foram digitados e qual foi a soma entre eles desconsiderando o "flag"'''
 
 
 

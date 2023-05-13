@@ -27,3 +27,19 @@ Por fim, fora do loop, exibimos a mensagem com o número total de valores digita
  e a soma desses valores.'''
 
 
+ '''outra forma
+ 
+ cont = 0
+soma = 0
+while True:
+    n = int(input('Número [999 para parar]:  '))
+    if n == 999:
+        break
+    else:
+       soma = soma + n
+       cont += 1
+    
+print(f'Foram digitados {cont} e a soma entre eles é: {soma}')
+'''
+
+
