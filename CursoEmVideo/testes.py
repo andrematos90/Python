@@ -1,27 +1,27 @@
 '''
-crie um programa que leia a idade e sexo de várias pessoas. 
-a cada pessoa cadastrada, o programa deverá perguntar se o usuário quer 
-continuar. No final mostre: 
-A - Quantas pessoas tem mais de 18 anos.
-B - Quantos homens foram cadastrados.
-C - Quantas mulheres tem menos de 20 anos.
+ crie um programa que leia o nome e o preço de vários produtos.
+ O programa deverá perguntar se o usuário quer continuar.
+ No final mostre:
+ A - Quanto é o total gasto na compra.
+ B - Quantos produtos custam mais de R$1000.
+ C - Qual é o nome do produto mais barato.
 '''
-maior_18 = 0
-homens_cadastrados = 0
-mulheres_menor_de_20 = 0
+total_gasto = mais_de_mil = 0
+mais_barato = 0
+produto_mais_barato = ''
+mais_barato = float('inf')
 while True:
-    
-    idade = int(input('Idade: '))
-    sexo = str(input('Sexo M/F: ')).upper().strip()
-    resposta = str(input('Continuar S/N: ')).upper().strip()
-    if idade >= 18:
-        maior_18 += 1
-    if sexo == 'M':
-     homens_cadastrados += 1
-    if sexo == 'F' and idade <= 20:
-       mulheres_menor_de_20 +=1
-    if resposta in 'nN':
+    produto = str(input('Produto: '))
+    preco = float(input('Preço: '))
+    continuar = str(input('Continuar S/N: ')).upper().strip()
+    total_gasto += preco
+    if preco >= 1000:
+        mais_de_mil += 1
+    if preco < mais_barato:
+        mais_barato = preco
+        produto_mais_barato = produto
+    if continuar in 'N':
         break
-print(f'Pessoas maiores de 18: {maior_18}')
-print(f'Homens cadastrados: {homens_cadastrados}')
-print(f'Mulheres menores de 20 anos: {mulheres_menor_de_20}')
+print(f'Total: R${total_gasto:.2f}')
+print(f'Quantidade de produtos com valor maior que R$1000: {mais_de_mil}')
+print(f'Produto mais barato: {produto_mais_barato}')

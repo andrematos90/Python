@@ -108,4 +108,26 @@ Finalmente, o programa imprime uma mensagem de finalização e, em seguida, impr
 total da compra, o número de produtos com preço acima de R$1000 e o nome do produto
  mais barato encontrado durante a execução do programa.
 
+ 
+ outra forma 
+
+ total_gasto = mais_de_mil = 0
+mais_barato = 0
+produto_mais_barato = ''
+mais_barato = float('inf')
+while True:
+    produto = str(input('Produto: '))
+    preco = float(input('Preço: '))
+    continuar = str(input('Continuar S/N: ')).upper().strip()
+    total_gasto += preco
+    if preco >= 1000:
+        mais_de_mil += 1
+    if preco < mais_barato:
+        mais_barato = preco
+        produto_mais_barato = produto
+    if continuar in 'N':
+        break
+print(f'Total: R${total_gasto:.2f}')
+print(f'Quantidade de produtos com valor maior que R$1000: {mais_de_mil}')
+print(f'Produto mais barato: {produto_mais_barato}')
 '''
