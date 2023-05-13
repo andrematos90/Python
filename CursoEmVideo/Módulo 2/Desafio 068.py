@@ -105,8 +105,28 @@ usuário escolheu ímpar e a soma dos números for ímpar.
 
 Fora do loop, o código exibe quantas vezes o usuário venceu o jogo
         
-        
-        '''
+outra forma 
+
+from random import randint
+
+vitorias_jogador = jogador = computador = resultado = 0
+palpite = ''
+while True:
+    palpite = str(input('Par ou Impar: ')).upper().strip()
+    computador = randint(0 ,5)
+    jogador = int(input('Numero de 0 a 5: '))
+    resultado = computador + jogador
+    print(f'Computador jogou: {computador}')
+    print(f'Resultado: {resultado}')
+    if palpite == 'PAR' and resultado %2 == 0:
+        vitorias_jogador += 1
+        print('Você venceu!')
+    else:
+        print('Computador venceu!')
+        print(f'Quantidade de vitórias suas: {vitorias_jogador}')
+        break
+
+'''
 
 
 

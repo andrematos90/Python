@@ -275,6 +275,15 @@ a digitar valores
 digitar o valor "999", que é a condição de parada.No final, mostre quantos 
 números foram digitados e qual foi a soma entre eles desconsiderando o "flag"'''
 
+'''
+67 - Faça umn programa que mostre a tabuada de vários números, um de cada vez, para cada
+valor digitado pelo usúario.O programa será interrompido quando o número solicitado for negativo.
+'''
+
+''' 68 - Faça um programa que jogue para ou impar com o computador. O jogo
+só sera interrompido quando o jogador perder. Mostrando o total de vitórias 
+consecutivas do jogador.'''
+
 
 
 

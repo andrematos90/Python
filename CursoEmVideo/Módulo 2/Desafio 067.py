@@ -25,3 +25,15 @@ Dentro do loop, usamos um loop for para exibir a tabuada do número digitado
  pelo usuário. O loop for percorre os números de 1 a 10 (inclusive) e exibe o 
  resultado da multiplicação do número digitado pelo usuário pelo número do loop.'''
   
+'''
+outra forma 
+
+while True:
+    cont =  0
+    numero = int(input('Numero: '))
+    if numero < 0:
+        break
+    for c in range(1, 11):
+        cont += 1
+        resultado = numero * cont
+        print(f'{numero} x {cont} = {resultado}')'''

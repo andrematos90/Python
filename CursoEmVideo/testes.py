@@ -1,16 +1,24 @@
-'''Crie um program que leia vários números inteiros. O programa só vai parar quando o usúario
-digitar o valor "999", que é a condição de parada.No final, mostre quantos 
-números foram digitados e qual foi a soma entre eles desconsiderando o "flag"'''
+'''Faça um programa que jogue para ou impar com o computador. O jogo
+só sera interrompido quando o jogador perder. Mostrando o total de vitórias 
+consecutivas do jogador.'''
 
-cont = 0
-soma = 0
+from random import randint
+
+vitorias_jogador = jogador = computador = resultado = 0
+palpite = ''
 while True:
-    n = int(input('Número [999 para parar]:  '))
-    if n == 999:
-        break
+    palpite = str(input('Par ou Impar: ')).upper().strip()
+    computador = randint(0 ,5)
+    jogador = int(input('Numero de 0 a 5: '))
+    resultado = computador + jogador
+    print(f'Computador jogou: {computador}')
+    print(f'Resultado: {resultado}')
+    if palpite == 'PAR' and resultado %2 == 0:
+        vitorias_jogador += 1
+        print('Você venceu!')
     else:
-       soma = soma + n
-       cont += 1
-    
-print(f'Foram digitados {cont} e a soma entre eles é: {soma}')
+        print('Computador venceu!')
+        print(f'Quantidade de vitórias suas: {vitorias_jogador}')
+        break
+
 
