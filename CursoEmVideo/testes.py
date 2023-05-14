@@ -1,27 +1,32 @@
 '''
- crie um programa que leia o nome e o preço de vários produtos.
- O programa deverá perguntar se o usuário quer continuar.
- No final mostre:
- A - Quanto é o total gasto na compra.
- B - Quantos produtos custam mais de R$1000.
- C - Qual é o nome do produto mais barato.
+Crie um programa que simule o funcionamento de um caixa eletrônico. No início, 
+pergunte ao usuário qual será o valor a ser sacado (número inteiro) e o programa 
+vai informar quantas cédulas de cada valor serão entregues.
+
+Obs: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1
 '''
-total_gasto = mais_de_mil = 0
-mais_barato = 0
-produto_mais_barato = ''
-mais_barato = float('inf')
+
+print('=' * 30)
+print('{:^30}'.format('BANCO MATOS'))
+print('='* 30)
+valor_do_saque = int(input('Valor do Saque: R$'))
+total = valor_do_saque
+cedula = 50
+total_cedula = 0
+
 while True:
-    produto = str(input('Produto: '))
-    preco = float(input('Preço: '))
-    continuar = str(input('Continuar S/N: ')).upper().strip()
-    total_gasto += preco
-    if preco >= 1000:
-        mais_de_mil += 1
-    if preco < mais_barato:
-        mais_barato = preco
-        produto_mais_barato = produto
-    if continuar in 'N':
-        break
-print(f'Total: R${total_gasto:.2f}')
-print(f'Quantidade de produtos com valor maior que R$1000: {mais_de_mil}')
-print(f'Produto mais barato: {produto_mais_barato}')
+    if total >= cedula:
+        total -= cedula
+        total_cedula = total_cedula + 1
+    else:
+        if total_cedula > 0:
+         print(f'Total de {total_cedula} cédulas de R${cedula}')
+        if cedula == 50:
+            cedula = 20
+        elif cedula == 20:
+            cedula = 10
+        elif cedula == 10:
+            cedula = 1
+        total_cedula = 0
+        if total == 0:
+            break
