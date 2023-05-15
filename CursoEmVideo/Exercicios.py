@@ -332,6 +332,14 @@ Depois disso, mostre a listagem de números gerados e também indique o menor e 
 que está na tupla.
 '''
 
+'''
+75 - Desenvolva um programa que leia quatro valores inseridos  pelo usuário
+e guarde-os em uma tupla. No final, mostre:
+
+A - Quantas vezes apareceu o valor 9
+B - Em que posição foi digitado o primeiro valor 3.
+C - Quais foram os números pares.'''
+
 
 
 
