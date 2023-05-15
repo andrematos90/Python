@@ -1,14 +1,19 @@
 '''
-Crie um programa que tenha uma tupla totalmente preenchida com uma 
-contagem por extenso, de zero até vinte.
+Crieu uma tupla preenchida com os 20 primeiros colocados da tabela do brasileirão,
+na ordem de colocação. Depois mostre:
 
-Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostra-lo por extenso'''
+A - Apenas os 5 primeiros
+B - Os últimos 4 colocados
+C - Crie uma lista com os times em ordem alfabética
+D - Em que posição na tabela está o time do Joinville'''
 
-numero = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
-while True:
-    n = int(input('número: '))
-    print(numero[n])
-    resposta = str(input('Continuar? S/N')).upper().strip()
-    if resposta in 'N':
-        break
-    
+Times = ('Joinville', 'Athletico-PR', 'Fluminense', 'Santos', 'Palmeiras', 'América-MG',
+'Corinthians', 'Coritiba', 'Cruzeiro', 'Flamengo', 'Atlético-MG', 'Parana', 'Bahia',
+'Botafogo', 'Internacional', 'Grêmio', 'Ponte Preta', 'Juventude', 'Criciuma', 'Sport')
+
+print(f'Os cinco primeiros são: {Times[:5]}')
+print(f'OS rebaixados são: {Times[-4:]}')
+Ordem = sorted(Times)
+print(f'Oderm alfabética: {Ordem}')
+posicao = Times.index('Joinville')
+print(f'Jec está na {posicao + 1}° posição')

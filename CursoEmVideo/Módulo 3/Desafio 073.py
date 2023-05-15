@@ -44,4 +44,18 @@ print(f'JEC está na posição: {Times.index("Joinville") +1 }ª Posição'): es
 determina a posição da string "Joinville" na lista Times e exibe essa informação em
  uma string formatada.
 
-print('='* 50): essa linha exibe outra linha de 50 caracteres iguais de '=' na tela.'''
+print('='* 50): essa linha exibe outra linha de 50 caracteres iguais de '=' na tela.
+
+
+outra forma 
+
+Times = ('Joinville', 'Athletico-PR', 'Fluminense', 'Santos', 'Palmeiras', 'América-MG',
+'Corinthians', 'Coritiba', 'Cruzeiro', 'Flamengo', 'Atlético-MG', 'Parana', 'Bahia',
+'Botafogo', 'Internacional', 'Grêmio', 'Ponte Preta', 'Juventude', 'Criciuma', 'Sport')
+
+print(f'Os cinco primeiros são: {Times[:5]}')
+print(f'OS rebaixados são: {Times[-4:]}')
+Ordem = sorted(Times)
+print(f'Oderm alfabética: {Ordem}')
+posicao = Times.index('Joinville')
+print(f'Jec está na {posicao + 1}° posição')'''

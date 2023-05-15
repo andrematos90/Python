@@ -311,10 +311,19 @@ Obs: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1
 '''
 
 '''
-73 - Crie um programa que tenha uma tupla totalmente preenchida com uma 
+72 - Crie um programa que tenha uma tupla totalmente preenchida com uma 
 contagem por extenso, de zero até vinte.
 
 Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostra-lo por extenso'''
+
+'''
+73 - Crieu uma tupla preenchida com os 20 primeiros colocados da tabela do brasileirão,
+na ordem de colocação. Depois mostre:
+
+A - Apenas os 5 primeiros
+B - Os últimos 4 colocados
+C - Crie uma lista com os times em ordem alfabética
+D - Em que posição na tabela está o time do Joinville''
 
 
 
