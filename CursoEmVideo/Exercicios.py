@@ -323,7 +323,14 @@ na ordem de colocação. Depois mostre:
 A - Apenas os 5 primeiros
 B - Os últimos 4 colocados
 C - Crie uma lista com os times em ordem alfabética
-D - Em que posição na tabela está o time do Joinville''
+D - Em que posição na tabela está o time do Joinville'''
+
+'''
+ 74 - Crie um programa que gere 5 números aleatórios e colocque-os em uma tupla.
+
+Depois disso, mostre a listagem de números gerados e também indique o menor e o maior valor
+que está na tupla.
+'''
 
 
 
