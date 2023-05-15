@@ -310,6 +310,11 @@ vai informar quantas cédulas de cada valor serão entregues.
 Obs: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1
 '''
 
+'''
+73 - Crie um programa que tenha uma tupla totalmente preenchida com uma 
+contagem por extenso, de zero até vinte.
+
+Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostra-lo por extenso'''
 
 
 

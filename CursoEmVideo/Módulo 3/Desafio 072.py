@@ -56,4 +56,16 @@ print(f'Você digitou: {tupla[n]}')
 Essa linha é executada após o loop ser interrompido. Ela usa a função "print"
 para exibir uma mensagem informando o número digitado pelo usuário. O número é
 acessado na tupla usando a variável "n" como índice, e a palavra correspondente
-é exibida usando a formatação de string f-string.'''
+é exibida usando a formatação de string f-string.
+
+
+outra forma 
+
+
+numero = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+while True:
+    n = int(input('número: '))
+    print(numero[n])
+    resposta = str(input('Continuar? S/N')).upper().strip()
+    if resposta in 'N':
+        break'''

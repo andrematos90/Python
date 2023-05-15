@@ -1,32 +1,14 @@
 '''
-Crie um programa que simule o funcionamento de um caixa eletrônico. No início, 
-pergunte ao usuário qual será o valor a ser sacado (número inteiro) e o programa 
-vai informar quantas cédulas de cada valor serão entregues.
+Crie um programa que tenha uma tupla totalmente preenchida com uma 
+contagem por extenso, de zero até vinte.
 
-Obs: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1
-'''
+Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostra-lo por extenso'''
 
-print('=' * 30)
-print('{:^30}'.format('BANCO MATOS'))
-print('='* 30)
-valor_do_saque = int(input('Valor do Saque: R$'))
-total = valor_do_saque
-cedula = 50
-total_cedula = 0
-
+numero = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
 while True:
-    if total >= cedula:
-        total -= cedula
-        total_cedula = total_cedula + 1
-    else:
-        if total_cedula > 0:
-         print(f'Total de {total_cedula} cédulas de R${cedula}')
-        if cedula == 50:
-            cedula = 20
-        elif cedula == 20:
-            cedula = 10
-        elif cedula == 10:
-            cedula = 1
-        total_cedula = 0
-        if total == 0:
-            break
+    n = int(input('número: '))
+    print(numero[n])
+    resposta = str(input('Continuar? S/N')).upper().strip()
+    if resposta in 'N':
+        break
+    
