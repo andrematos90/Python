@@ -19,17 +19,17 @@ pyautogui.press('Enter')
 sleep(3)
 
 #Fazer Login no Sistema
-pyautogui.click(x=584, y=337)
+pyautogui.click(x=1893, y=415)
 pyautogui.write('Admin')
-pyautogui.click(x=542, y=419)
+pyautogui.click(x=1895, y=485)
 pyautogui.write('senha')
-pyautogui.click(x=644, y=482)
+pyautogui.click(x=1973, y=559)
 sleep(5)
 
-#Baixar base de dados
-pyautogui.rightClick(x=374, y=312)
+#Baixar base Relatrio dados
+pyautogui.rightClick(x=1717, y=391)
 sleep(5)
-pyautogui.click(x=461, y=574)
+pyautogui.click(x=1841, y=592)
 sleep(5)
 
 #Calcular Indicadores
@@ -44,18 +44,19 @@ quantidade = tabela['Quantidade'].sum()
 preco_medio = total_gasto / quantidade
 #Enviar E-email
 #entrar no e-mail
-pyautogui.click(x=456, y=52)
+pyautogui.click(x=1812, y=128)
 sleep(2)
 pyautogui.write('https://mail.google.com/mail/u/0/?pli=1#inbox')
 sleep(2)
 pyautogui.press('Enter')
+sleep(2)
 #clicar em escrever
-pyautogui.click(x=265, y=424)
+pyautogui.click(x=1461, y=242)
 sleep(2)
 pyautogui.write('andrejlle76@gmail.com')
 sleep(2)
 pyautogui.press('Enter')
-pyautogui.click(x=826, y=339)
+pyautogui.click(x=2136, y=373)
 pyautogui.write('Relatório')
-#preencher e e-mail
-#enviar
+#preencher e e-mailchrome
+#enviarAdminAdmin
