@@ -44,14 +44,16 @@ quantidade = tabela['Quantidade'].sum()
 preco_medio = total_gasto / quantidade
 #Enviar E-email
 #entrar no e-mail
-pyautogui.press('win')
+pyautogui.click(x=456, y=52)
 sleep(2)
 pyautogui.write('https://mail.google.com/mail/u/0/?pli=1#inbox')
 sleep(2)
+pyautogui.press('Enter')
 #clicar em escrever
 pyautogui.click(x=265, y=424)
 sleep(2)
 pyautogui.write('andrejlle76@gmail.com')
+sleep(2)
 pyautogui.press('Enter')
 pyautogui.click(x=826, y=339)
 pyautogui.write('Relatório')
