@@ -41,6 +41,22 @@ print('=' * 40) - imprime uma linha horizontal de 40 caracteres de comprimento.
                                 COÓDIGO GUANABARA
 
 
+produtos = ('ovo', 2.99,
+            'pao', 3.44,
+            'açucar', 8.99,
+            'arroz', 10.88)
+
+print('-' * 40)
+print(f'{"LISTAGEM DE PREÇOS":^40}')
+print('-' * 40)
+
+for pos in range(0, len(produtos)):
+    if pos % 2 == 0:
+        print(f'{produtos[pos]:.<30}', end='')
+    else:
+        print(f'RS{produtos[pos]:>5}')
+
+
 Produtos = ('ovo', 18.99, 'feijao', 5.88, 'carne', 10.99)
 
 
