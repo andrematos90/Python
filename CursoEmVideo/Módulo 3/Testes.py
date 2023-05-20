@@ -1,21 +1,12 @@
-''' 076 - Crie um programa que tenha uma tupla única com nomes de produtos
-e seus respectivos preços, na sequência.
-
-No final, mostre uma listagem de preços, organizando os dados em 
-forma tabular.'''
+'''Crie um programa que tenha uma tupla com várias palavras
+(não usar acentos). Depois disso, você deve mostrar, para cada palavra,
+quais são as vogais'''
 
 
-produtos = ('ovo', 2.99,
-            'pao', 3.44,
-            'açucar', 8.99,
-            'arroz', 10.88)
+tupla = ('andre', 'camila', 'davi', 'isabella')
 
-print('-' * 40)
-print(f'{"LISTAGEM DE PREÇOS":^40}')
-print('-' * 40)
-
-for pos in range(0, len(produtos)):
-    if pos % 2 == 0:
-        print(f'{produtos[pos]:.<30}', end='')
-    else:
-        print(f'RS{produtos[pos]:>5}')
+for palavra in tupla:
+    print(f'\nNa palavra {palavra} temos as vogais: ', end='')
+    for letra in palavra:
+        if letra.lower() in 'aeiou':
+         print(letra, end=' ')
