@@ -87,4 +87,29 @@ else: - Se o número 5 não estiver presente na lista, executa o bloco de códig
 seguinte.
 
 print('Número "5" não encontrado na lista!') - Exibe uma mensagem indicando que o 
-número 5 não foi encontrado na lista.'''
+número 5 não foi encontrado na lista.
+
+
+
+
+
+
+outra forma 
+
+lista = []
+cont = 0
+
+while True:
+    numero = int(input('número: '))
+    lista.append(numero)
+    cont += 1
+    continuar = str(input('Continuar? (S/N) ')).upper().strip()
+    if continuar in 'N':
+        break
+print(f'{cont} numeros digitados!')
+lista.sort(reverse=True)
+print(lista)
+if 5 in lista:
+    print(f'O numero 5 está na lista! Na posição: {lista.index(5)}')
+else:
+    print('Numero 5 não foi digitado!')'''

@@ -352,32 +352,6 @@ quais são as vogais'''
 
 
 '''
-78 - Crie um programa que leia 5 valores numéricos e guarde em uma lista
-No final, mostre qual foi o maior e o menor valor digitado e as respectivas
-posições na lista'''
-
-''' 79 - Crie um programa que leia vários números e os cadastre-os em 
-uma lista. Caso o número ja exista ele não sera adicionado.
-No final, serão exibidos todos os valores únicos digitados,
-em ordem de crescente'''
-
-''' 80 - Crie um programa onde o usuário possa digitar cinco valores
-e cadastre-os em uma lista, ja na posição correta de inserção
-(sem usar o sort(). No final, mostre a lista ordenada na tela.)'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
 78 - Crie um program aque leia 5 valores numéricos e guarde em uma lista
 No final, mostre qual foi o maior e o menor valor digitado e as respectivas
 posições na lista'''
@@ -453,7 +427,7 @@ No final mostre o conteúdo da estrutura na tela.'''
 '''91 - Crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios. Guarde esses resultados em um dicionário. No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado.'''
 
 '''
-Crie um programa que leia o nome, ano de nascimenmto e carteira de trabalho e cadastre - os (com idade) em um dicionário se por acaso o CTPS for diferente de zero, o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar. Consierando que para se aposentar tem que ter 35 anos de contribuição'''
+92 - Crie um programa que leia o nome, ano de nascimenmto e carteira de trabalho e cadastre - os (com idade) em um dicionário se por acaso o CTPS for diferente de zero, o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar. Consierando que para se aposentar tem que ter 35 anos de contribuição'''
 
 '''93 - Crie um programa que gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de golds feitos em cada partida. No final, tudo será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.'''
 

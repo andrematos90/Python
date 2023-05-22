@@ -1,21 +1,27 @@
-'''Crie um programa onde o usuário possa digitar cinco valores
-e cadastre-os em uma lista, ja na posição correta de inserção
-(sem usar o sort(). No final, mostre a lista ordenada na tela.)'''
+'''Crie um programa que vai ler vários números  e colocar em uma lista.
+Depois disso, mostre: 
+A - Quantos números foram digitados.
+B - A Lista de valores ordenada de forma decrescente.
+C - Se o valor 5 foi digitado e está ná lista ou não.
+'''
+
 
 lista = []
-for c in range(0,5):
-    n = int(input('Digite um número: '))
-    if c == 0 or n > lista[-1]:
-        lista.append(n)
-        print('Adicionado ao final da lista!')
-    else:
-        pos = 0
-        while pos <len(lista):
-            if n <= lista[pos]:
-                lista.insert(pos, n)
-                print(f'Adicionado na posição {pos} da lista!')
-                break
-            pos += 1
-print('-=' * 30)
-print(f'Os valores digitados em ordem foram: {lista}')
+cont = 0
+
+while True:
+    numero = int(input('número: '))
+    lista.append(numero)
+    cont += 1
+    continuar = str(input('Continuar? (S/N) ')).upper().strip()
+    if continuar in 'N':
+        break
+print(f'{cont} numeros digitados!')
+lista.sort(reverse=True)
+print(lista)
+if 5 in lista:
+    print(f'O numero 5 está na lista! Na posição: {lista.index(5)}')
+else:
+    print('Numero 5 não foi digitado!')
+
 
