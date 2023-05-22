@@ -351,6 +351,20 @@ forma tabular.'''
 quais são as vogais'''
 
 
+'''
+78 - Crie um programa que leia 5 valores numéricos e guarde em uma lista
+No final, mostre qual foi o maior e o menor valor digitado e as respectivas
+posições na lista'''
+
+''' 79 - Crie um programa que leia vários números e os cadastre-os em 
+uma lista. Caso o número ja exista ele não sera adicionado.
+No final, serão exibidos todos os valores únicos digitados,
+em ordem de crescente'''
+
+''' 80 - Crie um programa onde o usuário possa digitar cinco valores
+e cadastre-os em uma lista, ja na posição correta de inserção
+(sem usar o sort(). No final, mostre a lista ordenada na tela.)'''
+
 
 
 
