@@ -1,13 +1,14 @@
 ----------------------DICIONÁRIO-------------------------
 
-Em Python, um dicionário é uma estrutura de dados que permite armazenar e recuperar valores a partir de uma chave. Ele é criado utilizando-se chaves {} e os valores associados a cada chave são separados por dois pontos :. Por exemplo:
+Em Python, um dicionário é uma estrutura de dados que permite armazenar e recuperar valores a partir de uma chave. Ele é criado utilizando-se chaves {} e os valores associados a cada chave são separados por dois pontos. Por exemplo:
 
 sintaxe para declarar uma váriavel como dicionário:
 
 dados = {}
+ou
 dados = dict()
 
-dados = {'nome' : 'Pedro'}  "nome" é o identificador e "pedro"  
+dados = {'nome' : 'Pedro'}  "nome" é o identificador e "pedro" o valor  
 
 EX: 
 

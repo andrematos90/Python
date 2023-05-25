@@ -6,10 +6,10 @@ na ordem correta.'''
 expr = str(input('Digite uma expressão: '))
 pilha = []
 
-for i in expr:
-    if i == '(':
+for caracter in expr:
+    if caracter == '(':
         pilha.append('(')
-    elif i == ')':
+    elif caracter == ')':
         if len(pilha) > 0:
             pilha.pop()
         else:
