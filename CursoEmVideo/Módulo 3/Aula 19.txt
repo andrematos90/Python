@@ -44,7 +44,7 @@ print(filme.values())
 
 PARA IMPRIMIR AS CHAVES:
 
-print(filme,keys())
+print(filme.keys())
 
 PARA IMPRIMIR OS VALORES E AS CHAVES:
 
@@ -59,7 +59,7 @@ filme = {
     'diretor': 'George Lucas'
 }
 
-for k, v in filme.items():
+for k, v in filme.items():  "semelhante ao metodo enumerate()"
     print(f'O {k} é {v}')
 
 
