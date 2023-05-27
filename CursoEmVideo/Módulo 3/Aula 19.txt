@@ -62,6 +62,12 @@ filme = {
 for k, v in filme.items():  "semelhante ao metodo enumerate()"
     print(f'O {k} é {v}')
 
+a cada iteração do loop k e v recebem os items de filme
+
+A saida seria:  O titulo é star wars
+                O ano é 1977
+                O diretor pe George Lucas
+
 
 
 exemplo de uma uma locadora que contem varios filmes :
