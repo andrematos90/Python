@@ -1,14 +1,13 @@
-aluno = dict()
+from random import randint
+from time import sleep
 
-aluno['nome'] = str(input('Aluno: '))
-aluno['media'] = float(input(f'média de {aluno["nome"]}: '))
-
-if aluno['media'] >= 7:
-    aluno['situação'] = 'Aprovado'
-elif aluno['media'] < 7:
-    aluno['situação'] = 'Recuperação'
-else:
-    aluno['situação'] = 'Reprovado'
-    
-for k, v in aluno.items():
-    print(f'{k} é igual {v}')
+players = dict()
+print('Drawn values: ')
+for play in range(1, 5):
+    players[f'player{play}'] = randint(1, 6)
+    print(f'    Player {play} rolled {players[f"player{play}"]}')
+    sleep(0.5)
+print('Player ranking')
+for key, value in enumerate(sorted(players, key=players.get, reverse=True)):
+    print(f'    {key + 1}° place: {value} with {players[value]}')
+    sleep(0.5)
