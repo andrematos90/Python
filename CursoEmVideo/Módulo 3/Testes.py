@@ -1,38 +1,16 @@
-'''
-94 - Crie um programa que leia o nome, sexo  e idade de várias pessoas, guardando os dados de cada uma delas em um dicionário e todos os dicionários em uma lista. No final mostre:
-A - Quantas pessoas foram cadastradas.
-B - A Média de idade do grupo.
-C - Uma lista com todas as mulheres.
-D - Uma lista com todas as pessoas com idade acima da média.'''
+'''93 - Crie um programa que gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de golds feitos em cada partida. No final, tudo será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.'''
+from time import sleep
+jogador = {}
+gols = []
+jogador['nome'] = input('Nome: ')
+jogador['partidas'] = int(input('Partidas: '))
+for c in range(0, jogador['partidas']):
+    gols.append(int(input(f'Quantos gols na partida {c}: ')))
+jogador['gol'] = gols
+print(jogador)
+for i, v in enumerate(gols):
+    print(f'na partida {i + 1} fez {v} gols')
+    sleep(1)
+    
 
-pessoa = {}
-galera = []
-media = total = 0
 
-
-while True:
-        pessoa.clear()
-        pessoa['nome'] = input('Nome: ')
-        while True:
-                pessoa['sexo'] = input('Sexo [M/F]: ').upper()[0]
-                if pessoa['sexo'] in 'MF':
-                        break
-                print('ERRO! O campo aceita apenas M ou F!')
-        pessoa['idade'] = int(input('Idade: '))
-        galera.append(pessoa.copy())
-        total += 1
-        while True:
-                continuar = input('Continuar? [S/N]: ').upper()[0]
-                if continuar in 'SN':
-                  break
-                print('ERRO! O campo aceita apena S ou N!')
-        if continuar in 'N':
-               break
-print('-=' * 50)
-print()
-print(galera)
-print()
-print('-=' * 50)
-print()
-print('A - Quantas pessoas foram cadastradas.')
-print(f'{total} Pessoas.')
