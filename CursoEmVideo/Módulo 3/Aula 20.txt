@@ -1,0 +1,185 @@
+---------------------------------------FUNÇÕES----------------------------------------
+
+Funções em Python são blocos de código reutilizáveis que realizam uma tarefa específica. Elas são definidas usando a palavra-chave def, seguida pelo nome da função, parênteses que podem conter parâmetros (opcional) e dois pontos. O código da função é indentado e pode conter um ou mais comandos.
+
+Aqui está um exemplo de uma função simples que soma dois números:
+
+def somar(a, b):
+    resultado = a + b
+    return resultado
+
+Neste exemplo, temos uma função chamada "somar" que recebe dois parâmetros (a e b). Ela calcula a soma dos dois números e retorna o resultado usando a palavra-chave return.
+
+Podemos chamar essa função passando os valores desejados para os parâmetros:
+
+resultado = somar(3, 5)
+print(resultado)  # Saída: 8
+
+Além dos parâmetros, as funções podem ter argumentos opcionais com valores padrão, permitindo que sejam chamadas com menos argumentos. Aqui está um exemplo:
+
+def saudacao(nome, mensagem='Olá'):
+    print(f'{mensagem}, {nome}!')
+
+saudacao('João')  # Saída: Olá, João!
+saudacao('Maria', 'Oi')  # Saída: Oi, Maria!
+
+Nesse exemplo, a função saudacao possui um parâmetro obrigatório nome e um parâmetro opcional mensagem com valor padrão 'Olá'. Se nenhum valor for fornecido para mensagem, ela será usada com o valor padrão.
+
+As funções também podem retornar múltiplos valores usando tuplas. Veja o exemplo:
+
+def dividir(a, b):
+    quociente = a // b
+    resto = a % b
+    return quociente, resto
+
+resultado = dividir(10, 3)
+print(resultado)  # Saída: (3, 1)
+
+Nesse exemplo, a função dividir retorna tanto o quociente quanto o resto da divisão entre a e b, e podemos atribuir esses valores a variáveis separadas.
+
+As funções são úteis para organizar o código, evitar repetição e facilitar a manutenção. Elas podem ser chamadas em qualquer parte do programa após serem definidas.
+
+
+PRINCIPAIS FUNÇÕES DA LIGUAGEM PYTHON 
+
+print(): Exibe uma mensagem na saída padrão (console).
+input(): Solicita uma entrada do usuário via teclado.
+len(): Retorna o tamanho (número de elementos) de um objeto.
+type(): Retorna o tipo de um objeto.
+range(): Gera uma sequência de números.
+int(): Converte um valor para o tipo inteiro.
+float(): Converte um valor para o tipo float (número decimal).
+str(): Converte um valor para o tipo string.
+list(): Converte um iterável em uma lista.
+dict(): Cria um dicionário.
+tuple(): Converte um iterável em uma tupla.
+set(): Cria um conjunto (coleção de elementos únicos).
+sorted(): Retorna uma nova lista ordenada.
+sum(): Retorna a soma dos elementos de um iterável.
+max(): Retorna o valor máximo em um iterável.
+min(): Retorna o valor mínimo em um iterável.
+abs(): Retorna o valor absoluto de um número.
+round(): Arredonda um número para um número específico de casas decimais.
+open(): Abre um arquivo.
+range(): Gera uma sequência de números.
+enumerate(): Retorna um iterador com pares (índice, valor) de uma sequência.
+zip(): Combina elementos de várias sequências em uma única sequência.
+map(): Aplica uma função a cada elemento de uma sequência.
+filter(): Filtra elementos de uma sequência com base em uma função.
+lambda: Permite criar funções anônimas.
+import: Importa módulos externos para serem usados no código.
+def: Define uma função personalizada.
+
+
+TRABALHANDO COM PARAMETROS 
+
+Parâmetros em Python são valores que podem ser passados para uma função quando ela é chamada. Eles permitem que você forneça informações ou dados específicos para a função manipular ou processar.
+
+Existem três tipos de parâmetros em Python: parâmetros posicionais, parâmetros com valor padrão e parâmetros nomeados. Vamos explicar cada um deles:
+
+Parâmetros posicionais:
+
+Os parâmetros posicionais são passados para a função na mesma ordem em que foram definidos.
+Eles são associados aos argumentos de chamada da função pelo valor e pela posição.
+Exemplo:
+
+def somar(a, b):
+    resultado = a + b
+    return resultado
+
+resultado = somar(3, 5)
+print(resultado)  # Saída: 8
+
+Parâmetros com valor padrão:
+
+Os parâmetros com valor padrão possuem um valor atribuído previamente.
+Se nenhum valor é fornecido ao chamar a função, o valor padrão será usado.
+Exemplo:
+
+def saudacao(nome, mensagem='Olá'):
+    print(f'{mensagem}, {nome}!')
+
+saudacao('João')  # Saída: Olá, João!
+saudacao('Maria', 'Oi')  # Saída: Oi, Maria!
+
+
+Parâmetros nomeados:
+
+Os parâmetros nomeados permitem que você atribua argumentos a parâmetros específicos, independentemente da ordem.
+Você pode chamar a função passando os valores com seus nomes correspondentes.
+Isso torna o código mais legível e menos suscetível a erros quando a função tem muitos parâmetros.
+Exemplo:
+
+def calcular(a, b, operacao='+'):
+    if operacao == '+':
+        resultado = a + b
+    elif operacao == '-':
+        resultado = a - b
+    else:
+        resultado = 'Operação inválida'
+    return resultado
+
+resultado1 = calcular(3, 5, operacao='+')
+resultado2 = calcular(b=3, a=5, operacao='-')
+
+--------------------------------Aula Guanabara--------------------------------
+
+Em todas as linguagens de programação função está ligada a "rotina"
+
+"rotina" = algo que é feito constantemente
+
+
+
+CRIANDO FUNÇÃO PERSONALIZADA
+
+função para imprimi linha na tela:
+
+def mostrarlinha():
+    print('----------------')
+
+a função só é executada quando for chamada no código
+
+mostrarlinha()
+
+TRABALHANDO COM PARAMETROS 
+
+def mensagem(msg):
+    print('-------------------------')
+    print(msg)
+    print('-------------------------')
+
+a chamada da função seria:
+
+mensagem('Sistema de alunos')
+
+saida:
+
+-------------------------
+Sistema de alunos
+-------------------------
+
+
+ex:
+
+def soma(a, b):
+  print(f'A = {a} B = {b}')
+  s = a + b 
+  print(f'A Soma A + B = {s}')
+
+
+# programa principal
+soma(b=4, a=5) # posso definir os valores desta forma, nao importando a ordem de a e b
+soma(7, 5)# ou desta forma, onde o programa segue a ordem que foi definida na         
+          # na função primeiro a depois b
+
+
+EMPACOTANDO PARAMETROS
+
+Em Python, também é possível definir funções que aceitam um número variável de argumentos usando o operador * para parâmetros posicionais e ** para parâmetros nomeados.
+
+
+def contador( *num):
+    print(num)
+
+contador(2, 3)
+contador(1, 6, 4)
