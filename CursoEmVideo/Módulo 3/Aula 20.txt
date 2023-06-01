@@ -183,3 +183,17 @@ def contador( *num):
 
 contador(2, 3)
 contador(1, 6, 4)
+
+
+exemplo:
+função para dobrar valores:
+
+def dobra(lista):
+    pos = 0
+    while pos < len(lista):
+        lista[pos] *= 2
+        pos += 1
+
+valores = [4, 5, 6 ]
+dobra(valores)
+print(valores)

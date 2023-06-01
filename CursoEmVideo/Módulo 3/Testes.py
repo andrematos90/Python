@@ -1,5 +1,9 @@
-def contador( *num):
-    print(num + num)
+def dobra(lista):
+    pos = 0
+    while pos < len(lista):
+        lista[pos] *= 2
+        pos += 1
 
-contador(2, 3)
-contador(1, 6, 4)
+valores = [4, 5, 6 ]
+dobra(valores)
+print(valores)

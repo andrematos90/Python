@@ -441,3 +441,35 @@ D - Uma lista com todas as pessoas com idade acima da média.'''
 
 '''
 95 - Aprimore o desafio 93 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.'''
+
+'''
+96 - Faça um programa que tenha uma função chamada area(), que receba as dimensões 
+de um terreno retangular (largura x comprimento) e mostre a área do terreno'''
+
+'''97 - Faça um programa que tenha uma função chamdada escreva(), que receba um texto qualquer como parâmetro e mostre uma mensagem com tamanho adaptável.
+
+Ex: escreva('Olá, mundo!')
+
+       -----------
+saida: olá, mundo!
+       -----------
+       
+'''
+'''
+98- Faça um programa que tenha uma função chamada contador(),
+que receba três parametros: inicio, fim e passo e realize a contagem.
+Seu programa tem que realizar três contagens através da função criada.
+
+A - De 1 até 10, de um em um
+B - De 10 até 0, de 2 em 2
+C - Uma contagem personalizada.
+'''
+
+'''
+99 - Faça um programa que tenha uma função chamada maior(), que receba
+vários parâmetros com valores innteiros.
+Seu programa tem que analisar todos os valores e dizer qual deles é o maior'''
+
+'''
+100 - Faça um programa que tenha lista  chamada numeros e duas funções chamadas sorteio() e somarPar()A primeira função vai sortear 5 números e vai colocálos dentro de uma lista e a segunda função vai mostrar a soma entre todos valores pares sorteados pela função anterior'''
+
