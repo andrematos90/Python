@@ -14,8 +14,9 @@ while True:
     for c in range(0, jogador['partidas']):
         gols.append(int(input(f'Quantos gols na partida {c + 1}: ')))
     jogador['gol'] = gols.copy()
-    jogadores.append(jogador.copy())
     tot = sum(jogador['gol'])
+    jogador['total'] = tot
+    jogadores.append(jogador.copy()) 
     while True:
         continuar = input('Continuar [S/N]: ' ).upper()[0]
         if continuar in  'SN':
@@ -23,14 +24,24 @@ while True:
         print('ERRO! O campo aceita apenas S ou N!')
     if continuar == 'N':
         break
+print()
 print(jogadores)
 print()
 print('-=' * 30)
-print(f'{"cod":<5}{"NOME":>5}{"PARTIDAS":>15}{"GOLS" :>15}')
-print()
-for i, v in enumerate(jogadores):
-    print(f'{i}')
+print(f'{"cod":<5}{"NOME":<10}{"PARTIDAS":<10}{"GOLS":<20}{"TOTAL":<10}')
+print('-' * 60)
+for i, jogador in enumerate(jogadores):
+    print(f'{i+1:<5}{jogador["nome"]:<10}{jogador["partidas"]:<10}{str(jogador["gol"]):<20}{jogador["total"]:<10}')
+print('-' * 60)
+while True:
+    busca = int(input('Mostrar dados de qual jogador? [999] para parar: '))
+    if busca == 999:
+        break
+    else:
+        print(f'Estatísticas de {jogadores[busca]["nome"]}')
 
+
+    
     
 
 
