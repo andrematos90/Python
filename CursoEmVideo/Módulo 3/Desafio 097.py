@@ -11,7 +11,7 @@ def escreva(txt):
     print('-' * len(txt))
     print(txt)
     print('-' * len(txt))
-
+#programa principal
 texto = input('digite um texto: ')
 escreva(texto)
 
