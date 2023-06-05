@@ -138,3 +138,4 @@ fim = int(input('Fim: ')): Solicita ao usuário o valor de fim e o converte para
 pas = int(input('Passo: ')): Solicita ao usuário o valor do passo e o converte para inteiro.
 
 contador(ini, fim, pas): Chama a função contador com os parametros'''
+
