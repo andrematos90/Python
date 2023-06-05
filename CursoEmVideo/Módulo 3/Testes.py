@@ -1,32 +1,21 @@
 from time import sleep
 
-def contador(i, f, p):
-  if p < 0:
-     p *= -1
-  if p == 0:
-     p = 1
-  print(f'contagem de {i} até {f} de {p} em {p}')
-  if i < f:
-    cont = i
-    while cont <= f:
-        print(f'{cont}', end=' ', flush=True)
-        sleep(0.5)
-        cont += p
-    print('FIM!')
-  else:
-     cont = i
-     while cont >= f:
-        print(f'{cont}', end=' ',flush=True)
-        sleep(0.5)
-        cont -= p
-     print('FIM!')
-
+def maior(*num):
+    cont = maior = 0
+    print('\n Analisando os valores....')
+    for valor in num:
+        print(f'{valor}', end=' ', flush=True)
+        sleep(0.3)
+        if cont == 0:
+            maior = valor
+        else:
+            if valor > maior:
+             maior = valor
+        cont += 1
+    print(f'Foram passados {cont} valores')
+    print(f'O maior valor valor foi {maior}')
 
 #programa principal
-contador(1, 10, 1)
-contador(10, 0, 2)
-print('CONTAGEM PERSONALIZADA')
-ini = int(input('Inicio:  '))
-fim= int(input('Fim:      '))
-pas = int(input('Passo:   '))
-contador(ini, fim, pas)
+
+maior(2, 9, 4, 5, 7, 1)
+
