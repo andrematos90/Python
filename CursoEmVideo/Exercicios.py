@@ -473,3 +473,5 @@ Seu programa tem que analisar todos os valores e dizer qual deles é o maior'''
 '''
 100 - Faça um programa que tenha lista  chamada numeros e duas funções chamadas sorteio() e somarPar()A primeira função vai sortear 5 números e vai colocálos dentro de uma lista e a segunda função vai mostrar a soma entre todos valores pares sorteados pela função anterior'''
 
+''' 101 - Crie um programa que tenha uma função chamada voto() que vai receber como parâmetro o ano de nascimento de uma pessoa, retornado um valor literal indicando se uma pessoa tem voto negado, opcional ou obrigatório nas eleições.'''
+
