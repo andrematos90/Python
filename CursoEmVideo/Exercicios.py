@@ -475,3 +475,6 @@ Seu programa tem que analisar todos os valores e dizer qual deles é o maior'''
 
 ''' 101 - Crie um programa que tenha uma função chamada voto() que vai receber como parâmetro o ano de nascimento de uma pessoa, retornado um valor literal indicando se uma pessoa tem voto negado, opcional ou obrigatório nas eleições.'''
 
+'''
+102 - Crie um programa que tenha uma função fatorial() que receba dois parâmetros. O primeiro que indique o número a calcular e o outro chamado show, que será um valor lógico(opcional) indicando se será mostrado
+ou não na tela o processo de cálculo do fatorial.'''
