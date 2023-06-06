@@ -1,10 +1,14 @@
-comida1 = ['pizza', 5.99]
-comida2 = ['açai', 4.99]
-comida3 = ['churrasco', 4.99]
-comidas = [comida1, comida2, comida3]
+def teste(b):
+    global a
+    a = 8
+    b += 4
+    c = 2
+    print(f'a dentro é: {a}')
+    print(f'b dentro é: {b}')
+    print(f'c dentro é: {c}')
 
-for pos in comidas: 
-   print(pos[0])
-   
+a = 5
+teste(a)
+print(f'a fora vale: {a}')
   
   

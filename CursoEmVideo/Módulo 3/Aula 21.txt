@@ -1,0 +1,206 @@
+--------------------------------------  INTERACTIVE HELP ----------------------------------------------------
+
+Interactive help em Python refere-se à capacidade de obter informações e documentação sobre objetos, funções e módulos diretamente no ambiente de programação interativo do Python, como o interpretador de linha de comando ou um ambiente de desenvolvimento integrado (IDE).
+
+Quando você está trabalhando em um ambiente interativo, pode usar a função embutida help() para obter informações sobre um determinado objeto, função ou módulo. Ao chamar help() e passar o objeto como argumento, o interpretador Python exibirá uma descrição detalhada do objeto, juntamente com exemplos de uso e outros detalhes relevantes.
+
+Por exemplo, se você quiser saber mais sobre a função print() em Python, pode digitar help(print) no prompt de comando do Python ou no shell do IDLE. O interpretador exibirá a documentação completa da função print(), explicando seu propósito, a sintaxe correta de uso, quais argumentos ela aceita e outros detalhes importantes.
+
+O help() é uma ferramenta útil para explorar a biblioteca padrão do Python, módulos de terceiros e até mesmo para obter informações sobre objetos definidos pelo usuário. Ele permite que você aprenda sobre os recursos disponíveis, verifique a sintaxe correta e entenda como usar determinada função ou módulo em seu código.
+
+Além do help(), existem outras ferramentas interativas de ajuda em Python, como a função dir() para listar os atributos e métodos de um objeto e a ajuda em linha incorporada em muitos IDEs, que fornecem informações contextuais à medida que você digita seu código. Essas ferramentas interativas ajudam os programadores a explorar e entender as capacidades da linguagem Python
+
+
+ATRIBUTO __DOC__
+
+O atributo __doc__ é um atributo especial em Python que armazena a documentação associada a um objeto. Ele pode ser acessado usando a notação de ponto após o nome do objeto.
+
+A documentação associada a um objeto é uma string que fornece informações sobre o objeto, incluindo sua finalidade, sintaxe, parâmetros, retornos e exemplos de uso. Essa documentação é conhecida como docstring.
+
+As docstrings são usadas para fornecer informações claras e concisas sobre o objetivo e o funcionamento de classes, funções, módulos e métodos em Python. Elas são uma parte importante da documentação do código e são usadas por ferramentas como help() para exibir informações sobre objetos em um ambiente interativo.
+
+Para acessar a docstring de um objeto, você pode usar o atributo __doc__. Por exemplo, se você tiver uma função chamada my_function, pode acessar sua docstring da seguinte maneira:
+
+print(my_function.__doc__)
+
+Isso exibirá a docstring associada à função my_function, se houver. Caso contrário, será exibido None, indicando que não há docstring disponível para esse objeto específico.
+
+As docstrings são uma prática recomendada em Python, pois ajudam a tornar o código mais legível, facilitam a manutenção e fornecem informações úteis para outros desenvolvedores que possam usar ou colaborar com o seu código.
+
+
+----------------------------------------- DOCSTRING -----------------------------------------------------------
+
+Docstring, abreviação de "document string", é uma string de documentação que fornece informações sobre um objeto em Python, como funções, métodos, classes e módulos. É uma convenção de estilo de programação em Python para documentar o código de forma clara e concisa.
+
+A docstring é colocada logo após a definição do objeto e é delimitada por três aspas simples (''') ou três aspas duplas ("""). Por exemplo:
+
+
+def minha_funcao(argumento):
+    """Essa é a docstring da minha função.
+    
+    Descrição detalhada da função, explicando o que ela faz,
+    quais argumentos ela recebe, qual é o seu valor de retorno
+    e outros detalhes relevantes.
+    
+    Exemplos de uso também podem ser incluídos.
+    """
+    # Corpo da função
+    ...
+
+
+A docstring pode conter várias seções, como uma descrição geral do objeto, informações sobre os parâmetros, valor de retorno, exceções que podem ser lançadas e exemplos de uso. Essas seções são separadas por uma linha em branco para melhorar a legibilidade.
+
+As docstrings são importantes porque fornecem uma maneira sistemática de documentar o código e ajudam os desenvolvedores a entender a funcionalidade de um objeto sem a necessidade de ler o código fonte completo. Elas também são usadas pelas ferramentas de documentação, como o módulo pydoc e o gerador de documentação Sphinx, para gerar documentação automática a partir do código fonte.
+
+Ao escrever código em Python, é uma boa prática incluir docstrings significativas e informativas para ajudar a si mesmo e a outros desenvolvedores a entender e utilizar seus objetos corretamente.
+
+
+
+----------------------------------------- PARÂMETROS OPCIONAIS ------------------------------------------------
+
+
+Parâmetros opcionais, também conhecidos como parâmetros com valores padrão, são parâmetros de uma função ou método que possuem um valor pré-definido. Esses parâmetros não são obrigatórios ao chamar a função e, se nenhum valor for fornecido pelo usuário, o valor padrão será usado em seu lugar.
+
+Os parâmetros opcionais são úteis quando você deseja que uma função tenha flexibilidade em relação aos argumentos que recebe. Eles permitem que você forneça um valor padrão para um argumento, tornando-o opcional para o chamador da função. Dessa forma, o chamador pode optar por fornecer um valor específico para esse argumento ou simplesmente deixá-lo com o valor padrão.
+
+Aqui está um exemplo de uma função que possui um parâmetro opcional:
+
+
+def saudacao(nome, saudacao="Olá"):
+    mensagem = saudacao + ", " + nome + "!"
+    print(mensagem)
+
+
+Neste exemplo, a função saudacao() tem dois parâmetros: nome e saudacao. O parâmetro saudacao tem um valor padrão definido como "Olá". Isso significa que, se nenhum valor for fornecido para saudacao ao chamar a função, o valor "Olá" será usado por padrão.
+
+Aqui estão alguns exemplos de chamadas da função saudacao():
+
+
+saudacao("João")  # Saída: Olá, João!
+saudacao("Maria", "Oi")  # Saída: Oi, Maria!
+
+
+Parâmetros opcionais, também conhecidos como parâmetros com valores padrão, são parâmetros de uma função ou método que possuem um valor pré-definido. Esses parâmetros não são obrigatórios ao chamar a função e, se nenhum valor for fornecido pelo usuário, o valor padrão será usado em seu lugar.
+
+Os parâmetros opcionais são úteis quando você deseja que uma função tenha flexibilidade em relação aos argumentos que recebe. Eles permitem que você forneça um valor padrão para um argumento, tornando-o opcional para o chamador da função. Dessa forma, o chamador pode optar por fornecer um valor específico para esse argumento ou simplesmente deixá-lo com o valor padrão.
+
+Aqui está um exemplo de uma função que possui um parâmetro opcional:
+
+python
+Copy code
+def saudacao(nome, saudacao="Olá"):
+    mensagem = saudacao + ", " + nome + "!"
+    print(mensagem)
+Neste exemplo, a função saudacao() tem dois parâmetros: nome e saudacao. O parâmetro saudacao tem um valor padrão definido como "Olá". Isso significa que, se nenhum valor for fornecido para saudacao ao chamar a função, o valor "Olá" será usado por padrão.
+
+Aqui estão alguns exemplos de chamadas da função saudacao():
+
+python
+Copy code
+saudacao("João")  # Saída: Olá, João!
+saudacao("Maria", "Oi")  # Saída: Oi, Maria!
+Na primeira chamada, como nenhum valor é fornecido para o parâmetro saudacao, o valor padrão "Olá" é usado. Na segunda chamada, o valor "Oi" é fornecido explicitamente para saudacao, substituindo o valor padrão.
+
+Parâmetros opcionais fornecem flexibilidade ao permitir que uma função tenha comportamentos diferentes com base nos valores fornecidos pelo chamador. Eles podem tornar seu código mais legível e fornecer uma maneira de fornecer valores padrão apropriados quando um argumento não é especificado.
+
+
+--------------------------------------- ESCOPO DE VARIÁVEIS ---------------------------------------------------
+
+
+
+Em Python, o escopo de uma variável refere-se à parte do programa onde a variável é acessível e pode ser utilizada. O escopo determina onde uma variável é definida e onde ela pode ser acessada.
+
+Existem dois principais escopos de variáveis em Python: escopo global e escopo local.
+
+Escopo Global:
+
+Uma variável definida fora de qualquer função ou classe tem escopo global.
+Essa variável pode ser acessada em qualquer lugar do programa, incluindo dentro de funções e classes.
+Para definir uma variável global, você pode atribuir um valor a ela fora de qualquer função ou classe.
+Exemplo:
+
+x = 10  # variável global
+
+def minha_funcao():
+    print(x)  # Acesso à variável global
+
+minha_funcao()  # Saída: 10
+
+
+Escopo Local:
+
+Uma variável definida dentro de uma função tem escopo local.
+Essa variável só pode ser acessada dentro da função onde foi definida.
+Para definir uma variável local, você pode atribuir um valor a ela dentro de uma função.
+Exemplo:
+
+
+def minha_funcao():
+    y = 5  # variável local
+    print(y)
+
+minha_funcao()  # Saída: 5
+
+print(y)  # Isso causará um erro, pois a variável y é local e não pode ser acessada fora da função
+
+É importante ter em mente o escopo das variáveis ao escrever código Python, para evitar confusões e erros de acesso a variáveis em lugares inesperados.
+
+
+Variável global
+
+def teste(b):
+    global a
+    a = 8
+    b += 4
+    c = 2
+    print(f'a dentro é: {a}')
+    print(f'b dentro é: {b}')
+    print(f'c dentro é: {c}')
+
+a = 5
+teste(a)
+print(f'a fora vale: {a}')
+
+A variável global a é declarada fora da função com o valor 5.
+A função teste(b) é chamada passando a como argumento.
+Dentro da função, é declarada a variável global a usando a declaração global a. Isso permite que a função acesse e modifique a variável global a.
+A variável a é atribuída o valor 8.
+O parâmetro b é incrementado em 4.
+A variável local c é declarada e atribuída o valor 2.
+São impressos os valores das variáveis a, b e c dentro da função.
+O valor da variável global a fora da função é impresso.
+A saída do código será:
+
+a dentro é: 8
+b dentro é: 9
+c dentro é: 2
+a fora vale: 8
+
+A variável global a é modificada dentro da função usando a declaração global, por isso o valor de a fora da função também é alterado. No entanto, as variáveis b e c são locais à função e não afetam a variável a fora do escopo da função.
+
+
+---------------------------------------- RETORNANDO VALORES -------------------------------------------------- 
+
+
+O retorno de valores refere-se à capacidade de uma função em Python de retornar um resultado ou valor específico após sua execução. Em outras palavras, quando uma função é chamada e concluída, ela pode fornecer um valor de retorno que pode ser usado pelo código que a chamou.
+
+Em Python, o valor de retorno é definido usando a instrução return dentro do corpo da função. O valor especificado após o return é o resultado que a função irá retornar. A função pode retornar qualquer tipo de objeto em Python, como números, strings, listas, dicionários, etc.
+
+Aqui está um exemplo simples de uma função que retorna um valor:
+
+O retorno de valores refere-se à capacidade de uma função em Python de retornar um resultado ou valor específico após sua execução. Em outras palavras, quando uma função é chamada e concluída, ela pode fornecer um valor de retorno que pode ser usado pelo código que a chamou.
+
+Em Python, o valor de retorno é definido usando a instrução return dentro do corpo da função. O valor especificado após o return é o resultado que a função irá retornar. A função pode retornar qualquer tipo de objeto em Python, como números, strings, listas, dicionários, etc.
+
+Aqui está um exemplo simples de uma função que retorna um valor:
+
+def soma(a, b):
+    return a + b
+
+resultado = soma(3, 5)
+print(resultado)  # Saída: 8
+
+
+Neste exemplo, a função soma(a, b) recebe dois parâmetros a e b e retorna a soma deles usando a instrução return. O resultado da chamada da função soma(3, 5) é atribuído à variável resultado e, em seguida, é impresso na tela.
+
+É importante notar que nem todas as funções precisam retornar um valor. Algumas funções são usadas apenas para realizar tarefas ou executar ações sem retornar um resultado específico. Nessas situações, é comum que a função retorne None, que é um tipo de objeto que representa a ausência de valor. Se uma função não tiver uma instrução return, o valor de retorno padrão será None.
