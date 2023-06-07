@@ -253,6 +253,8 @@ Seu programa deverá realizar a operação solicitada em cada caso.
 
 '''
 
+''' 60 - Crie um programa que leia um número qualquero e mostre seu fatorial.'''
+
 '''61 - Refaça o exercicio 051, lendo o primeiro de uma PA e a razão de uma PA,
 mostrando os 10 primeiros termos da progressão usando a estrutura while.
 
