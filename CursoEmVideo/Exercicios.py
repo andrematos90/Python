@@ -480,3 +480,10 @@ Seu programa tem que analisar todos os valores e dizer qual deles é o maior'''
 '''
 102 - Crie um programa que tenha uma função fatorial() que receba dois parâmetros. O primeiro que indique o número a calcular e o outro chamado show, que será um valor lógico(opcional) indicando se será mostrado
 ou não na tela o processo de cálculo do fatorial.'''
+
+''' 103 - Faça um programa que tenha uma função chamada ficha(), que receba dois parâmetro opcioanais. O nome do jogador e quantos gols ele marcou. O programa deverá ser capar de mostrar a ficha do jogador, mesmo que 
+algum dado não tenha sido informado corretamente.'''
+
+'''104 - Crie um programa que tenha a função leiaInt(), que vai funcionar de forma semelhante á função 
+input() do python, só que fazendo a validação para aceitar apenas um valor númerico.
+EX: n = leiaInt('Digite um n')'''
