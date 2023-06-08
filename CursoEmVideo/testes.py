@@ -1,14 +1,12 @@
-def teste(b):
-    global a
-    a = 8
-    b += 4
-    c = 2
-    print(f'a dentro é: {a}')
-    print(f'b dentro é: {b}')
-    print(f'c dentro é: {c}')
+def leiaInt(n):
+   n = input('Numéro:')
+   if n.isnumeric():
+    
+      print(f'número digitado: {n}')
+      return n
+   else:
+      while n != n.isnumeric():
+        print('\033[31mErro!\033[0m digite um número ')
+        n = input('número: ').strip()
 
-a = 5
-teste(a)
-print(f'a fora vale: {a}')
-  
-  
+numero = leiaInt('número: ')
