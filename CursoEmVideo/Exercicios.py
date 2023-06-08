@@ -487,3 +487,12 @@ algum dado não tenha sido informado corretamente.'''
 '''104 - Crie um programa que tenha a função leiaInt(), que vai funcionar de forma semelhante á função 
 input() do python, só que fazendo a validação para aceitar apenas um valor númerico.
 EX: n = leiaInt('Digite um n')'''
+
+'''105 - Faça um programa que tenha uma função notas() que pode receber várias notas de alunos e vai retornar um dicionário com as seguintes informações:
+- Quantidade de notas
+- A maior Nota
+- A menor Nota
+- A média do aluno
+- A situação (opcional)
+
+Adicione tambem docstrings.'''
