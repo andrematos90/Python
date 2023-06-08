@@ -1,0 +1,82 @@
+------------------------------------------- MÓDULOS E PACOTES -------------------------------------------------
+
+Em Python, um módulo é um arquivo que contém definições e instruções Python que podem ser usadas em outros programas Python. Os módulos permitem organizar e reutilizar o código, facilitando o desenvolvimento e a manutenção de projetos.
+
+Existem diferentes maneiras de trabalhar com módulos em Python. Vou explicar algumas delas:
+
+Importação de módulos:
+Você pode importar um módulo em um programa Python usando a instrução import. Por exemplo, se você tiver um arquivo chamado "mymodule.py" com algumas funções definidas, pode importá-lo da seguinte forma:
+
+import mymodule
+
+Depois de importar o módulo, você pode usar as funções e variáveis definidas nele usando a sintaxe mymodule.nome_da_funcao().
+
+Importação específica:
+Se você quiser importar apenas funções ou variáveis específicas de um módulo, pode usar a sintaxe from ... import. Por exemplo:
+
+from mymodule import funcao1, funcao2
+
+Agora, você pode usar as funções funcao1() e funcao2() diretamente, sem precisar usar o nome do módulo como prefixo.
+
+Importação com alias:
+É possível importar um módulo ou função com um alias (apelido) usando a palavra-chave as. Isso pode ser útil se você precisar evitar conflitos de nomes ou se quiser usar um nome mais curto. Por exemplo:
+
+import mymodule as mm
+
+import mymodule as mm
+Agora, você pode usar mm.nome_da_funcao() para chamar as funções do módulo.
+
+Essas são apenas algumas das maneiras de trabalhar com módulos em Python. Existem muitos outros recursos e técnicas disponíveis para importação de módulos, como importação condicional, importação de pacotes e uso de módulos built-in. Os módulos são uma parte fundamental do ecossistema Python e permitem criar programas mais modularizados e de fácil manutenção.
+
+
+------------------------------------- aula guanabara -----------------------------------------------------
+
+Modularização
+
+- surgiu no incio da década de 60
+- sistemas ficando cada vez maiores
+- foco: dividir um programa grande
+- foco: aumentar a legibilidade
+- foco: facilitar a manutenção
+
+
+
+--------------------------------------- PACOTES ------------------------------------------------------------
+
+Em Python, pacotes são estruturas que organizam módulos relacionados em um diretório hierárquico. Eles são usados para organizar e modularizar código em projetos maiores. Os pacotes são diretórios que contêm um arquivo especial chamado __init__.py, que indica ao Python que o diretório deve ser tratado como um pacote.
+
+Um pacote pode conter vários módulos e até mesmo subpacotes. Dessa forma, é possível criar uma hierarquia de pacotes e módulos para organizar o código de forma mais eficiente.
+
+Aqui está uma breve descrição de como trabalhar com pacotes em Python:
+
+Criando um pacote:
+Para criar um pacote, você precisa criar um diretório com um nome significativo para o pacote e adicionar um arquivo __init__.py vazio (ou com código relevante, se necessário) dentro dele. A estrutura pode ser algo assim:
+
+meu_pacote/
+├── __init__.py
+├── modulo1.py
+└── subpacote/
+    ├── __init__.py
+    └── modulo2.py
+
+Importando um pacote:
+Para importar um pacote ou módulo de um pacote, você pode usar a mesma sintaxe de importação que é usada para módulos regulares. Por exemplo:
+
+import meu_pacote.modulo1
+
+Ou, se você quiser importar apenas uma função específica do módulo:
+
+from meu_pacote.modulo1 import minha_funcao
+
+Você também pode usar aliases (apelidos) ao importar pacotes ou módulos, assim como é feito com módulos regulares.
+
+Acessando módulos de um subpacote:
+Se você tiver um subpacote dentro do seu pacote, pode acessar os módulos dentro dele usando a notação de ponto. Por exemplo:
+
+import meu_pacote.subpacote.modulo2
+
+Ou, para importar uma função específica do módulo:
+
+from meu_pacote.subpacote.modulo2 import minha_funcao2
+
+Essas são apenas algumas das operações básicas relacionadas a pacotes em Python. Os pacotes são uma maneira poderosa de organizar e modularizar o código, facilitando a manutenção e reutilização. Além disso, eles são amplamente usados para distribuir bibliotecas e frameworks em Python, permitindo que outros desenvolvedores aproveitem as funcionalidades fornecidas por eles.
