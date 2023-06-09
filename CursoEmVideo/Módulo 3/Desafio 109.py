@@ -7,7 +7,7 @@ from pacotes import moeda
 v = float(input('Valor: '))
 print(f'A metade de R${v} é {moeda.metade(v, False)}')
 print(f'O dobro de R${v} é {moeda.dobro(v, False)}')
-print(f'Aumentando 10% de R${v}, fica: {moeda. aumentando(v, True)}')
+print(f'Aumentando  de R${v}, fica: {moeda. aumentando(v, True)}')
 print(f'Diminuindo 13% de {v}, fica: {moeda.diminuindo(v, False)}')
 
 

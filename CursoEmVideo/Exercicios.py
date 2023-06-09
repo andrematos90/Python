@@ -513,3 +513,6 @@ os valores como um valor monetário formatado.'''
 '''109 - Modifique as funções que foram criadas no exercicios 107 para que elas aceitem um 
 parÂmetro a mais, informando se o valor retornado por elas  vai ou não ser formatado pela 
 função moeda(), desenvolvida no exercicio 108. '''
+
+'''110 - Adicione ao módulo moeda.py criado nos desafios anteriores, uma função chamada resumo(), que mostre
+na tela algumas informações geradas pelas funções que já temos no módulo criado até aqui'''

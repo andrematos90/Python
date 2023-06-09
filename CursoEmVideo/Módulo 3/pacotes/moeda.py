@@ -29,6 +29,17 @@ def diminuindo(numeroquequerodiminmuir, formatado=False):
 def moeda(valor):
    return f'R${valor:.2f}'
 
+def resumo(valor):
+    print('-' * 30)
+    print('RESUMO DO VALOR')
+    print('-' * 30)
+    print(f'Valor analisado: R${valor:.2f}')
+    print(f'Dobro do Valor: {dobro(valor, True)}')
+    print(f'Metade do Valor: {metade(valor, True)}')
+    print(f'10% de aumento: {aumentando(valor, True)}')
+    print(f'13% de redução: {diminuindo(valor, True)}')
+    print('-' * 30)
+
 '''
 Função metade(numeroquequeroametade, formatado=False):
 
