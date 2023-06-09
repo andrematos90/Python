@@ -11,3 +11,6 @@ def aumentando(numeroquequeroaumentar):
 def diminuindo(numeroquequerodiminmuir):
     numeroquequerodiminmuir = numeroquequerodiminmuir - ((numeroquequerodiminmuir / 100) *  13)
     return numeroquequerodiminmuir
+
+def moeda(valor):
+   return f'R${valor:.2f}'
