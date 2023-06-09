@@ -520,3 +520,6 @@ na tela algumas informações geradas pelas funções que já temos no módulo c
 '''111 - Crie um pacote que tenha dois módulos internos chamados moeda e dado.
 Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o primeiro pacote
  e mantenha tudo funcioando'''
+
+'''112 - Dentro do pacote, no módulo dado. Crie uma função chamda leiaDinheiro().
+ Que seja capaz de funcionar como um input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários.'''

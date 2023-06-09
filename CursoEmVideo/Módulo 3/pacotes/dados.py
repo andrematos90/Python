@@ -11,7 +11,20 @@ def resumo(valor):
     print(f'13% de redução: {moeda.diminuindo(valor, True)}')
     print('-' * 30)
 
+def leiaDinheiro(valor):
+    if valor == valor.isnumeric():
+        return resumo(valor)
+    else:
+        while not valor.isnumeric():
+            valor = (float(input('Valor:')))
+            return valor
+
+
+
+
 '''
+Função resumo()
+
 Impressão de linhas de separação:
 
 A função imprime uma linha de caracteres '-' repetidos 30 vezes usando o operador de multiplicação (print('-' * 30)). Isso cria uma linha visualmente separada para o resumo.
