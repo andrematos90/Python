@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cronômetro</title>
+    <script>
+        function pausar() {
+            fetch('/pausar');
+        }
+
+        function parar() {
+            fetch('/parar');
+        }
+
+        function zerar() {
+            fetch('/zerar');
+        }
+    </script>
+</head>
+<body>
+    <h1>Cronômetro</h1>
+    <div id="cronometro">{{ hora|formatar_numero }}:{{ minuto|formatar_numero }}:{{ segundo|formatar_numero }}</div>
+    <br>
+    <button onclick="pausar()">Pausar</button>
+    <button onclick="parar()">Parar</button>
+    <button onclick="zerar()">Zerar</button>
+</body>
+</html>
