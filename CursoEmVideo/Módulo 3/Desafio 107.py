@@ -6,8 +6,6 @@ Faça também um programa que importe esse módulo e use algumas dessas funçõe
 
 from pacotes import moeda
 
-
-
 #programa principal
 
 p = float(input('Valor R$: '))

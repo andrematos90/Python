@@ -3,4 +3,4 @@
 from pacotes import dados
 
 v = dados.leiaDinheiro('Valor R$: ')
-print(dados.leiaDinheiro(v))
+dados.resumo(v)

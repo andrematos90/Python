@@ -11,16 +11,14 @@ def resumo(valor):
     print(f'13% de redução: {moeda.diminuindo(valor, True)}')
     print('-' * 30)
 
+
+
 def leiaDinheiro(valor):
-    if valor == valor.isnumeric():
-        return resumo(valor)
-    else:
-        while not valor.isnumeric():
-            valor = (float(input('Valor:')))
-            return valor
-
-
-
+    if valor in  ',':
+        valor = valor.replace(',', '.')
+    elif isinstance(valor, int) or isinstance(valor, float):
+        return valor
+  
 
 '''
 Função resumo()
