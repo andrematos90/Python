@@ -8,7 +8,7 @@ def dimunuir(valor = 0, taxa = 0, formatada=False):
 
 def dobro(valor = 0, formata=False):
     res = valor * 2
-    return res if formata is False else moeda(res)
+    return res if not formata else moeda(res)
 
 def metade(valor = 0, formata = False):
     res = valor / 2

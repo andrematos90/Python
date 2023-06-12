@@ -5,6 +5,6 @@ import moeda
 
 v = float(input('Valor: '))
 print(f'A metade de {moeda.moeda(v)} é {(moeda.metade(v, ))}')
-print(f'O dobro de {moeda.moeda(v)} é {(moeda.dobro(v, ))}')
+print(f'O dobro de {moeda.moeda(v)} é {(moeda.dobro(v, True))}')
 print(f'Aumentando 10% temos {(moeda.aumentar(v, 10))}')
 print(f'Diminuindo 13% temos {(moeda.dimunuir(v, 13))}')
