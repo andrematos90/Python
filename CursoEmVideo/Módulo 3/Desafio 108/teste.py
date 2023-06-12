@@ -1,6 +1,5 @@
 '''108 - Adapte o código do exercicio 107, criando uma função adicional chamada moeda() que consiga mostrar
 os valores como um valor monetário formatado.'''
-
 import moeda
 
 v = float(input('Valor: '))
