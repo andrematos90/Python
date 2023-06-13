@@ -13,13 +13,15 @@ def resumo(valor):
 
 
 
-def leiaDinheiro(valor):
-    if valor in  ',':
-        valor = valor.replace(',', '.')
-    elif isinstance(valor, int) or isinstance(valor, float):
-        return valor
-  
-
+def leiaDinheiro(msg):
+    valido = False
+    while not valido:
+        entrada = str(input(msg)).replace(',','.').strip()
+        if entrada.isalpha() or entrada == '':
+            print(f'\033[0;31mERRO!\033[m Valor inválido!')
+        else:
+            valido = True
+            return float(entrada)
 '''
 Função resumo()
 
@@ -49,4 +51,29 @@ Impressão da redução de 13%:
 A função chama a função diminuindo() passando o valor fornecido como argumento e True como segundo argumento para obter o valor reduzido em 13% formatado. O resultado é impresso utilizando a função print().
 Impressão de linhas de separação:
 
-A função imprime novamente uma linha de caracteres '-' repetidos 30 vezes para '''
+A função imprime novamente uma linha de caracteres '-' repetidos 30 vezes para 
+
+
+
+Função leiaDinheiro()
+
+
+A função leiaDinheiro é definida com um parâmetro msg que representa a mensagem exibida para o usuário.
+
+A variável valido é inicializada como False. Essa variável será usada para controlar o loop enquanto a entrada não for válida.
+
+Entra no loop while not valido, que continuará repetindo até que valido seja True.
+
+Dentro do loop, o programa solicita uma entrada do usuário usando input(msg). A mensagem msg é exibida para o usuário.
+
+A entrada do usuário é convertida em uma string usando str(input(msg)).
+
+Em seguida, a função replace(',', '.') é usada para substituir qualquer vírgula (,) por um ponto (.) na entrada do usuário. Isso é feito para lidar com diferentes convenções de separação decimal.
+
+O método strip() é usado para remover quaisquer espaços em branco extras antes e depois da entrada.
+
+O programa verifica se a entrada contém apenas letras ou está vazia usando entrada.isalpha() ou entrada == ''. Se a entrada atender a essas condições, um erro é exibido para o usuário.
+
+Se a entrada for considerada válida, ou seja, não contiver apenas letras e não estiver vazia, a variável valido é definida como True, encerrando o loop.
+
+Finalmente, o valor monetário válido é retornado como um número de ponto flutuante usando return float(entrada)'''
