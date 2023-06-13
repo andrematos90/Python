@@ -1,0 +1,112 @@
+Tratamento de erros e exceções em Python é uma técnica usada para lidar com possíveis erros que podem ocorrer durante a execução de um programa. Isso permite que você controle o fluxo do programa e lide com situações inesperadas de maneira adequada. Vou explicar o processo passo a passo:
+
+Bloco Try-Except: (Tente alguma coisa se nao acontece uma exceção) O tratamento de erros é realizado usando um bloco try-except. O código suscetível a erros é colocado no bloco try, enquanto o código para tratar esses erros é colocado no bloco except.
+
+Tente executar o código: O Python tenta executar o código dentro do bloco try.
+
+Ocorre um erro: Se ocorrer um erro durante a execução do código no bloco try, o fluxo do programa será interrompido e o Python procurará por um bloco except correspondente para tratar esse erro.
+
+Correspondência de erro: O Python verifica se o tipo de erro gerado corresponde a algum tipo de erro especificado dentro de um bloco except.
+
+Correspondência encontrada: Se um bloco except corresponder ao tipo de erro gerado, o código dentro desse bloco será executado. Isso permite que você trate o erro de acordo com suas necessidades.
+
+Tratamento do erro: Dentro do bloco except, você pode incluir código para lidar com o erro. Isso pode incluir exibir uma mensagem de erro, fazer outra tentativa de execução, registrar informações sobre o erro, entre outras ações.
+
+Fluxo de programa continua: Após o tratamento do erro, o fluxo do programa continua normalmente, ignorando o código que causou o erro.
+
+É possível ter vários blocos except para tratar diferentes tipos de erros. Também é possível usar um bloco else logo após os blocos except, que será executado somente se nenhum erro ocorrer no bloco try.
+
+Além disso, você pode usar um bloco finally opcionalmente, que será executado independentemente de ocorrer um erro ou não. Isso é útil para liberar recursos ou executar ações de limpeza que devem ocorrer independentemente de um erro.
+
+Aqui está um exemplo básico de tratamento de exceção em Python:
+
+try:
+    # Código suscetível a erros
+    resultado = 10 / 0  # Divisão por zero, gerando um erro
+except ZeroDivisionError:
+    # Tratamento específico para a divisão por zero
+    print("Erro: Divisão por zero não é permitida.")
+except Exception as e:
+    # Tratamento genérico para qualquer outro tipo de erro
+    print("Erro desconhecido:", str(e))
+else:
+    # Código a ser executado se nenhum erro ocorrer
+    print("Divisão concluída com sucesso.")
+finally:
+    # Código a ser sempre executado, independentemente de ocorrer um erro
+    print("Finalizando programa.")
+
+
+Nesse exemplo, o programa tenta executar a divisão 10 / 0, que gera um erro ZeroDivisionError. O bloco except ZeroDivisionError é correspondente a esse tipo de erro e exibe uma mensagem específica. Se qualquer outro tipo de erro ocorrer, o bloco except Exception será correspondente e exibirá uma mensagem "Erro desconhecido" seguida da representação em string do objeto de exceção e, que captura o tipo específico de erro ocorrido. Isso permitirá identificar e registrar informações sobre o erro desconhecido.
+
+
+
+--------------------------------------------- AULA GUANABARA ------------------------------------------------
+
+Principais exceções que ocorrem em Python
+
+
+SyntaxError: Ocorre quando há um erro de sintaxe no código.
+
+IndentationError: Ocorre quando a indentação do código está incorreta.
+
+NameError: Ocorre quando um nome de variável ou função não está definido no escopo atual.
+
+TypeError: Ocorre quando ocorre uma operação em um objeto de um tipo incompatível.
+
+IndexError: Ocorre quando um índice está fora dos limites de uma sequência (como uma lista ou uma string).
+
+ValueError: Ocorre quando uma função recebe um argumento do tipo correto, mas com um valor inválido.
+
+KeyError: Ocorre quando uma chave não é encontrada em um dicionário.
+
+FileNotFoundError: Ocorre quando um arquivo não é encontrado em operações de leitura ou gravação de arquivos.
+
+ZeroDivisionError: Ocorre quando ocorre uma divisão por zero.
+
+AttributeError: Ocorre quando um objeto não possui um determinado atributo ou método.
+
+FileExistsError: Ocorre quando você tenta criar um arquivo ou diretório que já existe.
+
+IOError: Ocorre quando ocorre um erro relacionado à operação de entrada/saída, como falha ao abrir ou ler um arquivo.
+
+TypeError: Ocorre quando ocorre uma operação em um objeto de um tipo incompatível.
+
+OverflowError: Ocorre quando um cálculo resulta em um valor que excede o limite máximo permitido pelo tipo de dado.
+
+ImportError: Ocorre quando ocorre um erro ao importar um módulo.
+
+AttributeError: Ocorre quando um objeto não possui um determinado atributo ou método.
+
+KeyboardInterrupt: Ocorre quando o usuário interrompe a execução do programa pressionando a combinação de teclas "Ctrl+C" durante a execução.
+
+MemoryError: Ocorre quando o Python não consegue alocar memória suficiente para executar uma determinada operação.
+
+PermissionError: Ocorre quando ocorre uma falha de permissão ao tentar acessar um arquivo ou diretório.
+
+StopIteration: Ocorre quando uma iteração chega ao final, mas ainda tenta obter mais elementos.
+
+
+TRY EXCEPT
+
+try:
+    # Código que pode gerar uma exceção
+    x = 10 / 0  # Divisão por zero, gerando um ZeroDivisionError
+    print(x)  # Esta linha não será executada devido à exceção acima
+except ZeroDivisionError:
+    # Tratamento específico para a exceção ZeroDivisionError
+    print("Erro: Divisão por zero não é permitida.")
+except Exception as e:
+    # Tratamento genérico para qualquer outra exceção
+    print("Erro desconhecido:", str(e))
+
+
+Neste exemplo, o bloco try é usado para envolver o código que pode gerar uma exceção. Se ocorrer uma exceção dentro do bloco try, o fluxo do programa será interrompido e o Python procurará por um bloco except correspondente que corresponda ao tipo de exceção gerado.
+
+No exemplo acima, o código tenta executar a divisão 10 / 0, que gera uma exceção ZeroDivisionError. O bloco except ZeroDivisionError corresponde a essa exceção específica e exibe uma mensagem de erro adequada.
+
+Se ocorrer uma exceção diferente de ZeroDivisionError, o bloco except Exception será correspondente e exibirá uma mensagem genérica de erro. A cláusula as e permite capturar o objeto de exceção gerado para obter informações adicionais sobre o erro.
+
+É possível ter vários blocos except para tratar diferentes tipos de exceções, e também é possível usar um bloco else que será executado apenas se nenhuma exceção ocorrer no bloco try. Além disso, pode ser usado um bloco finally opcionalmente, que será executado independentemente de ocorrer uma exceção ou não, permitindo a execução de ações de limpeza ou liberação de recursos.
+
+
