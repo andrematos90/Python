@@ -109,4 +109,25 @@ Se ocorrer uma exceção diferente de ZeroDivisionError, o bloco except Exceptio
 
 É possível ter vários blocos except para tratar diferentes tipos de exceções, e também é possível usar um bloco else que será executado apenas se nenhuma exceção ocorrer no bloco try. Além disso, pode ser usado um bloco finally opcionalmente, que será executado independentemente de ocorrer uma exceção ou não, permitindo a execução de ações de limpeza ou liberação de recursos.
 
+Exemplo tratamento de erros:
 
+try:
+
+    a = int(input('\033[0;32mDenominador: \033[m'))
+    b = int(input('\033[0;30mDivisor: \033[m'))
+    r = a / b
+
+except ZeroDivisionError:
+    print('\033[0;31mERRO!Um número não pode ser dividido por 0!\033[0m')
+
+except ValueError:
+    print('\33[0;31mERRO! Insira apenas numeros inteiros\033[0m')
+
+except Exception as erro:
+    print(f'\033[0;31mERRO! A causa do erro encontrado foi {erro.__cause__}\033[0m')
+
+else:
+    print(f'Resultado: {r}')
+
+finally:
+    print('\033[0;34mObrigado!\033[0m')
