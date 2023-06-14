@@ -528,4 +528,8 @@ Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o prime
 113 - Reescreva a função leiaInt do Desafio 104, incluindo agora a possibilidadeda digitação de um número de tipo inválido. Aproveite e crie tambem uma função leiaFloat() com a mesma fucionalidade.
 '''
 
-'''114 - Crie um código em python que teste se o site Pudim.com.br está acessivel pelo computador usado.'''
+'''
+114 - Crie um código em python que teste se o site Pudim.com.br está acessivel pelo computador usado.'''
+
+'''
+115 - Crie um pequeno sistema modularizado que permite cadastrar pessoas pelo seu nome e idade em um arquivo de texto simples. O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as cadastradas.'''
