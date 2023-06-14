@@ -523,3 +523,7 @@ Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o prime
 
 '''112 - Dentro do pacote, no módulo dado. Crie uma função chamda leiaDinheiro().
  Que seja capaz de funcionar como um input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários.'''
+
+'''
+113 - Reescreva a função leiaInt do Desafio 104, incluindo agora a possibilidadeda digitação de um número de tipo inválido. Aproveite e crie tambem uma função leiaFloat() com a mesma fucionalidade.
+'''
