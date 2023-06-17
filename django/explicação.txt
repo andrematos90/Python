@@ -1,0 +1,3 @@
+Olá! O Django é um framework web popular para desenvolvimento rápido de aplicativos em Python. Ele fornece uma estrutura robusta e flexível para criar aplicativos da web, seguindo o padrão Model-View-Controller (MVC).
+
+Com o Django, você pode criar aplicativos da web com facilidade, desde sites simples até aplicativos complexos. Ele inclui recursos como autenticação de usuário, administração do site, ORM (Object-Relational Mapping) para trabalhar com banco de dados e manipulação de formulários. Além disso, o Django possui um poderoso sistema de roteamento de URLs, o que facilita a criação de URLs amigáveis e o gerenciamento de solicitações HTTP.
