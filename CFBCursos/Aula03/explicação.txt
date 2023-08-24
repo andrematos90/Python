@@ -1,0 +1,146 @@
+Variáveis em Python são usadas para armazenar e manipular dados. Uma variável é essencialmente um nome que você atribui a um valor, permitindo que você se refira a esse valor mais tarde no código. Aqui estão os principais aspectos das variáveis em Python:
+
+Declaração de Variáveis: Em Python, você não precisa declarar explicitamente o tipo de uma variável. Você simplesmente atribui um valor a um nome e o interpretador Python determina automaticamente o tipo de dado. Isso é conhecido como tipagem dinâmica.
+
+Exemplo:
+
+idade = 25
+nome = "Ana"
+salario = 1500.50
+esta_chovendo = True
+
+
+Convenções de Nomenclatura: Python possui convenções de nomenclatura que são amplamente seguidas pela comunidade para tornar o código mais legível. Os nomes das variáveis devem ser descritivos e em letras minúsculas. Se um nome de variável contiver múltiplas palavras, geralmente usa-se o estilo snake_case (palavras separadas por underscores).
+
+Exemplo:
+
+nome_completo = "João Silva"
+saldo_bancario = 5000.0
+
+
+Reatribuição de Variáveis: Você pode reatribuir valores a variáveis quantas vezes quiser. A variável assume o novo valor atribuído, substituindo o valor anterior.
+
+Exemplo:
+
+idade = 30
+idade = idade + 5  # idade agora é 35
+
+
+Operações com Variáveis: Você pode realizar operações matemáticas e outras operações usando variáveis.
+
+Exemplo:
+
+a = 10
+b = 5
+soma = a + b
+subtracao = a - b
+multiplicacao = a * b
+divisao = a / b
+
+
+Concatenação de Strings: É possível concatenar (juntar) strings usando o operador +.
+
+Exemplo:
+
+primeiro_nome = "Maria"
+sobrenome = "Garcia"
+nome_completo = primeiro_nome + " " + sobrenome  # "Maria Garcia"
+
+
+Variáveis como Parâmetros de Funções: Variáveis também podem ser usadas como parâmetros em funções, permitindo que você passe dados para funções e as manipule.
+
+Exemplo:
+
+def saudacao(nome):
+    print("Olá, " + nome + "!")
+
+saudacao("Pedro")  # Saída: "Olá, Pedro!"
+
+
+Múltiplas Atribuições: Python permite atribuir valores a várias variáveis em uma única linha.
+
+Exemplo:
+
+x, y, z = 10, 20, 30
+
+
+Desempacotamento de Sequências: Você pode atribuir valores de uma lista ou tupla a várias variáveis de uma vez.
+
+Exemplo:
+
+numeros = [1, 2, 3]
+a, b, c = numeros
+
+
+
+ESCOPO 
+
+O escopo de uma variável em Python se refere à parte do programa onde a variável é acessível e pode ser referenciada. Python possui diferentes níveis de escopo que determinam onde uma variável pode ser usada. Existem dois principais tipos de escopo em Python: escopo global e escopo local.
+
+Escopo Global: Variáveis definidas fora de qualquer função ou bloco de código são consideradas globais. Isso significa que elas podem ser acessadas de qualquer lugar no código, tanto dentro de funções quanto fora delas.
+
+Exemplo:
+
+x = 10  # Escopo global
+
+def funcao():
+    print(x)  # A variável x é acessível aqui
+    
+funcao()  # Saída: 10
+
+
+
+Escopo Local: Variáveis definidas dentro de uma função são consideradas locais. Elas só podem ser acessadas dentro dessa função específica e não estão disponíveis fora dela.
+
+Exemplo:
+
+def funcao():
+    y = 5  # Escopo local
+    print(y)  # A variável y é acessível aqui
+
+funcao()  # Saída: 5
+print(y)  # Isso resultaria em um erro, pois y não está definido neste escopo
+
+
+Variáveis Globais e Locais: Se uma variável for definida em um escopo local (dentro de uma função), ela será tratada como uma variável local, mesmo se houver uma variável com o mesmo nome no escopo global.
+
+Exemplo:
+
+z = 100  # Escopo global
+
+def outra_funcao():
+    z = 200  # Escopo local
+    print(z)  # A variável z local é acessível aqui
+
+outra_funcao()  # Saída: 200
+print(z)  # Saída: 100, pois estamos acessando a variável global
+
+
+Palavra-chave global: Se você quiser modificar uma variável global de dentro de uma função, precisa usar a palavra-chave global para indicar que está se referindo à variável global e não criando uma variável local com o mesmo nome.
+
+Exemplo:
+
+a = 10  # Escopo global
+
+def modificar_variavel_global():
+    global a
+    a = 20  # Modifica a variável global
+
+modificar_variavel_global()
+print(a)  # Saída: 20
+
+
+Encerramento (Closure): Funções aninhadas (funções definidas dentro de outras funções) têm acesso ao escopo de suas funções externas. Isso é conhecido como encerramento e permite que as funções internas acessem variáveis da função externa.
+
+Exemplo:
+
+def funcao_externa():
+    variavel_externa = 50  # Escopo da função externa
+    
+    def funcao_interna():
+        print(variavel_externa)  # A variável externa é acessível aqui
+        
+    return funcao_interna
+
+nova_funcao = funcao_externa()
+nova_funcao()  # Saída: 50
