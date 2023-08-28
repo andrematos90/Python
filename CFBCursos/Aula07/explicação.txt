@@ -1,75 +1,125 @@
-Em Python, uma string é uma sequência de caracteres. Ela é usada para representar texto e é uma das estruturas de dados fundamentais na linguagem. As strings em Python são imutáveis, o que significa que uma vez que uma string é criada, ela não pode ser modificada. Se você precisar fazer alterações em uma string, na verdade você estará criando uma nova string com as modificações desejadas.
+                             MÉTODOS DE STRING
 
 
+Existem muitos métodos de string em Python, cada um projetado para realizar uma tarefa específica de manipulação de strings. Vou listar e explicar brevemente alguns dos métodos mais comuns e úteis:
 
-Aqui estão algumas informações importantes sobre strings em Python:
+str.upper() e str.lower():
+Retorna uma nova string com todos os caracteres em maiúsculas ou minúsculas, respectivamente.
 
-Criação de Strings:
-Você pode criar uma string usando aspas simples (') ou aspas duplas ("). Por exemplo:
-
-string1 = 'Isso é uma string usando aspas simples.'
-string2 = "Isso é uma string usando aspas duplas."
-
-
-
-Strings Multilinha:
-Se você quiser criar uma string multilinha, pode usar três aspas simples ou duplas. Isso é útil para representar blocos de texto com várias linhas:
-
-texto_multilinha = '''
-Esta é a primeira linha.
-Esta é a segunda linha.
-E assim por diante...
-'''
-
-Acessando Caracteres:
-Os caracteres em uma string podem ser acessados usando índices. O índice começa em 0 para o primeiro caractere, -1 para o último caractere, -2 para o penúltimo e assim por diante:
-
-minha_string = "Python"
-primeiro_caractere = minha_string[0]  # 'P'
-ultimo_caractere = minha_string[-1]   # 'n'
-
-
-
-Tamanho da String:
-O tamanho (número de caracteres) de uma string pode ser obtido usando a função len():
-
-tamanho = len(minha_string)  # 6
-
-
-
-Concatenação de Strings:
-Você pode concatenar strings usando o operador de adição (+):
-
-saudacao = "Olá, " + "mundo!"
-
-
-
-Métodos de String:
-Python fornece vários métodos embutidos para manipulação de strings, como upper(), lower(), strip(), replace(), split(), etc. Esses métodos retornam novas strings e não alteram a original.
-
-
-
-Formatação de Strings:
-Você pode usar o método .format() ou as f-strings (disponíveis a partir do Python 3.6) para formatar strings com valores variáveis:
-
-nome = "André"
-idade = 33
-mensagem = "Olá, meu nome é {} e tenho {} anos.".format(nome, idade)
-# Ou usando f-strings:
-mensagem_fstring = f"Olá, meu nome é {nome} e tenho {idade} anos."
+texto = "Olá, Mundo!"
+texto_upper = texto.upper()  # "OLÁ, MUNDO!"
+texto_lower = texto.lower()  # "olá, mundo!"
 
 
 
 
-Strings Raw:
-Uma string raw (crua) é uma string precedida por um r ou R. Ela é usada para evitar que sequências de escape, como \n ou \t, sejam interpretadas:
+str.capitalize() e str.title():
+capitalize() retorna a string com o primeiro caractere em maiúscula e os outros em minúsculas.
+title() retorna a string com o primeiro caractere de cada palavra em maiúscula.
 
-caminho_arquivo = r'C:\Programas\Python'
+texto = "bem-vindo ao mundo"
+texto_cap = texto.capitalize()  # "Bem-vindo ao mundo"
+texto_title = texto.title()      # "Bem-Vindo Ao Mundo"
 
 
-Indexação e Fatiamento:
-Você pode acessar partes de uma string usando a indexação e o fatiamento:
 
-minha_string = "Python"
-primeira_letra = minha_string[0]     # 'P'
-primeiras_duas_letras = minha_string[:2]  # 'Py'
+str.strip() e str.rstrip() e str.lstrip():
+strip() remove espaços em branco no início e no final da string. 
+rstrip() remove apenas à direita
+lstrip() remove apenas à esquerda.
+
+texto = "   Olá, Mundo!   "
+texto_stripped = texto.strip()    # "Olá, Mundo!"
+texto_rstripped = texto.rstrip()  # "   Olá, Mundo!"
+texto_lstripped = texto.lstrip()  # "Olá, Mundo!   "
+
+
+
+str.replace(old, new):
+Substitui todas as ocorrências da substring old pela substring new.
+
+texto = "Olá, pessoal! Olá, Mundo!"
+novo_texto = texto.replace("Olá", "Oi")  # "Oi, pessoal! Oi, Mundo!"
+
+
+
+str.split(sep):
+Divide a string em substrings usando o separador sep e retorna uma lista de substrings resultantes.
+
+texto = "maçã, banana, laranja"
+lista_frutas = texto.split(", ")  # ["maçã", "banana", "laranja"]
+
+
+
+
+str.join(iterable):
+Une uma lista (ou qualquer iterável) de strings usando a string original como separador.
+
+palavras = ["Olá", "mundo", "!"]
+texto = " ".join(palavras)  # "Olá mundo !"
+
+
+
+
+str.startswith(prefix) e str.endswith(suffix):
+Verifica se a string começa com o prefixo ou termina com o sufixo especificado, retornando um valor booleano.
+
+texto = "Python é incrível"
+comeca_com_python = texto.startswith("Python")  # True
+termina_com_incrivel = texto.endswith("incrível")  # True
+
+
+
+
+
+str.find(sub) e str.index(sub):
+find() retorna o índice da primeira ocorrência da substring sub (ou -1 se não encontrada). index() é semelhante, mas levanta uma exceção se a substring não for encontrada.
+
+texto = "Python é uma linguagem poderosa"
+indice = texto.find("linguagem")  # 10
+indice2 = texto.index("python")   # ValueError, pois não encontrará a substring
+
+str.count(sub):
+Conta o número de ocorrências da substring sub na string.
+
+texto = "banana, maçã, abacaxi, banana"
+ocorrencias = texto.count("banana")  # 2
+
+
+
+                              CARACTERES DE ESCAPE
+
+
+Os caracteres de escape são sequências especiais de caracteres que têm um significado especial quando usados em strings. Eles são usados para representar caracteres que normalmente seriam difíceis ou impossíveis de inserir diretamente em uma string, como aspas, novas linhas, tabulações, etc. Aqui estão alguns dos caracteres de escape mais comuns em Python:
+
+\n: Nova linha (line feed).
+\r: Retorno de carro (carriage return).
+\t: Tabulação horizontal.
+\b: Retrocesso (backspace).
+\f: Avanço de página (form feed).
+\': Aspa simples.
+\": Aspa dupla.
+\\: Barra invertida (usada para escapar a própria barra invertida).
+\xhh: Um byte em hexadecimal (por exemplo, \x0A representa uma nova linha).
+\uxxxx: Um caractere Unicode de 16 bits (por exemplo, \u00E7 representa "ç").
+\Uxxxxxxxx: Um caractere Unicode de 32 bits.
+\N{name}: Um caractere Unicode pelo seu nome (por exemplo, \N{GREEK CAPITAL LETTER DELTA}).
+Aqui estão alguns exemplos de uso de caracteres de escape:
+
+
+# Exemplo de nova linha e tabulação
+texto = "Primeira linha\nSegunda linha\tTexto após a tabulação."
+
+# Exemplo de aspas dentro de uma string
+citação = "Ele disse, \"Olá!\""
+
+# Exemplo de uso de caracteres Unicode
+unicode_exemplo = "Este é um símbolo: \u2665"  # Coração (♥)
+
+# Exemplo de uso de nome de caractere Unicode
+delta = "\N{GREEK CAPITAL LETTER DELTA}"
+
+
+Lembre-se de que os caracteres de escape são usados para modificar o comportamento normal das strings e para permitir a inclusão de caracteres especiais. Se você precisar incluir um caractere que tenha um significado especial como parte da própria string (por exemplo, uma barra invertida), você pode usar a barra invertida dupla (\\) para escapar o caractere de escape.
+
+
