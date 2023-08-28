@@ -1,0 +1,23 @@
+Em Python, os tipos de dados definem os valores que uma variável pode armazenar e as operações que podem ser realizadas com esses valores. Python é uma linguagem de programação de tipagem dinâmica, o que significa que você não precisa especificar explicitamente o tipo de uma variável ao declará-la. O tipo é inferido automaticamente com base no valor atribuído à variável. Aqui estão alguns dos tipos de dados mais comuns em Python:
+
+Inteiro (int): Representa números inteiros, positivos ou negativos, sem parte decimal. Exemplos: -5, 0, 42.
+
+Flutuante (float): Representa números com parte decimal. Exemplos: 3.14, -0.5, 2.0.
+
+String (str): Representa uma sequência de caracteres. É delimitada por aspas simples (' ') ou duplas (" "). Exemplos: 'Olá, mundo!', "Python".
+
+Booleano (bool): Representa um valor lógico, que pode ser True (verdadeiro) ou False (falso). É usado em expressões condicionais e lógicas. Exemplos: True, False.
+
+Lista (list): Uma coleção ordenada e mutável de valores, separados por vírgulas e delimitados por colchetes ([]). Exemplos: [1, 2, 3], ['maçã', 'banana', 'laranja'].
+
+Tupla (tuple): Semelhante a uma lista, mas imutável, ou seja, seus elementos não podem ser alterados após a criação. Delimitada por parênteses (()). Exemplos: (1, 2, 3), ('a', 'b', 'c').
+
+Dicionário (dict): Uma estrutura de dados que associa chaves a valores. Cada chave é única e usada para acessar seu valor correspondente. Delimitado por chaves ({}). Exemplos: {'nome': 'João', 'idade': 30}, {'item1': 100, 'item2': 200}.
+
+Conjunto (set): Uma coleção não ordenada e mutável de elementos únicos, delimitado por chaves ({}). Exemplos: {1, 2, 3}, {'a', 'b', 'c'}.
+
+Nenhum (NoneType): Representa a ausência de valor. É frequentemente usado para indicar a falta de retorno de uma função ou a falta de valor em uma variável.
+
+Bytes e Bytearrays: Usados para representar sequências de bytes, úteis para manipular dados binários.
+
+Estes são os tipos de dados básicos em Python, mas a linguagem também suporta tipos mais avançados, como classes e objetos definidos pelo usuário, que permitem a criação de estruturas de dados personalizadas e complexas. O conhecimento das características de cada tipo de dado é fundamental para programar de forma eficaz em Python, permitindo que você escolha a estrutura mais apropriada para resolver diferentes problemas.
